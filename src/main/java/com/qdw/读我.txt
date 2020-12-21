@@ -1,0 +1,1 @@
+Make sure lpsolve55.dll and lpsolve55j.dll are placed in System32 folder based on system type i.e., 32bit or 64 bit
