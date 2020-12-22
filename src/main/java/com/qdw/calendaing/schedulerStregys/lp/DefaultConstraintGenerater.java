@@ -19,12 +19,19 @@ import java.util.Map;
 @Slf4j
 public class DefaultConstraintGenerater implements ConstraintGenerater {
 
+    private boolean flag = false;
+
     @Override
     public List<List<Integer>> generate(NetContext netContext, ConstraintType constraintType) {
         if (netContext.getNetwork()==null || netContext.getRequirements()==null || constraintType==null){
             log.error("无效参数");
             return new ArrayList<>();
         }
+        if (!flag){
+            netContext.getRequirements().initializeFlows(netContext.getPathConfig(),netContext.getNetwork());
+            flag = true;
+        }
+
         List<List<Integer>> list = new ArrayList<>();
         switch (constraintType){
             case RONGLIANG:
@@ -47,41 +54,64 @@ public class DefaultConstraintGenerater implements ConstraintGenerater {
     private List<List<Integer>> getRLCons(NetContext netContext){
         Requirements requirements = netContext.getRequirements();
         Network network = netContext.getNetwork();
+        System.out.println("所有初始流的数量为:"+requirements.getFlowsOfAll());
         ArrayList<List<Integer>> res = new ArrayList<>(requirements.getRequirements().size());
-        for (Link link : network.getLinks().values()) {
-            List<Integer> list = new LinkedList<>();
-            for (Requirements.Requirement requirement : requirements.getRequirements()) {
-                Map<Integer, List<Flow>> flowsOfR = requirement.getFlowsOfR();
-                for (List<Flow> flows : flowsOfR.values()) {
-                    for (Flow flow : flows) {
-                        if (flow.isCover(link)){
-                            list.add(1);
-                        }else {
-                            list.add(0);
+        System.out.println("linksdesize:"+network.getLinks().size());
+        for (int i = netContext.getRequirements().getEarliestSlot(); i <= netContext.getRequirements().getLatestSlot(); i++) {
+            for (Link link : network.getLinks().values()) {
+                List<Integer> list = new LinkedList<>();
+                for (Requirements.Requirement requirement : requirements.getRequirements()) {
+                    Map<Integer, List<Flow>> flowsOfR = requirement.getFlowsOfR();
+                    for (List<Flow> flows : flowsOfR.values()) {
+                        for (Flow flow : flows) {
+                            if (flow.isCover(link) && flow.getTimeSlot() == i) {
+                                System.out.println("###link:"+link.getId());
+                                list.add(1);
+                            } else {
+                                list.add(0);
+                            }
+
                         }
                     }
                 }
+                list.add(1);
+                list.add((int) link.getLinkInfoMap().get(i).getCapacity());
+                res.add(list);
             }
-            list.add(1);
-            list.add((int)link.getLinkInfoMap().get(0).getCapacity());
-            res.add(list);
         }
+
+        System.out.println("参数个数为：" + res.get(0).size());
+        System.out.println("getRLCons size!!!:"+res.size());
         return res;
 
     }
     // 获取流量约束
     private List<List<Integer>> getLLCons(NetContext netContext){
         Requirements requirements = netContext.getRequirements();
+
         int flowsOfAll = requirements.getFlowsOfAll();
+        System.out.println("所有初始流的数量为:"+flowsOfAll);
+
         List<List<Integer>> res = new LinkedList<>();
+        int j = 0;
         for (int i = 0; i < flowsOfAll; i++) {
+
             List<Integer> list = new ArrayList<>(flowsOfAll+2);
             for (int k = 0; k < flowsOfAll; k++) {
-                list.add(0);
+                if (k==j){
+                    list.add(1);
+                }else {
+                    list.add(0);
+                }
             }
-            list.set(i,2);
+            j++;
+//            list.set(i,2);
+            list.add(2);
+            list.add(0);
             res.add(list);
         }
+        System.out.println("参数个数为：" + res.get(0).size());
+        System.out.println("getLLCons size!!!:"+res.size());
         return res;
     }
 
@@ -90,6 +120,7 @@ public class DefaultConstraintGenerater implements ConstraintGenerater {
         Requirements requirements = netContext.getRequirements();
         List<List<Integer>> res = new LinkedList<>();
         int flowsOfAll = requirements.getFlowsOfAll();
+        System.out.println("所有初始流的数量为:"+flowsOfAll);
         int i = 0;
         for (Requirements.Requirement requirement : requirements.getRequirements()) {
             List<Integer> list = new LinkedList<>();
@@ -103,13 +134,15 @@ public class DefaultConstraintGenerater implements ConstraintGenerater {
                     list.add(1);
                 }
             }
-            while (list.size()!=flowsOfAll){
+            while (list.size() < flowsOfAll){
                 list.add(0);
             }
             list.add(3);
             list.add((int)requirement.getDemand());
             res.add(list);
         }
+        System.out.println("参数个数为：" + res.get(0).size());
+        System.out.println("getXQCons size!!!:"+res.size());
         return res;
     }
 
@@ -128,6 +161,8 @@ public class DefaultConstraintGenerater implements ConstraintGenerater {
 
         return res;
     }
+
+
 
     private Integer getCost(Flow flow){
 

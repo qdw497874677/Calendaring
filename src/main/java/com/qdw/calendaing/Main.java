@@ -5,9 +5,9 @@ import com.qdw.calendaing.base.MaxBandwidthPathProducer;
 import com.qdw.calendaing.base.NetContext;
 import com.qdw.calendaing.schedulerStregys.VbvpEarliestOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.VbvpEarliestOnlineScheduler;
-import com.qdw.calendaing.schedulerStregys.VbvpStepsOfflineScheduler;
+import com.qdw.calendaing.schedulerStregys.VbvpStepsOnlineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.DefaultConstraintGenerater;
-import com.qdw.calendaing.schedulerStregys.lp.LPSimpleScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPSimpleOfflineScheduler;
 
 /**
  * @PackageName:com.qdw.calendaing
@@ -22,10 +22,12 @@ public class Main {
         netContext.setPathProducer(new MaxBandwidthPathProducer());
         netContext.refresh();
 
-//        Scheduler scheduler = new VbvpEarliestOfflineScheduler();
-//        Scheduler scheduler = new VbvpEarliestOnlineScheduler();
-        Scheduler scheduler = new LPSimpleScheduler(new DefaultConstraintGenerater());
+        Scheduler scheduler = new VbvpEarliestOfflineScheduler();
 //        Scheduler scheduler = new VbvpStepsOfflineScheduler();
+//        Scheduler scheduler = new VbvpEarliestOnlineScheduler();
+//        Scheduler scheduler = new VbvpStepsOnlineScheduler();
+//        Scheduler scheduler = new LPSimpleOfflineScheduler(new DefaultConstraintGenerater());
+
 //        Scheduler scheduler = new LPSimpleScheduler(new DefaultConstraintGenerater());
 
         CalendaingResult calendaingResult = scheduler.calendaing(netContext);

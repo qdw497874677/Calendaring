@@ -47,4 +47,13 @@ public class Constraint {
 	public void setConstraintValue(double constraintValue) {
 		this.constraintValue = constraintValue;
 	}
+
+	@Override
+	public String toString() {
+		return "Constraint{" +
+				"coefficient='" + coefficient + '\'' +
+				", equality=" + equality +
+				", constraintValue=" + constraintValue +
+				'}';
+	}
 }

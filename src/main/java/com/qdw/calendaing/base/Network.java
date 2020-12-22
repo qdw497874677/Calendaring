@@ -35,7 +35,7 @@ public class Network implements Cloneable {
                     "0-1-10.0," +
                     "0-2-10.0," +
                     "0-3-10.0," +
-                    "1-2-10.0," +
+                    "1-3-10.0," +
                     "2-3-10.0";
             if (topoConfig==null){
                 topoConfig = new TopoConfig(topoStr,4,0, TopoStrType.YOURONGLIANG);
@@ -141,7 +141,7 @@ public class Network implements Cloneable {
     public void updateBandwidth(Path path,int timeSlot,double value){
 //        System.out.println(path);
 //        System.out.println(path.getLinksSet().size());
-        for (Link link : path.getLinksSet()) {
+        for (Link link : path.getLinksMap().values()) {
 //            System.out.println("!!!!"+value);
 //            System.out.println();
             link.decrease(value, timeSlot);

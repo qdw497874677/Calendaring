@@ -21,7 +21,7 @@ public class NetContext implements Cloneable {
     private static volatile NetContext netContext;
 
     private Network network;
-    private int numOfTimeSlot = 20;
+    private int numOfTimeSlot = 10;
     private int maxNumOfPath = 3;
     private int maxHop = 6;
 
@@ -36,15 +36,15 @@ public class NetContext implements Cloneable {
     private PathProducer pathProducer;
 
     private Requirements requirements;
-    private int numOfR = 40;
+    private int numOfR = 20;
     private int earliestSlot = 0;
-    private int latestSlot = 19;
+    private int latestSlot = 9;
     private int demandBase = 6;
     private RequirementConfig requirementConfig;
     private RequirementProducer requirementProducer;
 
     {
-        topoConfig = new TopoConfig(topoStr,numOfNode,30.0, TopoStrType.WURONGLIANG);
+        topoConfig = new TopoConfig(topoStr,numOfNode,20.0, TopoStrType.WURONGLIANG);
         pathConfig = new PathConfig(maxNumOfPath, maxHop);
         requirementConfig = new RequirementConfig(numOfR,earliestSlot,latestSlot,demandBase);
         requirementProducer = new RandomRProducer();
@@ -67,6 +67,7 @@ public class NetContext implements Cloneable {
         // 初始化网络
         network = new Network(numOfTimeSlot);
         network.initializeNetwork(topoConfig,pathConfig,pathProducer);
+//        network.initializeNetwork(null,pathConfig,pathProducer);
         System.out.println(network.getPathCacheInfo());
 
         // 初始化请求

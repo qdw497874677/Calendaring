@@ -26,7 +26,7 @@ public class Flow {
 		this.isUsed=false;
 		this.status = status;
 
-		if (p==null){
+		if (p==null || p.getPath()==null){
 			id = r.getId()+"-0-0";
 		}else {
 			id = r.getId()+"-"+p.getFirst().getId()+"-"+p.getLast().getId();
@@ -36,7 +36,8 @@ public class Flow {
 
 	public boolean isCover(Link link){
 		// 如果是虚拟流也算是经过
-		return status.equals(FlowStatus.XUNI) || path.isCover(link);
+		return !status.equals(FlowStatus.XUNI)
+				&& path.isCover(link);
 	}
 
 

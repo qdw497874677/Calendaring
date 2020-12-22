@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 public class Requirements implements Cloneable {
 	@Data
-	static public class 									Requirement implements Cloneable{
+	static public class Requirement implements Cloneable{
 		private int id;
 		private Node sNode;
 		private Node dNode;
@@ -44,7 +44,7 @@ public class Requirements implements Cloneable {
 			this.readySlot = readySlot;
 			this.deadline = deadline;
 			this.demand = demand;
-			this.flowsOfR = new HashMap<>();
+			this.flowsOfR = new LinkedHashMap<>();
 //			priority = demand/(deadline-readySlot);
 //			priority = demand;
 			priority = updatePriority(readySlot);
@@ -82,6 +82,9 @@ public class Requirements implements Cloneable {
 		}
 
 		public Flow addFlow(int timeSlot, FlowStatus flowStatus, Path path){
+			if (path==null){
+				return null;
+			}
 			return addFlow(timeSlot,flowStatus,path,0.0);
 		}
 
@@ -94,7 +97,6 @@ public class Requirements implements Cloneable {
 				list.add(flow);
 				flowsOfR.put(timeSlot,list);
 			}
-			numOfFlows++;
 			// 更新满足的要求
 			meetDemand += value;
 			return flow;
@@ -109,7 +111,6 @@ public class Requirements implements Cloneable {
 				list.add(flow);
 				flowsOfR.put(timeSlot,list);
 			}
-			numOfFlows++;
 		}
 
 		public void addDemand(double value){
@@ -127,11 +128,8 @@ public class Requirements implements Cloneable {
 			} catch (CloneNotSupportedException e) {
 				e.printStackTrace();
 			}
-
 			return clone;
 		}
-
-
 	}
 	// 最早开始时隙
 	private int earliestSlot;
@@ -204,7 +202,6 @@ public class Requirements implements Cloneable {
 			// 在最后一个时隙上添加虚拟流
 			oneR.addDummyFlow(r);
 			maxNumOfFlow = Math.max(maxNumOfFlow,oneR.getNumOfFlows());
-			numOfFlows += oneR.getNumOfFlows();
 		}
 
 	}
@@ -212,8 +209,12 @@ public class Requirements implements Cloneable {
 	public int getFlowsOfAll(){
 		int sum = 0;
 		for (Requirement requirement : requirements) {
-			sum += requirement.getNumOfFlows();
+			for (List<Flow> flows : requirement.getFlowsOfR().values()) {
+				System.out.println(sum);
+				sum += flows.size();
+			}
 		}
+		numOfFlows = sum;
 		return sum;
 	}
 
