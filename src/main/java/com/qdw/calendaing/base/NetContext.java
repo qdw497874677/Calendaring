@@ -21,8 +21,8 @@ public class NetContext implements Cloneable {
     private static volatile NetContext netContext;
 
     private Network network;
-    private int numOfTimeSlot = 10;
-    private int maxNumOfPath = 3;
+    private int numOfTimeSlot = 19;
+    private int maxNumOfPath = 6;
     private int maxHop = 6;
 
     private String topoStr = "0-1,0-2,1-2,1-3,2-3,2-4,3-5,4-5,5-6,4-6,4-7,5-8,6-8,2-7,6-9,7-9,8-9,7-10,7-11,9-10,10-11";
@@ -36,9 +36,9 @@ public class NetContext implements Cloneable {
     private PathProducer pathProducer;
 
     private Requirements requirements;
-    private int numOfR = 20;
+    private int numOfR = 100;
     private int earliestSlot = 0;
-    private int latestSlot = 9;
+    private int latestSlot = 19;
     private int demandBase = 6;
     private RequirementConfig requirementConfig;
     private RequirementProducer requirementProducer;
@@ -75,7 +75,6 @@ public class NetContext implements Cloneable {
         requirements.initializeRs(network,requirementProducer);
     }
 
-
     // 根据一个已有的请求集合初始上下文
     public void refresh(Requirements requirements){
         network = new Network(numOfTimeSlot);
@@ -87,7 +86,7 @@ public class NetContext implements Cloneable {
     // 初始化每个请求的默认流
     public void initializeRequirementsFlows(){
         requirements.initializeRs(network,requirementProducer);
-        requirements.initializeFlows(pathConfig,network);
+        requirements.initializeFlows(pathConfig,network,true);
         System.out.println("initializeRequirementsFlows~~~~~~~~~~");
     }
 

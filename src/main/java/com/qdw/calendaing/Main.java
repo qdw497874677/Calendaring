@@ -1,13 +1,14 @@
 package com.qdw.calendaing;
 
+import com.qdw.calendaing.base.Flow;
+import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.schedulerStregys.Scheduler;
 import com.qdw.calendaing.base.MaxBandwidthPathProducer;
 import com.qdw.calendaing.base.NetContext;
-import com.qdw.calendaing.schedulerStregys.VbvpEarliestOfflineScheduler;
-import com.qdw.calendaing.schedulerStregys.VbvpEarliestOnlineScheduler;
-import com.qdw.calendaing.schedulerStregys.VbvpStepsOnlineScheduler;
-import com.qdw.calendaing.schedulerStregys.lp.DefaultConstraintGenerater;
-import com.qdw.calendaing.schedulerStregys.lp.LPSimpleOfflineScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPStepsOnlineScheduler;
+
+import java.util.List;
 
 /**
  * @PackageName:com.qdw.calendaing
@@ -22,11 +23,12 @@ public class Main {
         netContext.setPathProducer(new MaxBandwidthPathProducer());
         netContext.refresh();
 
-        Scheduler scheduler = new VbvpEarliestOfflineScheduler();
+//        Scheduler scheduler = new VbvpEarliestOfflineScheduler();
 //        Scheduler scheduler = new VbvpStepsOfflineScheduler();
 //        Scheduler scheduler = new VbvpEarliestOnlineScheduler();
 //        Scheduler scheduler = new VbvpStepsOnlineScheduler();
-//        Scheduler scheduler = new LPSimpleOfflineScheduler(new DefaultConstraintGenerater());
+//        Scheduler scheduler = new LPSimpleOfflineScheduler();
+        Scheduler scheduler = new LPStepsOnlineScheduler();
 
 //        Scheduler scheduler = new LPSimpleScheduler(new DefaultConstraintGenerater());
 
@@ -35,5 +37,20 @@ public class Main {
         System.out.println(netContext.getNetwork().getLinksInfo());
         System.out.println(calendaingResult.getAcceptRate());
         System.out.println(calendaingResult.getThroughputRate());
+        System.out.println("ºÄÊ±£º"+calendaingResult.getTotalTime()+"ms");
+
+        for (Requirements.Requirement requirement : netContext.getRequirements().getRequirements()) {
+            if (requirement.getMeetDemand()>requirement.getDemand()){
+                System.out.println("!!!"+requirement.getMeetDemand() + "  " + requirement.getDemand());
+                for (List<Flow> flows : requirement.getFlowsOfR().values()) {
+                    for (Flow flow : flows) {
+                        System.out.print(flow+" "+flow.getValue());
+                        if (flow.getStatus().equals(FlowStatus.XUNI)){
+                            System.out.println(" ÊÇÐéÄâÁ÷  ");
+                        }
+                    }
+                }
+            }
+        }
     }
 }

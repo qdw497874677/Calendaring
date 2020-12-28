@@ -2,6 +2,7 @@ package com.qdw.calendaing.base;
 
 import com.qdw.calendaing.base.config.PathConfig;
 import com.qdw.calendaing.base.config.TopoConfig;
+import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.constant.TopoStrType;
 import javafx.util.Pair;
 import lombok.Data;
@@ -50,7 +51,7 @@ public class Network implements Cloneable {
         // 初始化节点
         creatNodes(topoConfig.getNumOfNode());
         // 初始化链路
-        creatLinks(netTopo.getGraph());
+        creatLinks(netTopo.getGraph(),topoConfig);
         // 根据配置初始化默认路径
         creatPaths(netTopo.getGraph(),pathConfig,pathProducer);
         return this;
@@ -63,12 +64,13 @@ public class Network implements Cloneable {
         }
     }
 
-    private void creatLinks(double[][] g){
+    private void creatLinks(double[][] g,TopoConfig topoConfig){
+        double value = topoConfig.getCapacity();
         for (int i = 0; i < g.length; i++) {
             for (int j = i; j < g[0].length; j++) {
                 if(g[i][j]>0.0){
                     Link link = new Link(nodes.get(i), nodes.get(j));
-                    link.initializeInfo(slotSize,10.0,1);
+                    link.initializeInfo(slotSize,value,1);
                     links.put(link.getId(),link);
                 }
             }
@@ -135,12 +137,18 @@ public class Network implements Cloneable {
         }
     }
     public void updateBandwidth(Flow flow){
+        if (flow.getStatus().equals(FlowStatus.XUNI)){
+            return;
+        }
         updateBandwidth(flow.getPath(),flow.getTimeSlot(),flow.getValue());
     }
     // 更新链路带宽
     public void updateBandwidth(Path path,int timeSlot,double value){
 //        System.out.println(path);
 //        System.out.println(path.getLinksSet().size());
+        if (path==null){
+            return;
+        }
         for (Link link : path.getLinksMap().values()) {
 //            System.out.println("!!!!"+value);
 //            System.out.println();

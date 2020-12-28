@@ -103,7 +103,7 @@ public class Requirements implements Cloneable {
 		}
 
 		public void addDummyFlow(int timeSlot){
-			Flow flow = new Flow(timeSlot, null, this, FlowStatus.XUNI,0.0);
+			Flow flow = Flow.getXUNNIFlow(timeSlot,this);
 			if (flowsOfR.containsKey(timeSlot)){
 				flowsOfR.get(timeSlot).add(flow);
 			}else {
@@ -129,6 +129,29 @@ public class Requirements implements Cloneable {
 				e.printStackTrace();
 			}
 			return clone;
+		}
+
+		@Override
+		public boolean equals(Object o) {
+			if (this == o) {
+				return true;
+			}
+			if (o == null || getClass() != o.getClass()) {
+				return false;
+			}
+			Requirement that = (Requirement) o;
+			return id == that.id &&
+					readySlot == that.readySlot &&
+					deadline == that.deadline &&
+					Double.compare(that.demand, demand) == 0 &&
+					Double.compare(that.meetDemand, meetDemand) == 0 &&
+					Objects.equals(sNode, that.sNode) &&
+					Objects.equals(dNode, that.dNode);
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(id, sNode, dNode, readySlot, deadline, demand, meetDemand);
 		}
 	}
 	// 最早开始时隙
@@ -180,7 +203,7 @@ public class Requirements implements Cloneable {
 
 
 	// 根据网络初始化请求的流
-	public void initializeFlows(PathConfig pathConfig, Network network){
+	public void initializeFlows(PathConfig pathConfig, Network network,boolean needXUNI){
 		int maxNum = pathConfig.getMaxNum();
 		int numOfR = requirementConfig.getNumOfR();
 
@@ -198,9 +221,11 @@ public class Requirements implements Cloneable {
 					oneR.addFlow(l,FlowStatus.ZHENGCHANG,pathsC.get(j));
 				}
 			}
+			if (needXUNI){
+				// 在最后一个时隙上添加虚拟流
+				oneR.addDummyFlow(r);
+			}
 
-			// 在最后一个时隙上添加虚拟流
-			oneR.addDummyFlow(r);
 			maxNumOfFlow = Math.max(maxNumOfFlow,oneR.getNumOfFlows());
 		}
 
@@ -242,6 +267,8 @@ public class Requirements implements Cloneable {
 		}
 		return sb.toString();
 	}
+
+
 
 
 

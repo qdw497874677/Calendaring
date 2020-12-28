@@ -16,7 +16,7 @@ public class TestBed {
 
     public static void main(String[] args) {
         // 实验次数
-        int time = 200;
+        int time = 100;
         List<CalendaingResult> list = new LinkedList<>();
         NetContext netContext = NetContext.getNetContext();
 //        netContext.setPathProducer(new MaxBandwidthPathProducer());
@@ -28,6 +28,8 @@ public class TestBed {
 //            Scheduler scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 //            Scheduler scheduler = new VbvpEarliestOnlineScheduler();// 在线、全时隙
             Scheduler scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
+//             Scheduler scheduler = new LPSimpleOfflineScheduler();// 离线、分时隙、LP
+//             Scheduler scheduler = new LPSimpleOnlineScheduler();// 在线、分时隙、LP
 
             long start = System.currentTimeMillis();
             CalendaingResult calendaingResult = scheduler.calendaing(netContext);

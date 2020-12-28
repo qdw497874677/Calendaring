@@ -34,6 +34,10 @@ public class Flow {
 
 	}
 
+	static public Flow getXUNNIFlow(int timeSlot, Requirements.Requirement requirement){
+		return new Flow(timeSlot, null, requirement, FlowStatus.XUNI,0.0);
+	}
+
 	public boolean isCover(Link link){
 		// 如果是虚拟流也算是经过
 		return !status.equals(FlowStatus.XUNI)
