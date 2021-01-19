@@ -2,9 +2,11 @@ package com.qdw.calendaing.base;
 
 import com.qdw.calendaing.base.config.TopoConfig;
 import com.qdw.calendaing.base.constant.TopoStrType;
+import com.qdw.calendaing.base.pathBase.Path;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import sun.nio.ch.Net;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,6 +48,7 @@ public class NetTopo implements Cloneable {
         return netTopo;
     }
 
+    // 生成topo专用方法
     public static NetTopo createTopoByTimeSlot(NetContext netContext,int timeSlot){
         NetTopo netTopo = new NetTopo();
         int numOfNode = netContext.getNetwork().getNodes().size();
@@ -60,6 +63,7 @@ public class NetTopo implements Cloneable {
         return netTopo;
     }
 
+    // 10:1-2
     public void updateGraph(String pathStr,double value){
         String[] split = pathStr.split(":");
         split = split[1].split("-");
@@ -70,8 +74,31 @@ public class NetTopo implements Cloneable {
             graph[b][a] = value;
         }
 
-        System.out.println("更新了一条路径");
+//        System.out.println("更新了一条路径:"+pathStr+" -> "+value);
     }
+
+    public void updateGraph(Path path,double value){
+        String[] split = path.getPathStr().split("-");
+        for (int i = 1; i < split.length; i++) {
+            int a = Integer.parseInt(split[i-1]);
+            int b = Integer.parseInt(split[i]);
+            graph[a][b] = value;
+            graph[b][a] = value;
+        }
+    }
+
+    public void updateGraphToDe(Path path, double value){
+        String[] split = path.getPathStr().split("-");
+        for (int i = 1; i < split.length; i++) {
+            int a = Integer.parseInt(split[i-1]);
+            int b = Integer.parseInt(split[i]);
+            graph[a][b] -= value;
+            graph[b][a] -= value;
+        }
+    }
+
+
+
 
     public int[][] double2Int(){
         int n = graph.length;
@@ -94,12 +121,13 @@ public class NetTopo implements Cloneable {
     public NetTopo clone() throws CloneNotSupportedException {
         int n = graph.length;
         int m = graph[0].length;
-        double[][] clone = new double[n][m];
+        double[][] cloneG = new double[n][m];
         for (int i = 0; i < n; i++) {
-            System.arraycopy(graph[i],0,clone[i],0,m);
+            System.arraycopy(graph[i],0,cloneG[i],0,m);
         }
-
-        return new NetTopo(clone);
+        NetTopo clone = (NetTopo) super.clone();
+        clone.setGraph(cloneG);
+        return clone;
     }
 
     @Override

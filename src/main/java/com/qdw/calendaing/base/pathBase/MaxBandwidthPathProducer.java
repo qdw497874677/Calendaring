@@ -1,8 +1,8 @@
-package com.qdw.calendaing.base;
+package com.qdw.calendaing.base.pathBase;
 
-import org.apache.commons.lang.StringUtils;
-
-import java.util.*;
+import com.qdw.calendaing.base.NetTopo;
+import com.qdw.calendaing.base.config.PathConfig;
+import com.qdw.calendaing.base.pathBase.kpaths.K_PathsProducer;
 
 /**
  * @PackageName:com.qdw.calendaing
@@ -10,12 +10,12 @@ import java.util.*;
  * @Description:
  * @date: 2020/11/8 0008 22:06
  */
-public class MaxBandwidthPathProducer implements PathProducer {
+public class MaxBandwidthPathProducer extends AbstractPathProducer {
     /*
      * dj最大带宽，double
      */
 
-
+    // 返回字符串表示的路径和带宽  带宽:节点A-节点B
     public String getPathByDijkstraMaxbandwidth(int s, int d, int numOfNode, NetTopo topo) {
         if (s < 0 || s >= numOfNode) {
             throw new ArrayIndexOutOfBoundsException();
@@ -26,10 +26,10 @@ public class MaxBandwidthPathProducer implements PathProducer {
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-        double[] bandwidth = new double[numOfNode];// 存放源点到其他点的矩离
+        double[] bandwidth = new double[numOfNode];// 存放源点到其他点的最大可用带宽（经过链路的最小带宽）
         boolean[] visited = new boolean[numOfNode];
         String[] path = new String[numOfNode];
-        for(int i = 0; i < numOfNode; i++){
+        for(int i = 0; i < numOfNode; i++) {
             bandwidth[i] = edges[s][i];
             path[i] = s + "-" + i;
         }
@@ -78,44 +78,16 @@ public class MaxBandwidthPathProducer implements PathProducer {
     }
 
 
-    private void deleteEdgeByB(double value,double[][] g){
-        int n = g.length;
-        int m = g[0].length;
-        for (int i = 0; i < n; i++) {
-            for (int j = i+1; j < m; j++) {
-                if (g[i][j] < value){
-                    g[i][j] = 0;
-                    g[j][i] = 0;
-                }
 
-            }
-        }
-    }
 
     @Override
-    public String getPathStr(int s,int d,int numOfNode, NetTopo netTopo, int maxNum, int maxHop) {
-        NetTopo clone = null;
-        try {
-            clone = netTopo.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        List<String> res = new LinkedList<>();
-
-        while (maxNum-->0){
-//            System.out.println(clone);
-            String pathStr = getPathByDijkstraMaxbandwidth(s, d, numOfNode, clone);
-
-            if (StringUtils.isBlank(pathStr)){
-                break;
-            }
-            res.add(pathStr);
-            clone.updateGraph(pathStr,0.0);
-        }
-
-        return String.join(",",res);
-
+    public String getPathStr(int s, int d, int numOfNode, NetTopo netTopo, double maxBdw) {
+        return getPathByDijkstraMaxbandwidth(s,d,numOfNode,netTopo);
     }
+
+
+
+
 
     public static void main(String[] args) {
         double[][] g = new double[][]{

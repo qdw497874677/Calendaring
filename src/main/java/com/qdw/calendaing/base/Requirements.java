@@ -1,16 +1,23 @@
 package com.qdw.calendaing.base;
 
+import com.alibaba.fastjson.JSONObject;
 import com.qdw.calendaing.base.config.PathConfig;
 import com.qdw.calendaing.base.config.RequirementConfig;
 import com.qdw.calendaing.base.constant.FlowStatus;
+import com.qdw.calendaing.base.pathBase.Path;
+import com.qdw.calendaing.base.requirementBase.RequirementProducer;
+import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
+import com.qdw.calendaing.base.requirementBase.priority.PriorityModifier;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import sun.nio.ch.Net;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * @author qdw49
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -36,6 +43,10 @@ public class Requirements implements Cloneable {
 		private boolean isAccpted;
 		// 优先级
 		private double priority;
+		// 限制带宽
+		private double maxBdw;
+		// 优先级修改器
+		private PriorityModifier priorityModifier;
 
 		public Requirement(int id, Node sNode, Node dNode, int readySlot, int deadline, double demand) {
 			this.id = id;
@@ -47,14 +58,30 @@ public class Requirements implements Cloneable {
 			this.flowsOfR = new LinkedHashMap<>();
 //			priority = demand/(deadline-readySlot);
 //			priority = demand;
-			priority = updatePriority(readySlot);
+			this.maxBdw = -1;
+			this.priorityModifier = new MaxCS_PM();
+			priority = updatePriority(readySlot,priorityModifier);
+		}
+		public Requirement(int id, Node sNode, Node dNode, int readySlot, int deadline, double demand,double maxBdw,PriorityModifier priorityModifier) {
+			this.id = id;
+			this.sNode = sNode;
+			this.dNode = dNode;
+			this.readySlot = readySlot;
+			this.deadline = deadline;
+			this.demand = demand;
+			this.flowsOfR = new LinkedHashMap<>();
+//			priority = demand/(deadline-readySlot);
+//			priority = demand;
+			this.priorityModifier = priorityModifier;
+			priority = updatePriority(readySlot,priorityModifier);
+			this.maxBdw = maxBdw;
 		}
 
 		public boolean containSlot(int timeSlot){
 			return (timeSlot>=readySlot && timeSlot<=deadline);
 		}
 
-		public double updatePriority(int curTimeSlot){
+		public double updatePriority(int curTimeSlot, PriorityModifier priorityModifier){
 //			priority =
 //					(demand - meetDemand)*(readySlot-curTimeSlot+1) // 未完成数据量
 //					/
@@ -68,14 +95,22 @@ public class Requirements implements Cloneable {
 //			priority = - (demand - meetDemand) ;
 //			priority = - (demand - meetDemand) / ( (double)(deadline - readySlot + 1)/(curTimeSlot - readySlot + 1) ) ;
 //			priority = - (demand - meetDemand) / (1 + (double)(deadline - readySlot + 1)/(curTimeSlot - readySlot + 1) ) ;
-			priority = - (demand - meetDemand) / (1 + (double)(deadline - curTimeSlot + 1)/(deadline - readySlot + 1) ) ;
+//			priority = - (demand - meetDemand) / (1 + (double)(deadline - curTimeSlot + 1)/(deadline - readySlot + 1) ) ;
+
+//			if (deadline == curTimeSlot){
+//				priority += 100;
+//				System.out.println("@#$#@@#$@#$@#$@#$#@@#$@#$");
+//			}
 
 			// 吞吐量优先
 			// 时间越久，满足的数据量越小，优先级越高
 //			priority = (demand - meetDemand) / (double)(deadline - curTimeSlot + 1);
 //			priority = (double)(curTimeSlot - readySlot + 1);
 //			priority = (demand - meetDemand) / (double)(curTimeSlot - readySlot + 1);
+//			priority = (demand - meetDemand) / (1 + (double)(deadline - curTimeSlot + 1)/(deadline - readySlot + 1) );
 
+
+			priority = priorityModifier.updatePriority(curTimeSlot,this);
 
 			System.out.println("pri:"+priority);
 			return priority;
@@ -99,6 +134,7 @@ public class Requirements implements Cloneable {
 			}
 			// 更新满足的要求
 			meetDemand += value;
+			numOfFlows++;
 			return flow;
 		}
 
@@ -123,6 +159,7 @@ public class Requirements implements Cloneable {
 			Requirement clone = null;
 			try {
 				clone = (Requirement) super.clone();
+				// 初始化满足需求和流
 				clone.setMeetDemand(0);
 				clone.setFlowsOfR(new LinkedHashMap<>());
 			} catch (CloneNotSupportedException e) {
@@ -152,6 +189,41 @@ public class Requirements implements Cloneable {
 		@Override
 		public int hashCode() {
 			return Objects.hash(id, sNode, dNode, readySlot, deadline, demand, meetDemand);
+		}
+
+		private String getNonzeroFlow(){
+			StringBuilder res = new StringBuilder();
+			for (List<Flow> flows : flowsOfR.values()) {
+				if (flows.size()>0){
+					res.append(" [").append(flows.get(0).getTimeSlot()).append("]");
+				}
+				res.append("{");
+				for (Flow flow : flows) {
+					if (flow.getStatus().equals(FlowStatus.ZHENGCHANG) && flow.getValue()>0.0){
+						res.append(flow.getPath().getPathStr()).append(":").append(flow.getValue()).append(" ");
+					}
+				}
+				res.append("}");
+			}
+			return res.toString();
+		}
+
+		@Override
+		public String toString() {
+			return "Requirement{" +
+					"id=" + id +
+					", sNode=" + sNode +
+					", dNode=" + dNode +
+					", readySlot=" + readySlot +
+					", deadline=" + deadline +
+					", demand=" + demand +
+					", meetDemand=" + meetDemand +
+					", maxBdw=" + maxBdw +
+					", numOfFlows=" + getNumOfFlows() +
+					", nonZeroFlows=" + getNonzeroFlow() +
+					", isAccpted=" + isAccpted +
+					", priority=" + priority +
+					'}';
 		}
 	}
 	// 最早开始时隙
@@ -188,17 +260,73 @@ public class Requirements implements Cloneable {
 
 	}
 
-	public Requirement addR(Network network, int sId, int dId, int readySlot, int deadline, double demand){
-		Requirement requirement = new Requirement(ids++, network.getNode(sId), network.getNode(dId), readySlot, deadline, demand);
+	// 获取所有的流
+	public List<Flow> getAllFlows(){
+		List<Flow> flows = new LinkedList<>();
+		for (Requirements.Requirement requirement : requirements) {
+			for (List<Flow> flow : requirement.getFlowsOfR().values()) {
+				flows.addAll(flow);
+			}
+		}
+		return flows;
+	}
+
+	static public JSONObject getJson(int sNode,int dNode,int readySlot,int deadline,double demand,double maxBdw){
+		JSONObject jsonObject = new JSONObject();
+		jsonObject.put("sNode",sNode);
+		jsonObject.put("dNode",dNode);
+		jsonObject.put("readySlot",readySlot);
+		jsonObject.put("deadline",deadline);
+		jsonObject.put("demand",demand);
+		jsonObject.put("maxBdw",maxBdw);
+		return jsonObject;
+	}
+
+	static public List<JSONObject> reqsToJson(Requirements requirements){
+		List<JSONObject> list = new LinkedList<>();
+		for (Requirement requirement : requirements.getRequirements()) {
+			JSONObject jsonObject = new JSONObject();
+			jsonObject.put("id",requirement.getId());
+			jsonObject.put("sNode",requirement.getSNode());
+			jsonObject.put("dNode",requirement.getDNode());
+			jsonObject.put("readySlot",requirement.getReadySlot());
+			jsonObject.put("deadline",requirement.getDeadline());
+			jsonObject.put("demand",requirement.getDemand());
+			jsonObject.put("maxBdw",requirement.getMaxBdw());
+			list.add(jsonObject);
+		}
+		return list;
+	}
+
+	static public Requirements createReqs(List<JSONObject> list,RequirementConfig requirementConfig,Network network){
+		Requirements requirements = new Requirements(requirementConfig);
+		for (JSONObject jsonObject : list) {
+			jsonObject.get("");
+			requirements.addR(network,
+					(int)jsonObject.get("sNode"),
+					(int)jsonObject.get("dNode"),
+					(int)jsonObject.get("readySlot"),
+					(int)jsonObject.get("deadline"),
+					(double)jsonObject.get("demand"),
+					(double)jsonObject.get("maxBdw"),
+					requirementConfig);
+		}
+		return requirements;
+	}
+
+	public Requirement addR(Network network, int sId, int dId, int readySlot, int deadline, double demand,double maxBdw,RequirementConfig requirementConfig){
+		Requirement requirement = new Requirement(ids++, network.getNode(sId), network.getNode(dId), readySlot, deadline, demand,maxBdw,requirementConfig.getPriorityModifier());
 		requirements.add(requirement);
 		return requirement;
 	}
 
-	public void initializeRs(Network network, RequirementProducer requirementProducer){
+	public void initializeRs(Network network){
 		int numOfR = requirementConfig.getNumOfR();
 		for (int i = 0; i < numOfR; i++) {
-			requirements.add(requirementProducer.getOneR(requirementConfig,network));
+			requirements.add(requirementConfig.getRequirementProducer().getOneR(requirementConfig,network));
 		}
+
+		System.out.println();
 	}
 
 
@@ -254,6 +382,8 @@ public class Requirements implements Cloneable {
 		}
 		return clone;
 	}
+
+
 
 	@Override
 	public String toString(){

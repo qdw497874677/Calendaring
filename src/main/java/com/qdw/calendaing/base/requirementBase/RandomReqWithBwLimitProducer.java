@@ -1,5 +1,7 @@
-package com.qdw.calendaing.base;
+package com.qdw.calendaing.base.requirementBase;
 
+import com.qdw.calendaing.base.Network;
+import com.qdw.calendaing.base.Requirements;
 import com.qdw.calendaing.base.config.RequirementConfig;
 
 import java.util.Random;
@@ -33,6 +35,10 @@ public class RandomReqWithBwLimitProducer implements RequirementProducer {
         do {
             d = random.nextInt(size);
         }while (d==s);
+
+        // 限制的最大带宽
+        double maxBdw = 0;
+        maxBdw = random.nextInt(demandBase) + (demandBase/3)*2;
 
         return new Requirements.Requirement(ids++,network.getNode(s),network.getNode(d),a,b,demand);
     }

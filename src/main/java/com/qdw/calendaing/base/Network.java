@@ -4,6 +4,8 @@ import com.qdw.calendaing.base.config.PathConfig;
 import com.qdw.calendaing.base.config.TopoConfig;
 import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.constant.TopoStrType;
+import com.qdw.calendaing.base.pathBase.Path;
+import com.qdw.calendaing.base.pathBase.PathProducer;
 import javafx.util.Pair;
 import lombok.Data;
 import org.apache.commons.lang.StringUtils;
@@ -30,7 +32,7 @@ public class Network implements Cloneable {
     }
 
 
-    public Network initializeNetwork(TopoConfig topoConfig, PathConfig pathConfig, PathProducer pathProducer){
+    public Network initializeNetwork(TopoConfig topoConfig, PathConfig pathConfig){
         if (topoConfig==null || StringUtils.isEmpty(topoConfig.getTopoStr())){
             String topoStr =
                     "0-1-10.0," +
@@ -42,9 +44,9 @@ public class Network implements Cloneable {
                 topoConfig = new TopoConfig(topoStr,4,0, TopoStrType.YOURONGLIANG);
             }
         }
-        return initializeNetwork2(topoConfig,pathConfig,pathProducer);
+        return initializeNetwork2(topoConfig,pathConfig);
     }
-    public Network initializeNetwork2(TopoConfig topoConfig,PathConfig pathConfig,PathProducer pathProducer){
+    public Network initializeNetwork2(TopoConfig topoConfig,PathConfig pathConfig){
         this.netTopo = NetTopo.createTopo(topoConfig);
 //        System.out.println("###  "+timeSlot);
 
@@ -53,7 +55,7 @@ public class Network implements Cloneable {
         // 初始化链路
         creatLinks(netTopo.getGraph(),topoConfig);
         // 根据配置初始化默认路径
-        creatPaths(netTopo.getGraph(),pathConfig,pathProducer);
+        creatPaths(netTopo.getGraph(),pathConfig);
         return this;
     }
 
@@ -77,25 +79,44 @@ public class Network implements Cloneable {
         }
     }
 
-    private void creatPaths(double[][] g, PathConfig pathConfig, PathProducer pathProducer){
+
+
+    private void creatPaths(double[][] g, PathConfig pathConfig){
+        creatPaths(g,pathConfig,this.netTopo);
+    }
+    // 生成一个网络拓扑中的每个节点之间的路径，根据pathConfig
+    private void creatPaths(double[][] g, PathConfig pathConfig,NetTopo netTopo){
+        String a1 = Arrays.deepToString(netTopo.getGraph());
+
         int maxNum = pathConfig.getMaxNum();
         int maxHop = pathConfig.getMaxHop();
         int numOfNode = g.length;
         List<String> list = new LinkedList<>();
         for (int i = 0; i < numOfNode; i++) {
             for (int j = i+1; j < numOfNode; j++) {
-                String pathStr = pathProducer.getPathStr(i, j, numOfNode, netTopo, maxNum, maxHop);
-                System.out.println("^^^^^"+i+" "+j+"  "+pathStr);
+                String pathStr = pathConfig.getPathProducer().getPathsStr(pathConfig.getKPathsProducer(),i, j, numOfNode, netTopo,pathConfig,pathConfig.getMaxBdw());
+//                System.out.println("^^^^^"+i+" "+j+"  "+pathStr);
                 if (!StringUtils.isBlank(pathStr)){
                     list.add(pathStr);
                 }
             }
         }
+        String a2 = Arrays.deepToString(netTopo.getGraph());
+        String res = "寻路前后原拓扑是否一致"+":"+(a2.equals(a1)?"true":"false")+"  "+Arrays.deepToString(netTopo.getGraph());
+        System.out.println(res);
         String pathStrs = String.join(",", list);
-        addPath(Path.buildPath(this, pathStrs).stream().map(Pair::getKey).collect(Collectors.toList()));
+        addPaths(pathStrs);
+    }
+    public void updatePaths(int timeSlot,NetContext netContext){
+        creatPaths(netTopo.getGraph(),netContext.getPathConfig(),NetTopo.createTopoByTimeSlot(netContext,timeSlot));
     }
 
-    private void addPath(List<Path> paths){
+    // pathStrs为多个路径字符串
+    public void addPaths(String pathStrs){
+        addPaths(Path.buildPath(this, pathStrs).stream().map(Pair::getKey).collect(Collectors.toList()));
+    }
+
+    public void addPaths(List<Path> paths){
         if (paths.size()==0){
             return;
         }
@@ -146,7 +167,7 @@ public class Network implements Cloneable {
     public void updateBandwidth(Path path,int timeSlot,double value){
 //        System.out.println(path);
 //        System.out.println(path.getLinksSet().size());
-        if (path==null){
+        if (path==null || path.getLinksMap() == null){
             return;
         }
         for (Link link : path.getLinksMap().values()) {
@@ -189,6 +210,36 @@ public class Network implements Cloneable {
             sb.append(link).append("\n");
         }
         return sb.toString();
+    }
+
+    // 总的路径数量
+    public int getPathCacheSize(){
+        int sum = 0;
+        for (List<Path> paths : pathCache.values()) {
+            sum += paths.size();
+        }
+        return sum;
+    }
+    // 平均节点间路径数量
+    public double getAvgPathSize(){
+        int size = getPathCacheSize();
+        int nodesSize = getNodes().size();
+        return size/(double)((nodesSize-1)*nodesSize/2);
+    }
+
+    public int getMaxpathSize(){
+        int max = 0;
+        for (List<Path> paths : pathCache.values()) {
+            max = Math.max(max,paths.size());
+        }
+        return max;
+    }
+    public int getMinpathSize(){
+        int min = Integer.MAX_VALUE;
+        for (List<Path> paths : pathCache.values()) {
+            min = Math.min(min,paths.size());
+        }
+        return min;
     }
 
     @Override

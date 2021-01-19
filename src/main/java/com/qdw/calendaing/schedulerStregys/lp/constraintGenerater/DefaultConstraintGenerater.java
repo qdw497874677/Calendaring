@@ -20,8 +20,9 @@ import java.util.stream.Collectors;
 public class DefaultConstraintGenerater extends AbstractConstraintGenerater {
 
 
+
     @Override
-    public List<List<Integer>> generate(NetContext netContext, Collection<Flow> flows, int timeSlot, ConstraintType constraintType) {
+    public List<List<Integer>> generateOne(NetContext netContext, Collection<Flow> flows, ConstraintType constraintType) {
         if (netContext.getNetwork()==null || netContext.getRequirements()==null || constraintType==null){
             log.error("无效参数");
             return new ArrayList<>();
@@ -57,7 +58,7 @@ public class DefaultConstraintGenerater extends AbstractConstraintGenerater {
                 boolean flag = false;
                 for (Flow flow : flows) {
                     if (flow.getTimeSlot()==i && flow.isCover(link)) {
-                        System.out.println("###link:"+link.getId());
+//                        System.out.println("###link:"+link.getId());
                         list.add(1);
                         flag = true;
                     } else {
@@ -142,9 +143,11 @@ public class DefaultConstraintGenerater extends AbstractConstraintGenerater {
         return res;
     }
 
+
+
     // 总流量最大，除了虚拟流
     @Override
-    public List<Integer> getObjFunc(NetContext netContext,Collection<Flow> flows,int timeSlot) {
+    public List<Integer> getObjFunc(NetContext netContext,Collection<Flow> flows) {
         List<Integer> res = new LinkedList<>();
         for (Flow flow : flows) {
             res.add(getCost(flow));

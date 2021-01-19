@@ -59,4 +59,11 @@ public class VbvpStepsOnlineScheduler extends VbvpStepsAbstractScheduler {
 //        System.out.println("@@@@"+unprocessed.size());
         return calendaingResult;
     }
+
+    @Override
+    public String toString() {
+        return "VbvpStepsOnlineScheduler{" +
+                "简介=" + "在线、单时隙、最早最易完成" +
+                "}";
+    }
 }

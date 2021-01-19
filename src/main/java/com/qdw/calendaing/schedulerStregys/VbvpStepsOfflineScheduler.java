@@ -18,27 +18,42 @@ public class VbvpStepsOfflineScheduler extends VbvpStepsAbstractScheduler {
     @Override
     public CalendaingResult calendaing(NetContext netContext) {
         CalendaingResult calendaingResult = new CalendaingResult();
+        int l = netContext.getRequirements().getEarliestSlot();
+        int r = netContext.getRequirements().getLatestSlot();
+        int curSlot = l;
+        // 每次优先拿 优先级高的请求
         PriorityQueue<Requirements.Requirement> curQueue = new PriorityQueue<>((a,b)->{
+
+
+//            if (a.getDeadline()==curSlot && b.getDeadline()>curSlot){
+//                System.out.println("#@#@#@#@#@");
+//                return 1;
+//            }else if (b.getDeadline()==curSlot && a.getDeadline()>curSlot){
+//                System.out.println("#@#@#@#@#@");
+//                return -1;
+//            }
+//            System.out.println("&&&&&&&&&&&&&");
             return (int)(b.getPriority()-a.getPriority());
         });
 
+        // 根据开始时隙排序，为了方便拿取请求。
         Queue<Requirements.Requirement> unprocessed = netContext.getRequirements().getRequirements().stream().sorted((a, b) -> {
             return a.getReadySlot() - b.getReadySlot();
         }).collect(Collectors.toCollection(LinkedList::new));
-        int l = netContext.getRequirements().getEarliestSlot();
-        int r = netContext.getRequirements().getLatestSlot();
 
-        for (int i = l; i <= r ; i++) {
+
+        for (; curSlot <= r ; curSlot++) {
             // 从未处理集合中获取可以参与计算的请求
-            while (!unprocessed.isEmpty() && unprocessed.peek().getReadySlot()==i){
+            while (!unprocessed.isEmpty() && unprocessed.peek().getReadySlot()==curSlot){
                 curQueue.add(unprocessed.poll());
             }
+
             List<Requirements.Requirement> list = new LinkedList<>();
             while (!curQueue.isEmpty()){
                 Requirements.Requirement poll = curQueue.poll();
 //                System.out.println(poll.getPriority());
-                if (!process(netContext,poll,i)){
-                    if (i==poll.getDeadline()){
+                if (!process(netContext,poll,curSlot)){
+                    if (curSlot==poll.getDeadline()){
                         calendaingResult.reject(poll);
                     }else {
                         list.add(poll);
@@ -57,8 +72,10 @@ public class VbvpStepsOfflineScheduler extends VbvpStepsAbstractScheduler {
         return calendaingResult;
     }
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "VbvpStepsOfflineScheduler{" +
+                "简介=" + "离线、单时隙、最早最易完成" +
+                "}";
+    }
 }

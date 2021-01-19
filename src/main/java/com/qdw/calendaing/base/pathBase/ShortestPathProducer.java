@@ -1,9 +1,12 @@
-package com.qdw.calendaing.base;
+package com.qdw.calendaing.base.pathBase;
 
+import com.qdw.calendaing.base.NetTopo;
+import com.qdw.calendaing.base.config.PathConfig;
+import com.qdw.calendaing.base.pathBase.kpaths.K_PathsProducer;
+import com.qdw.calendaing.base.pathBase.kpaths.SimpleKPathsProducer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.commons.lang.StringUtils;
 
 import java.util.*;
 
@@ -13,11 +16,11 @@ import java.util.*;
  * @Description:
  * @date: 2020/11/8 0008 22:06
  */
-public class ShortestPathProducer implements PathProducer {
+public class ShortestPathProducer extends AbstractPathProducer {
     /*
      * ×î¶ÌÂ·¾¶
      */
-    public String getPathByDijkstra(int s, int d, int numOfNode,NetTopo topo) {
+    public String getPathByDijkstra(int s, int d, int numOfNode, NetTopo topo) {
         if (s < 0 || s >= numOfNode) {
             throw new ArrayIndexOutOfBoundsException();
         }
@@ -91,8 +94,8 @@ public class ShortestPathProducer implements PathProducer {
         ShortestPathProducer maxBandwidthPathProducer = new ShortestPathProducer();
 //        System.out.println(maxBandwidthPathProducer.getPathByDijkstraMaxbandwidth(1, 3, 4, g));
 
-        String pathStr = maxBandwidthPathProducer.getPathStr(0, 2, 4, netTopo, 3, 4);
-        System.out.println(pathStr);
+//        String pathStr = maxBandwidthPathProducer.getPathsStr(new SimpleKPathsProducer(),0, 2, 4, netTopo, 3, 4,new PathConfig());
+//        System.out.println(pathStr);
     }
 
     @Data
@@ -134,29 +137,10 @@ public class ShortestPathProducer implements PathProducer {
 
 
     @Override
-    public String getPathStr(int s,int d,int numOfNode, NetTopo netTopo, int maxNum, int maxHop) {
-        NetTopo clone = null;
-        try {
-            clone = netTopo.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        List<String> res = new LinkedList<>();
-
-        while (maxNum-->0){
-            System.out.println(clone);
-            String pathStr = getPathByDijkstra(s, d, numOfNode, clone);
-
-            if (StringUtils.isBlank(pathStr)){
-                break;
-            }
-            res.add(pathStr);
-            clone.updateGraph(pathStr,0.0);
-        }
-
-        return String.join(",",res);
-
+    public String getPathStr(int s, int d, int numOfNode, NetTopo netTopo, double maxBdw) {
+        return getPathByDijkstra(s,d,numOfNode,netTopo);
     }
+
 
 //    @Override
 //    public String getPathStr(int s,int d,int numOfNode, NetTopo netTopo, int maxNum, int maxHop) {

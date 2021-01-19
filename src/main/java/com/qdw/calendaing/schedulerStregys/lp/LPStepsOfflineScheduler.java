@@ -22,17 +22,16 @@ import java.util.stream.Collectors;
 // TODO
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class LPStepsOfflineScheduler extends AbstractLPScheduler {
 
-    private ConstraintGenerater constraintGenerater;
+    {
+        setConstraintGenerater(new OneSlotConstraintGenerater());
+    }
 
     @Override
     public CalendaingResult calendaing(NetContext netContext) {
         // 初始化请求的流
         netContext.getRequirements().initializeFlows(netContext.getPathConfig(),netContext.getNetwork(),false);
-
-        constraintGenerater = new OneSlotConstraintGenerater();
 
         Requirements requirements = netContext.getRequirements();
         int l = requirements.getEarliestSlot();
@@ -43,6 +42,7 @@ public class LPStepsOfflineScheduler extends AbstractLPScheduler {
         for (int i = l; i <= r; i++) {
             List<Flow> flows = new LinkedList<>();
             for (Requirements.Requirement requirement : requirements.getRequirements()) {
+                // 如果还没有完全被满足，且有当前时隙初始的流
                 if (!requirement.isAccpted() && requirement.getFlowsOfR().containsKey(i)){
                     flows.addAll(requirement.getFlowsOfR().get(i));
                     Flow xunniFlow = Flow.getXUNNIFlow(i, requirement);
@@ -53,16 +53,13 @@ public class LPStepsOfflineScheduler extends AbstractLPScheduler {
             if (flows.size()==0){
                 continue;
             }
-            List<Constraint> constraints = new ArrayList<>();
-            constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,i, ConstraintType.LIULIANG)));
-            constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,i, ConstraintType.RONGLIANG)));
-            constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,i, ConstraintType.XUQIU)));
+            List<Constraint> constraints = getConstraints(netContext,flows);
 
             for (Constraint constraint : constraints) {
                 System.out.println(constraint);
             }
 
-            String objectiveFunction = constraintGenerater.getObjFunc(netContext,flows,i)
+            String objectiveFunction = constraintGenerater.getObjFunc(netContext,flows)
                     .stream()
                     .map(String::valueOf)
                     .collect(Collectors.joining(" "))
@@ -75,7 +72,8 @@ public class LPStepsOfflineScheduler extends AbstractLPScheduler {
             double[] res = LpUtil.solveLp(constraints, objectiveFunction, flowsOfAll,2);
             System.out.println(Arrays.toString(res));
             setFlows(res,flows,i);
-            updataP(flows,i);
+            updateP(flows,i,netContext);
+
         }
         long time  = System.currentTimeMillis() - start;
 
@@ -89,4 +87,12 @@ public class LPStepsOfflineScheduler extends AbstractLPScheduler {
         return calendaingResult;
     }
 
+
+    @Override
+    public String toString() {
+        return "LPStepsOfflineScheduler{" +
+                "简介=" + "离线、单时隙、LP" +
+                ", constraintGenerater=" + constraintGenerater.getClass().getSimpleName() +
+                '}';
+    }
 }

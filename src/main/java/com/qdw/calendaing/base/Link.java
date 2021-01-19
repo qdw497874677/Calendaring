@@ -1,7 +1,7 @@
 package com.qdw.calendaing.base;
 
 
-import com.qdw.calendaing.base.Path;
+import com.qdw.calendaing.base.pathBase.Path;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

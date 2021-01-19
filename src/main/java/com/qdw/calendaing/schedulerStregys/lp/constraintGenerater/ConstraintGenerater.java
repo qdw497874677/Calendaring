@@ -10,7 +10,9 @@ import java.util.List;
 
 public interface ConstraintGenerater {
 
- List<List<Integer>> generate(NetContext netContext, Collection<Flow> flows, int timeSlot, ConstraintType constraintType);
+ List<List<Integer>> generateAll(NetContext netContext, Collection<Flow> flows);
 
- List<Integer> getObjFunc(NetContext netContext, Collection<Flow> flows,int timeSlot);
+ List<List<Integer>> generateOne(NetContext netContext, Collection<Flow> flows, ConstraintType constraintType);
+
+ List<Integer> getObjFunc(NetContext netContext, Collection<Flow> flows);
 }

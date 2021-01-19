@@ -1,5 +1,6 @@
 package com.qdw.calendaing.dataCollecting;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.io.File;
@@ -19,24 +20,23 @@ public class ToFileDataCollecter implements DataCollecter {
 
     private File file;
 
-    public ToFileDataCollecter(File file){
-        this.file = file;
+    public ToFileDataCollecter(String fileName){
+        this.file = new File(fileName);
     }
 
     @Override
     public boolean addData(String data) {
         LocalDateTime now = LocalDateTime.now();
         data = now.toString() + "\n" + data;
-
+        FileWriter fileWriter = null;
         try {
-            FileWriter fileWriter = new FileWriter(file,true);
-            fileWriter.write(data);
+            fileWriter = new FileWriter(file,true);
+            fileWriter.write(data+"\n\n");
             fileWriter.flush();
             fileWriter.close();
         } catch (IOException e) {
             return false;
         }
-
         return true;
     }
 }

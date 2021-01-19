@@ -1,22 +1,19 @@
 package com.qdw.calendaing.schedulerStregys.lp;
 
 import com.pranav.pojo.Constraint;
-import com.qdw.calendaing.CalendaingResult;
-import com.qdw.calendaing.base.Flow;
-import com.qdw.calendaing.base.NetContext;
-import com.qdw.calendaing.base.Requirements;
-import com.qdw.calendaing.base.constant.ConstraintType;
+import com.qdw.calendaing.base.*;
+import com.qdw.calendaing.base.config.RequirementConfig;
 import com.qdw.calendaing.base.constant.FlowStatus;
+import com.qdw.calendaing.base.pathBase.Path;
 import com.qdw.calendaing.schedulerStregys.Scheduler;
-import com.qdw.lpnet.LpUtil;
+import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.ConstraintGenerater;
+import javafx.util.Pair;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -26,8 +23,10 @@ import java.util.stream.Collectors;
  * @date: 2020/11/30 0030 20:21
  */
 @Data
-@AllArgsConstructor
+@NoArgsConstructor
 public abstract class AbstractLPScheduler implements Scheduler {
+
+    ConstraintGenerater constraintGenerater;
 
     void setFlows(double[] res, Collection<Flow> flows, int timeSlot){
         if (flows.size()!=res.length){
@@ -91,15 +90,33 @@ public abstract class AbstractLPScheduler implements Scheduler {
         return constraints;
     }
 
-    void updataP(Collection<Flow> flows,int timeSlot){
+    void updateP(Collection<Flow> flows, int timeSlot, NetContext netContext){
         Requirements.Requirement pre = null;
         for (Flow flow : flows) {
             if (flow.getThisR()!=pre){
-                flow.getThisR().updatePriority(timeSlot);
+                flow.getThisR().updatePriority(timeSlot,netContext.getRequirementConfig().getPriorityModifier());
                 pre = flow.getThisR();
             }
         }
 
     }
 
+    void updatePaths(NetContext netContext,int timeSlot){
+        Map<String, List<Path>> pathCache = netContext.getNetwork().getPathCache();
+        pathCache.clear();
+        netContext.getNetwork().updatePaths(timeSlot,netContext);
+    }
+
+    void setConstraintGenerater(ConstraintGenerater constraintGenerater){
+        this.constraintGenerater = constraintGenerater;
+    }
+
+    public List<Constraint> getConstraints(NetContext netContext, List<Flow> flows){
+        List<Constraint> constraints = new ArrayList<>();
+        constraintGenerater.generateAll(netContext,flows);
+        constraints.addAll(setCons(constraintGenerater.generateAll(netContext,flows)));
+//        constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,ConstraintType.RONGLIANG)));
+//        constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,ConstraintType.XUQIU)));
+        return constraints;
+    }
 }

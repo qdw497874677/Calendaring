@@ -1,11 +1,8 @@
 package com.qdw.calendaing.base;
 
 import com.qdw.calendaing.base.constant.FlowStatus;
-import lombok.AllArgsConstructor;
+import com.qdw.calendaing.base.pathBase.Path;
 import lombok.Data;
-
-import java.util.LinkedList;
-import java.util.List;
 
 @Data
 public class Flow {
@@ -27,9 +24,9 @@ public class Flow {
 		this.status = status;
 
 		if (p==null || p.getPath()==null){
-			id = r.getId()+"-0-0";
+			id = r.getId()+":0->0";
 		}else {
-			id = r.getId()+"-"+p.getFirst().getId()+"-"+p.getLast().getId();
+			id = r.getId()+":"+p.getFirst().getId()+"->"+p.getLast().getId();
 		}
 
 	}
@@ -49,7 +46,11 @@ public class Flow {
 
 	@Override
 	public String toString() {
-		return "Flow [id=" + id + ", timestep=" + timeSlot +  ", value=" + value + ", Rid=" + thisR.getId() + "]";
+		return "Flow [id=" + id + ", path=" +
+				path.getPathStr() +
+				", timestep=" + timeSlot +  ", value=" + value + ", Rid=" +
+
+				thisR.getId() + "]";
 	}
 
 

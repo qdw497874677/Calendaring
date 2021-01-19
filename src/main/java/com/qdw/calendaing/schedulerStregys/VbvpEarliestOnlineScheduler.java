@@ -2,9 +2,7 @@ package com.qdw.calendaing.schedulerStregys;
 
 import com.qdw.calendaing.CalendaingResult;
 import com.qdw.calendaing.base.NetContext;
-import com.qdw.calendaing.base.Path;
 import com.qdw.calendaing.base.Requirements;
-import javafx.util.Pair;
 
 import java.util.List;
 
@@ -43,5 +41,12 @@ public class VbvpEarliestOnlineScheduler extends VbvpEarliestAbstractScheduler {
         requirements.sort((a,b)->{
             return a.getReadySlot() - b.getReadySlot();
         });
+    }
+
+    @Override
+    public String toString() {
+        return "VbvpEarliestOnlineScheduler{" +
+                "简介=" + "在线、全时隙、最早最易完成" +
+                "}";
     }
 }

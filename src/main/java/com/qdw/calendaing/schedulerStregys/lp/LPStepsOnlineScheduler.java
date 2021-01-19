@@ -27,17 +27,17 @@ import java.util.stream.Collectors;
  */
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class LPStepsOnlineScheduler extends AbstractLPScheduler {
 
-    private ConstraintGenerater constraintGenerater;
+    {
+        setConstraintGenerater(new OneSlotConstraintGenerater());
+    }
 
     @Override
     public CalendaingResult calendaing(NetContext netContext) {
         // 初始化请求的流
         netContext.getRequirements().initializeFlows(netContext.getPathConfig(),netContext.getNetwork(),false);
 
-        constraintGenerater = new OneSlotConstraintGenerater();
 
         Requirements requirements = netContext.getRequirements();
         int l = requirements.getEarliestSlot();
@@ -58,16 +58,13 @@ public class LPStepsOnlineScheduler extends AbstractLPScheduler {
             if (flows.size()==0){
                 continue;
             }
-            List<Constraint> constraints = new ArrayList<>();
-            constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,i, ConstraintType.LIULIANG)));
-            constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,i, ConstraintType.RONGLIANG)));
-            constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,i, ConstraintType.XUQIU)));
+            List<Constraint> constraints = getConstraints(netContext,flows);
 
             for (Constraint constraint : constraints) {
                 System.out.println(constraint);
             }
 
-            String objectiveFunction = constraintGenerater.getObjFunc(netContext,flows,i)
+            String objectiveFunction = constraintGenerater.getObjFunc(netContext,flows)
                     .stream()
                     .map(String::valueOf)
                     .collect(Collectors.joining(" "))
@@ -80,7 +77,7 @@ public class LPStepsOnlineScheduler extends AbstractLPScheduler {
             double[] res = LpUtil.solveLp(constraints, objectiveFunction, flowsOfAll,2);
             System.out.println(Arrays.toString(res));
             setFlows(res,flows,i);
-            updataP(flows,i);
+            updateP(flows,i,netContext);
         }
         long time  = System.currentTimeMillis() - start;
 
@@ -94,4 +91,11 @@ public class LPStepsOnlineScheduler extends AbstractLPScheduler {
         return calendaingResult;
     }
 
+    @Override
+    public String toString() {
+        return "LPStepsOnlineScheduler{" +
+                "简介=" + "在线、单时隙、LP" +
+                ", constraintGenerater=" + constraintGenerater.getClass().getSimpleName() +
+                '}';
+    }
 }

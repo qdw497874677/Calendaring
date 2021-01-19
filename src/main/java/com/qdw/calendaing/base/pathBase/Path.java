@@ -1,5 +1,9 @@
-package com.qdw.calendaing.base;
+package com.qdw.calendaing.base.pathBase;
 
+import com.qdw.calendaing.base.Flow;
+import com.qdw.calendaing.base.Link;
+import com.qdw.calendaing.base.Network;
+import com.qdw.calendaing.base.Node;
 import javafx.util.Pair;
 import lombok.Data;
 import org.apache.commons.lang.StringUtils;
@@ -23,7 +27,7 @@ public class Path {
     private String pathStr;
     private int hopCount;
     private Map<Integer, Flow> map = new LinkedHashMap<>();
-    private Map<String,Link> linksMap = new LinkedHashMap<>();
+    private Map<String, Link> linksMap = new LinkedHashMap<>();
     private Map<Integer,Double> residualCapacity = new LinkedHashMap<>();
 //    // 表示一个时隙路径的容量状态，true或者null表示已经为最新容量，不需要计算
 //    private Map<Integer,Boolean> residualCStatu;
@@ -97,6 +101,9 @@ public class Path {
     // 1-2-3:10.0,1-2-3-4:10.0
     static public List<Pair<Path,Double>> buildPath(Network network, String pathStr){
         List<Pair<Path,Double>> paths = new ArrayList<>();
+        if (StringUtils.isBlank(pathStr)){
+            return paths;
+        }
         String[] split = pathStr.split(",");
         for (String s : split) {
 //            System.out.println(s);

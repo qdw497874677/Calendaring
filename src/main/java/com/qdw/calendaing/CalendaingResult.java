@@ -2,6 +2,7 @@ package com.qdw.calendaing;
 
 import com.qdw.calendaing.base.Flow;
 import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.constant.FlowStatus;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -24,12 +25,14 @@ public class CalendaingResult {
     private long totalTime = 0;
 
     public void accept(Requirements.Requirement requirement){
+        requirement.setAccpted(true);
         accepted.add(requirement);
         sumDemand(requirement);
         sumMeetDemand(requirement);
     }
 
     public void reject(Requirements.Requirement requirement){
+        requirement.setAccpted(false);
         rejected.add(requirement);
         sumDemand(requirement);
         sumMeetDemand(requirement);
@@ -56,12 +59,18 @@ public class CalendaingResult {
 
     public String getAcceptRate(){
         int sum = accepted.size() + rejected.size();
+        if (sum==0){
+            return "0";
+        }
         System.out.println("accepted:"+accepted.size()+" rejected:"+rejected.size());
         BigDecimal bigDecimal = new BigDecimal((double) accepted.size() / sum * 100);
         return bigDecimal.setScale(2,BigDecimal.ROUND_HALF_DOWN)+"%";
     }
 
     public String getThroughputRate(){
+        if (sumOfDemand==0){
+            return "0";
+        }
         System.out.println("sumMeetDemand:"+sumMeetDemand+" sumOfDemand:"+sumOfDemand);
         BigDecimal bigDecimal = new BigDecimal(sumMeetDemand / sumOfDemand * 100);
         return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
@@ -97,6 +106,64 @@ public class CalendaingResult {
         }
 //        return (sum/accepted.get(0).get)+"";
         return "";
+    }
+
+    // 获取虽然还没有完成所有数据的传输预留，但是已经可以预留的部分数据量
+    public String getReservedButRejected(){
+        double sum = 0;
+        for (Requirements.Requirement requirement : rejected) {
+            for (List<Flow> flows : requirement.getFlowsOfR().values()) {
+                for (Flow flow : flows) {
+                    if (flow.getStatus().equals(FlowStatus.ZHENGCHANG)){
+                        sum += flow.getValue();
+                    }
+                }
+            }
+        }
+        BigDecimal bigDecimal = new BigDecimal(sum);
+        return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"";
+    }
+
+    // 获取虽然还没有完成所有数据的传输预留，但是已经可以预留的部分数据量
+    public String getReservedRateButRejected(){
+        double sum = 0;
+        double sumDemand = 0;
+        for (Requirements.Requirement requirement : rejected) {
+            sumDemand += requirement.getDemand();
+            for (List<Flow> flows : requirement.getFlowsOfR().values()) {
+                for (Flow flow : flows) {
+                    if (flow.getStatus().equals(FlowStatus.ZHENGCHANG)){
+                        sum += flow.getValue();
+                    }
+                }
+            }
+        }
+        if (sumDemand == 0){
+            return 0+"";
+        }
+//        System.out.println(sum+"@@@@@@@@@@@@@@");
+        BigDecimal bigDecimal = new BigDecimal(sum*100/sumDemand);
+        return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
+    }
+    // 求批量平均值
+    static public String getAverageReservedRateButRejected(Collection<CalendaingResult> collection){
+
+        double sum = 0;
+        double sumDemand = 0;
+        for (CalendaingResult calendaingResult : collection) {
+            for (Requirements.Requirement requirement : calendaingResult.getRejected()) {
+                sumDemand += requirement.getDemand();
+                for (List<Flow> flows : requirement.getFlowsOfR().values()) {
+                    for (Flow flow : flows) {
+                        if (flow.getStatus().equals(FlowStatus.ZHENGCHANG)){
+                            sum += flow.getValue();
+                        }
+                    }
+                }
+            }
+        }
+        BigDecimal bigDecimal = new BigDecimal(sum*100/sumDemand);
+        return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
     }
 
 

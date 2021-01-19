@@ -26,34 +26,28 @@ import java.util.stream.Collectors;
  */
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class LPSimpleOfflineScheduler extends AbstractLPScheduler {
 
-    private ConstraintGenerater constraintGenerater;
+    {
+        setConstraintGenerater(new DefaultConstraintGenerater());
+    }
+
 
     @Override
     public CalendaingResult calendaing(NetContext netContext) {
         // 初始化请求的流
         netContext.getRequirements().initializeFlows(netContext.getPathConfig(),netContext.getNetwork(),true);
 
-        constraintGenerater = new DefaultConstraintGenerater();
-        List<Constraint> constraints = new ArrayList<>();
-        List<Flow> flows = new LinkedList<>();
+        List<Flow> flows = netContext.getRequirements().getAllFlows();
 
-        for (Requirements.Requirement requirement : netContext.getRequirements().getRequirements()) {
-            for (List<Flow> flow : requirement.getFlowsOfR().values()) {
-                flows.addAll(flow);
-            }
-        }
-        constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,-1, ConstraintType.LIULIANG)));
-        constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,-1, ConstraintType.RONGLIANG)));
-        constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,-1, ConstraintType.XUQIU)));
+        // 获取约束
+        List<Constraint> constraints = getConstraints(netContext,flows);
 
         for (Constraint constraint : constraints) {
             System.out.println(constraint);
         }
 
-        String objectiveFunction = constraintGenerater.getObjFunc(netContext,flows,-1)
+        String objectiveFunction = constraintGenerater.getObjFunc(netContext,flows)
                 .stream()
                 .map(String::valueOf)
                 .collect(Collectors.joining(" "))
@@ -100,4 +94,12 @@ public class LPSimpleOfflineScheduler extends AbstractLPScheduler {
         return calendaingResult;
     }
 
+
+    @Override
+    public String toString() {
+        return "LPSimpleOfflineScheduler{" +
+                "简介=" + "离线、全时隙、LP" +
+                ", constraintGenerater=" + constraintGenerater.getClass().getSimpleName() +
+                '}';
+    }
 }
