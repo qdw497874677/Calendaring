@@ -23,4 +23,10 @@ public class LPWithBdwLimitScheduler extends AbstractLPScheduler {
     }
 
 
+    @Override
+    public String toString() {
+        return "LPWithBdwLimitScheduler{" +
+                "scheduler=" + scheduler.toString() +
+                '}';
+    }
 }

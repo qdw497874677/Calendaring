@@ -5,9 +5,12 @@ import com.qdw.calendaing.base.Flow;
 
 import com.qdw.calendaing.base.config.PathConfig;
 import com.qdw.calendaing.base.config.RequirementConfig;
+import com.qdw.calendaing.base.pathBase.BdwLimitProducer;
 import com.qdw.calendaing.base.pathBase.MaxBandwidthPathWithBdwLimitProducer;
 import com.qdw.calendaing.base.Requirements;
 import com.qdw.calendaing.base.constant.FlowStatus;
+import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathProducer;
+import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathWithBdwLimitProducer;
 import com.qdw.calendaing.base.pathBase.kpaths.SimpleKPathsProducer;
 import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
 import com.qdw.calendaing.schedulerStregys.*;
@@ -53,7 +56,11 @@ public class Main {
 //                new SimpleKPathsProducer());
 
         PathConfig pathConfig = new PathConfig(6,10,
-                new MaxBandwidthPathWithBdwLimitProducer(),
+//                new ShortestMaxBandwidthPathWithBdwLimitProducer(),
+                new BdwLimitProducer(new ShortestMaxBandwidthPathProducer()),
+//                new ShortestMaxBandwidthPathProducer(),
+//                new ShortestMaxBandwidthPathProducer(),
+//                new MaxBandwidthPathWithBdwLimitProducer(),
                 new SimpleKPathsProducer());
 
 //        RequirementConfig requirementConfig = new RequirementConfig(0,19,getReqsJsonList());
@@ -81,17 +88,18 @@ public class Main {
         );
 
         netContext.refresh();
-
+        // 设置为多路
+        netContext.setMulti(true);
 
         Scheduler scheduler;
-//        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
+        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
 //            scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 //            scheduler = new VbvpEarliestOnlineScheduler();// 在线、全时隙
 //            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
 //        scheduler = new LPSimpleOfflineScheduler();// 离线、全时隙、LP
 //            scheduler = new LPStepsOfflineScheduler();// 离线、分时隙、LP
 //             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
-        scheduler = new LPWithBdwLimitScheduler(new LPSimpleOfflineScheduler());
+//        scheduler = new LPWithBdwLimitScheduler(new LPSimpleOfflineScheduler());
 
         CalendaingResult calendaingResult = scheduler.calendaing(netContext);
         String print = getPrint(calendaingResult, netContext);
@@ -104,7 +112,7 @@ public class Main {
         netContext.setMulti(true);
 
         scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
-//        scheduler = new VbvpEarliestMultipathOfflineScheduler();// 离线、全时隙、多路径
+//        scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 
         CalendaingResult calendaingResult2 = scheduler.calendaing(netContext);
         String print2 = getPrint(calendaingResult2, netContext);

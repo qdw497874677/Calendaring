@@ -82,15 +82,22 @@ public abstract class VbvpAbstractScheduler implements Scheduler {
         return pairs;
     }
 
+    void tryProcess(NetContext netContext, List<Requirements.Requirement> requirements){
+        for (Requirements.Requirement requirement : requirements) {
+            tryProcess(netContext,requirement);
+        }
+    }
+
     void tryProcess(NetContext netContext,Requirements.Requirement requirement){
         int l = requirement.getReadySlot();
         int r = requirement.getDeadline();
         for (int i = l; i <= r; i++) {
             List<Pair<Path, Double>> list = null;
             if (netContext.isMulti()){
-                list = getOneStepPath(netContext, requirement, i);
-            }else {
                 list = getOneStepPaths(netContext,requirement,i);
+            }else {
+                list = getOneStepPath(netContext, requirement, i);
+
             }
             for (Pair<Path, Double> oneStepPath : list) {
                 if (oneStepPath!=null && oneStepPath.getValue()>0){

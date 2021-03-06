@@ -32,6 +32,8 @@ public class VbvpEarliestOnlineScheduler extends VbvpEarliestAbstractScheduler {
                 calendaingResult.reject(requirement);
             }
         }
+
+        tryProcess(netContext,calendaingResult.getRejected());
         return calendaingResult;
     }
 

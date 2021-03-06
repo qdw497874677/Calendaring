@@ -550,3 +550,1133 @@ NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂ
 Æ½¾ùÍÌÍÂÁ¿Îª:7282.7500
 Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:14.9170%
 
+2021-01-19T16:01:06.602
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:80ms
+Æ½¾ùÍê³ÉÂÊÎª:54.5950%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:34.4443%
+Æ½¾ùÍÌÍÂÁ¿Îª:7044.4100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:6.4748%
+
+2021-01-19T16:07:15.863
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:59ms
+Æ½¾ùÍê³ÉÂÊÎª:42.5975%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:31.3302%
+Æ½¾ùÍÌÍÂÁ¿Îª:6382.5300
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:0.0000%
+
+2021-01-19T16:07:53.388
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:38ms
+Æ½¾ùÍê³ÉÂÊÎª:42.0775%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:31.2817%
+Æ½¾ùÍÌÍÂÁ¿Îª:6391.3800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:0.0000%
+
+2021-01-19T17:24:17.123
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:48ms
+Æ½¾ùÍê³ÉÂÊÎª:42.5425%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:31.4788%
+Æ½¾ùÍÌÍÂÁ¿Îª:6406.0500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:7.8762%
+
+2021-01-19T17:25:09.340
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:64ms
+Æ½¾ùÍê³ÉÂÊÎª:54.7475%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:34.5609%
+Æ½¾ùÍÌÍÂÁ¿Îª:7073.0800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:6.2961%
+
+2021-01-19T18:51:26.774
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:AbstractLPScheduler(constraintGenerater=null)
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:49063ms
+Æ½¾ùÍê³ÉÂÊÎª:49.9500%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:50.9653%
+Æ½¾ùÍÌÍÂÁ¿Îª:10424.3432
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.4665%
+
+2021-01-19T21:08:19.966
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:2985ms
+Æ½¾ùÍê³ÉÂÊÎª:41.5750%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:47.6701%
+Æ½¾ùÍÌÍÂÁ¿Îª:9761.2487
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:21.2641%
+
+2021-01-19T22:21:45.503
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPSimpleOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:24171ms
+Æ½¾ùÍê³ÉÂÊÎª:57.8800%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:58.4384%
+Æ½¾ùÍÌÍÂÁ¿Îª:8896.9730
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.5759%
+
+2021-01-20T09:15:53.443
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:47ms
+Æ½¾ùÍê³ÉÂÊÎª:49.3833%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:38.3250%
+Æ½¾ùÍÌÍÂÁ¿Îª:5896.8900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:9.4827%
+
+2021-01-20T09:16:22.662
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:48ms
+Æ½¾ùÍê³ÉÂÊÎª:61.6933%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:42.3028%
+Æ½¾ùÍÌÍÂÁ¿Îª:6494.6100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:8.2790%
+
+2021-01-20T09:19:35.028
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:1619ms
+Æ½¾ùÍê³ÉÂÊÎª:46.7933%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:54.9634%
+Æ½¾ùÍÌÍÂÁ¿Îª:8433.8632
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:27.5695%
+
+2021-01-20T10:10:31.419
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:27ms
+Æ½¾ùÍê³ÉÂÊÎª:60.2000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:50.4245%
+Æ½¾ùÍÌÍÂÁ¿Îª:5142.0400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:11.0657%
+
+2021-01-20T10:17:11.007
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:27ms
+Æ½¾ùÍê³ÉÂÊÎª:71.3850%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:54.9385%
+Æ½¾ùÍÌÍÂÁ¿Îª:5670.3800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:11.8362%
+
+2021-01-20T10:19:49.700
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:1035ms
+Æ½¾ùÍê³ÉÂÊÎª:56.5650%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:64.1244%
+Æ½¾ùÍÌÍÂÁ¿Îª:6567.2135
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:33.9050%
+
+2021-01-20T10:33:38.352
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPSimpleOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:7503ms
+Æ½¾ùÍê³ÉÂÊÎª:66.7550%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:67.3503%
+Æ½¾ùÍÌÍÂÁ¿Îª:6893.6708
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.3504%
+
+2021-01-20T10:57:13.879
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:18ms
+Æ½¾ùÍê³ÉÂÊÎª:79.5600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:74.7948%
+Æ½¾ùÍÌÍÂÁ¿Îª:3804.3500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:17.0007%
+
+2021-01-20T10:59:23.070
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:12ms
+Æ½¾ùÍê³ÉÂÊÎª:88.3000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:81.0082%
+Æ½¾ùÍÌÍÂÁ¿Îª:4124.1700
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:23.3590%
+
+2021-01-20T11:01:43.810
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:534ms
+Æ½¾ùÍê³ÉÂÊÎª:73.9400%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:83.5792%
+Æ½¾ùÍÌÍÂÁ¿Îª:4277.4556
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:54.3769%
+
+2021-01-20T11:05:27.104
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPSimpleOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:1482ms
+Æ½¾ùÍê³ÉÂÊÎª:88.0500%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:89.2366%
+Æ½¾ùÍÌÍÂÁ¿Îª:4530.8785
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.5121%
+
+2021-01-20T11:07:33.628
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=500, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:66ms
+Æ½¾ùÍê³ÉÂÊÎª:37.3720%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:26.5650%
+Æ½¾ùÍÌÍÂÁ¿Îª:6780.8600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:6.8471%
+
+2021-01-20T11:09:11.001
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=500, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:70ms
+Æ½¾ùÍê³ÉÂÊÎª:49.3520%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:29.0635%
+Æ½¾ùÍÌÍÂÁ¿Îª:7426.9300
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.3569%
+
+2021-01-20T11:16:40.224
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=500, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:3658ms
+Æ½¾ùÍê³ÉÂÊÎª:37.5740%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:42.5785%
+Æ½¾ùÍÌÍÂÁ¿Îª:10903.4083
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:17.2510%
+
+2021-01-20T13:16:56.471
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=500, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPSimpleOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:70526ms
+Æ½¾ùÍê³ÉÂÊÎª:44.6360%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:45.4978%
+Æ½¾ùÍÌÍÂÁ¿Îª:11626.9700
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.8564%
+
+2021-01-20T14:54:06.577
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:10ms
+Æ½¾ùÍê³ÉÂÊÎª:93.3600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:93.2518%
+Æ½¾ùÍÌÍÂÁ¿Îª:2395.0900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:27.8762%
+
+2021-01-20T14:57:29.416
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:6ms
+Æ½¾ùÍê³ÉÂÊÎª:99.0800%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:98.7736%
+Æ½¾ùÍÌÍÂÁ¿Îª:2512.7800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:41.6490%
+
+2021-01-20T14:59:09.066
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPSimpleOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:440ms
+Æ½¾ùÍê³ÉÂÊÎª:99.6000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:99.6671%
+Æ½¾ùÍÌÍÂÁ¿Îª:2570.1600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:37.1542%
+
+2021-01-20T15:01:22.931
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:361ms
+Æ½¾ùÍê³ÉÂÊÎª:88.3600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:95.5703%
+Æ½¾ùÍÌÍÂÁ¿Îª:2423.9353
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:75.5270%
+
+2021-01-20T15:17:53.487
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:369ms
+Æ½¾ùÍê³ÉÂÊÎª:88.7000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:95.8598%
+Æ½¾ùÍÌÍÂÁ¿Îª:2415.4941
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:76.2940%
+
+2021-01-20T19:09:43.168
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPSimpleOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:116340ms
+Æ½¾ùÍê³ÉÂÊÎª:39.9467%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:41.0454%
+Æ½¾ùÍÌÍÂÁ¿Îª:12603.6063
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.2064%
+
+2021-01-20T21:00:53.843
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:4917ms
+Æ½¾ùÍê³ÉÂÊÎª:34.8450%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:38.2617%
+Æ½¾ùÍÌÍÂÁ¿Îª:11794.4601
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:13.8937%
+
+2021-01-20T21:57:25.917
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:56ms
+Æ½¾ùÍê³ÉÂÊÎª:33.8167%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:23.2866%
+Æ½¾ùÍÌÍÂÁ¿Îª:7104.3900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:6.2776%
+
+2021-01-20T21:58:44.355
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:79ms
+Æ½¾ùÍê³ÉÂÊÎª:45.4600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:25.3908%
+Æ½¾ùÍÌÍÂÁ¿Îª:7795.3700
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.6461%
+
+2021-01-20T21:59:32.778
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:66ms
+Æ½¾ùÍê³ÉÂÊÎª:33.3583%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:22.9517%
+Æ½¾ùÍÌÍÂÁ¿Îª:7075.3400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:6.0774%
+
+2021-01-22T09:05:55.178
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:54ms
+Æ½¾ùÍê³ÉÂÊÎª:18.7817%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:24.9555%
+Æ½¾ùÍÌÍÂÁ¿Îª:7669.6700
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:0.0000%
+
+2021-01-22T09:06:31.516
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:86ms
+Æ½¾ùÍê³ÉÂÊÎª:45.4633%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:25.3831%
+Æ½¾ùÍÌÍÂÁ¿Îª:7781.0900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.5989%
+
+2021-01-22T09:16:56.277
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:5284ms
+Æ½¾ùÍê³ÉÂÊÎª:35.3383%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:38.3970%
+Æ½¾ùÍÌÍÂÁ¿Îª:11750.8888
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:13.5828%
+
+2021-01-22T09:59:55.127
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=600, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:87ms
+Æ½¾ùÍê³ÉÂÊÎª:18.7000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:25.0805%
+Æ½¾ùÍÌÍÂÁ¿Îª:7740.1800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:2.8979%
+
+2021-01-22T10:06:28.919
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:10ms
+Æ½¾ùÍê³ÉÂÊÎª:91.3200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.7813%
+Æ½¾ùÍÌÍÂÁ¿Îª:2467.6100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.3784%
+
+2021-01-22T10:06:30.903
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:11ms
+Æ½¾ùÍê³ÉÂÊÎª:92.0400%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.9994%
+Æ½¾ùÍÌÍÂÁ¿Îª:2451.8100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:7.0374%
+
+2021-01-22T10:06:32.450
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:8ms
+Æ½¾ùÍê³ÉÂÊÎª:91.3600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.8720%
+Æ½¾ùÍÌÍÂÁ¿Îª:2500.3500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.0857%
+
+2021-01-22T10:06:33.895
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:7ms
+Æ½¾ùÍê³ÉÂÊÎª:92.9000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:97.3320%
+Æ½¾ùÍÌÍÂÁ¿Îª:2442.3100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.8698%
+
+2021-01-22T10:06:35.414
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:7ms
+Æ½¾ùÍê³ÉÂÊÎª:91.5000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.7629%
+Æ½¾ùÍÌÍÂÁ¿Îª:2498.0200
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.5224%
+
+2021-01-22T10:06:36.596
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:6ms
+Æ½¾ùÍê³ÉÂÊÎª:92.1000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:97.0403%
+Æ½¾ùÍÌÍÂÁ¿Îª:2477.6400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:3.7406%
+
+2021-01-22T10:08:22.283
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:11ms
+Æ½¾ùÍê³ÉÂÊÎª:91.0000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.4544%
+Æ½¾ùÍÌÍÂÁ¿Îª:2460.3000
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.8593%
+
+2021-01-22T10:08:23.860
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:8ms
+Æ½¾ùÍê³ÉÂÊÎª:90.9600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.7094%
+Æ½¾ùÍÌÍÂÁ¿Îª:2478.1200
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.8671%
+
+2021-01-22T10:08:25.183
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:5ms
+Æ½¾ùÍê³ÉÂÊÎª:91.3000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.5731%
+Æ½¾ùÍÌÍÂÁ¿Îª:2467.5700
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:7.5416%
+
+2021-01-22T10:08:26.245
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:5ms
+Æ½¾ùÍê³ÉÂÊÎª:90.8400%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.5496%
+Æ½¾ùÍÌÍÂÁ¿Îª:2496.9100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.6620%
+
+2021-01-22T10:08:27.557
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:5ms
+Æ½¾ùÍê³ÉÂÊÎª:90.9000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.5620%
+Æ½¾ùÍÌÍÂÁ¿Îª:2459.9600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:6.3478%
+
+2021-01-22T10:08:28.696
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:5ms
+Æ½¾ùÍê³ÉÂÊÎª:91.6600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.7089%
+Æ½¾ùÍÌÍÂÁ¿Îª:2498.6500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:7.6553%
+
+2021-01-22T10:10:22.723
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:16ms
+Æ½¾ùÍê³ÉÂÊÎª:65.4300%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:79.2737%
+Æ½¾ùÍÌÍÂÁ¿Îª:4022.0400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.6803%
+
+2021-01-22T10:10:24.560
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:12ms
+Æ½¾ùÍê³ÉÂÊÎª:65.7300%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:78.8433%
+Æ½¾ùÍÌÍÂÁ¿Îª:4010.0900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.6129%
+
+2021-01-22T10:10:26.184
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:11ms
+Æ½¾ùÍê³ÉÂÊÎª:65.8500%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:78.8451%
+Æ½¾ùÍÌÍÂÁ¿Îª:4032.6500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.2856%
+
+2021-01-22T10:10:27.846
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:9ms
+Æ½¾ùÍê³ÉÂÊÎª:65.4500%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:78.7115%
+Æ½¾ùÍÌÍÂÁ¿Îª:4019.1400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.9130%
+
+2021-01-22T10:10:29.312
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:9ms
+Æ½¾ùÍê³ÉÂÊÎª:66.2000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:79.3355%
+Æ½¾ùÍÌÍÂÁ¿Îª:4057.5900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.9249%
+
+2021-01-22T10:11:01.269
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:28ms
+Æ½¾ùÍê³ÉÂÊÎª:41.6450%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:53.5822%
+Æ½¾ùÍÌÍÂÁ¿Îª:5460.2800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.6562%
+
+2021-01-22T10:11:04.468
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:25ms
+Æ½¾ùÍê³ÉÂÊÎª:41.9200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:53.9682%
+Æ½¾ùÍÌÍÂÁ¿Îª:5509.8400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.4898%
+
+2021-01-22T10:11:06.690
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:16ms
+Æ½¾ùÍê³ÉÂÊÎª:40.9750%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:52.7375%
+Æ½¾ùÍÌÍÂÁ¿Îª:5418.6300
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.4834%
+
+2021-01-22T10:11:08.895
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:16ms
+Æ½¾ùÍê³ÉÂÊÎª:41.6200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:53.0727%
+Æ½¾ùÍÌÍÂÁ¿Îª:5456.9100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:4.5733%
+
+2021-01-22T10:11:56.503
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:51ms
+Æ½¾ùÍê³ÉÂÊÎª:30.7767%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:40.4203%
+Æ½¾ùÍÌÍÂÁ¿Îª:6186.1600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:3.9681%
+
+2021-01-22T10:11:59.692
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:25ms
+Æ½¾ùÍê³ÉÂÊÎª:30.7000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:41.1206%
+Æ½¾ùÍÌÍÂÁ¿Îª:6312.9300
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:3.8217%
+
+2021-01-22T10:12:02.609
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:22ms
+Æ½¾ùÍê³ÉÂÊÎª:30.8467%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:40.8201%
+Æ½¾ùÍÌÍÂÁ¿Îª:6269.2500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:3.7905%
+
+2021-01-22T10:12:57.955
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:54ms
+Æ½¾ùÍê³ÉÂÊÎª:25.2200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:33.6809%
+Æ½¾ùÍÌÍÂÁ¿Îª:6853.6400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:3.4277%
+
+2021-01-22T10:13:01.789
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:31ms
+Æ½¾ùÍê³ÉÂÊÎª:25.2025%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:33.5512%
+Æ½¾ùÍÌÍÂÁ¿Îª:6867.3400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:3.4277%
+
+2021-01-22T10:13:54.685
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=500, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOnlineScheduler{¼ò½é=ÔÚÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:62ms
+Æ½¾ùÍê³ÉÂÊÎª:21.7680%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:28.8589%
+Æ½¾ùÍÌÍÂÁ¿Îª:7367.9200
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:2.9596%
+
+2021-01-22T10:14:47.164
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:7ms
+Æ½¾ùÍê³ÉÂÊÎª:98.6000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:98.2863%
+Æ½¾ùÍÌÍÂÁ¿Îª:2517.1200
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:47.7775%
+
+2021-01-22T10:14:48.653
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:4ms
+Æ½¾ùÍê³ÉÂÊÎª:98.7200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:98.4693%
+Æ½¾ùÍÌÍÂÁ¿Îª:2522.3900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:44.9723%
+
+2021-01-22T10:14:50.036
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:4ms
+Æ½¾ùÍê³ÉÂÊÎª:98.8600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:98.6591%
+Æ½¾ùÍÌÍÂÁ¿Îª:2479.9900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:50.0139%
+
+2021-01-22T10:14:51.125
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:3ms
+Æ½¾ùÍê³ÉÂÊÎª:98.9000%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:98.7258%
+Æ½¾ùÍÌÍÂÁ¿Îª:2531.3000
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:49.5952%
+
+2021-01-22T10:14:52.005
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:3ms
+Æ½¾ùÍê³ÉÂÊÎª:98.6400%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:98.2409%
+Æ½¾ùÍÌÍÂÁ¿Îª:2526.5500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:40.6943%
+
+2021-01-22T10:14:52.994
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:3ms
+Æ½¾ùÍê³ÉÂÊÎª:98.5800%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:98.4840%
+Æ½¾ùÍÌÍÂÁ¿Îª:2534.2000
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:51.9820%
+
+2021-01-22T10:27:11.743
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:17ms
+Æ½¾ùÍê³ÉÂÊÎª:88.3200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:80.9390%
+Æ½¾ùÍÌÍÂÁ¿Îª:4148.0100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:23.2307%
+
+2021-01-22T10:27:13.622
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:10ms
+Æ½¾ùÍê³ÉÂÊÎª:88.7300%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:81.6115%
+Æ½¾ùÍÌÍÂÁ¿Îª:4122.1500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:23.0840%
+
+2021-01-22T10:27:15.900
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:8ms
+Æ½¾ùÍê³ÉÂÊÎª:88.7500%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:81.4972%
+Æ½¾ùÍÌÍÂÁ¿Îª:4125.9100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:22.3558%
+
+2021-01-22T10:27:17.269
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:7ms
+Æ½¾ùÍê³ÉÂÊÎª:88.1200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:80.5821%
+Æ½¾ùÍÌÍÂÁ¿Îª:4111.0800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:21.7767%
+
+2021-01-22T10:27:18.698
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:7ms
+Æ½¾ùÍê³ÉÂÊÎª:88.3300%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:81.2218%
+Æ½¾ùÍÌÍÂÁ¿Îª:4181.6600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:23.4884%
+
+2021-01-22T10:28:15.425
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:34ms
+Æ½¾ùÍê³ÉÂÊÎª:71.5050%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:55.2720%
+Æ½¾ùÍÌÍÂÁ¿Îª:5646.6200
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.3774%
+
+2021-01-22T10:28:18.502
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:21ms
+Æ½¾ùÍê³ÉÂÊÎª:71.5200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:55.6672%
+Æ½¾ùÍÌÍÂÁ¿Îª:5710.7500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:11.9737%
+
+2021-01-22T10:28:21.120
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:19ms
+Æ½¾ùÍê³ÉÂÊÎª:71.8900%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:55.9096%
+Æ½¾ùÍÌÍÂÁ¿Îª:5692.3800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.2887%
+
+2021-01-22T10:28:23.522
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:17ms
+Æ½¾ùÍê³ÉÂÊÎª:71.6500%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:55.4274%
+Æ½¾ùÍÌÍÂÁ¿Îª:5708.2400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:11.5446%
+
+2021-01-22T10:29:14.359
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:54ms
+Æ½¾ùÍê³ÉÂÊÎª:61.7533%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:42.6838%
+Æ½¾ùÍÌÍÂÁ¿Îª:6540.9100
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:8.1660%
+
+2021-01-22T10:29:18.230
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:28ms
+Æ½¾ùÍê³ÉÂÊÎª:61.3433%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:42.2441%
+Æ½¾ùÍÌÍÂÁ¿Îª:6499.8900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:8.1234%
+
+2021-01-22T10:29:21.790
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:28ms
+Æ½¾ùÍê³ÉÂÊÎª:61.4900%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:42.1815%
+Æ½¾ùÍÌÍÂÁ¿Îª:6437.3600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:8.0295%
+
+2021-01-22T10:31:03.786
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:66ms
+Æ½¾ùÍê³ÉÂÊÎª:54.3575%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:34.1376%
+Æ½¾ùÍÌÍÂÁ¿Îª:7019.4800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:6.2024%
+
+2021-01-22T10:31:08.688
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:40ms
+Æ½¾ùÍê³ÉÂÊÎª:54.7325%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:34.6752%
+Æ½¾ùÍÌÍÂÁ¿Îª:7063.3700
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:6.5259%
+
+2021-01-22T10:32:06.996
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=500, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:78ms
+Æ½¾ùÍê³ÉÂÊÎª:49.2840%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:28.9953%
+Æ½¾ùÍÌÍÂÁ¿Îª:7454.7600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:5.1964%
+
+2021-01-22T10:34:07.021
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:397ms
+Æ½¾ùÍê³ÉÂÊÎª:88.7800%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.0707%
+Æ½¾ùÍÌÍÂÁ¿Îª:2452.8211
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:77.5068%
+
+2021-01-22T10:34:42.778
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:351ms
+Æ½¾ùÍê³ÉÂÊÎª:88.5400%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.1076%
+Æ½¾ùÍÌÍÂÁ¿Îª:2474.3195
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:76.9670%
+
+2021-01-22T10:35:20.505
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:370ms
+Æ½¾ùÍê³ÉÂÊÎª:88.5200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:95.5649%
+Æ½¾ùÍÌÍÂÁ¿Îª:2418.3261
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:75.2000%
+
+2021-01-22T10:36:00.102
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:387ms
+Æ½¾ùÍê³ÉÂÊÎª:88.3200%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.4631%
+Æ½¾ùÍÌÍÂÁ¿Îª:2440.1236
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:80.1452%
+
+2021-01-22T10:36:39.654
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:389ms
+Æ½¾ùÍê³ÉÂÊÎª:88.8400%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.6579%
+Æ½¾ùÍÌÍÂÁ¿Îª:2422.4849
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:79.8028%
+
+2021-01-22T10:37:24.179
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=50, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:438ms
+Æ½¾ùÍê³ÉÂÊÎª:88.7800%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:96.1922%
+Æ½¾ùÍÌÍÂÁ¿Îª:2479.4472
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:78.2884%
+
+2021-01-22T10:39:08.932
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=100, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:579ms
+Æ½¾ùÍê³ÉÂÊÎª:73.7300%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:83.0460%
+Æ½¾ùÍÌÍÂÁ¿Îª:4231.2400
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:54.9996%
+
+2021-01-22T10:43:00.368
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:1057ms
+Æ½¾ùÍê³ÉÂÊÎª:55.9550%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:65.3789%
+Æ½¾ùÍÌÍÂÁ¿Îª:6625.2954
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:36.2777%
+
+2021-01-22T10:47:57.882
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=300, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:1743ms
+Æ½¾ùÍê³ÉÂÊÎª:46.9733%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:54.6614%
+Æ½¾ùÍÌÍÂÁ¿Îª:8382.3956
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:27.3836%
+
+2021-01-22T10:53:16.603
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=400, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:2810ms
+Æ½¾ùÍê³ÉÂÊÎª:41.1375%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:47.9145%
+Æ½¾ùÍÌÍÂÁ¿Îª:9868.6244
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:21.8386%
+
+2021-01-22T11:02:32.801
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=500, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{¼ò½é=ÔÚÏß¡¢µ¥Ê±Ï¶¡¢LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:3989ms
+Æ½¾ùÍê³ÉÂÊÎª:37.5360%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:42.5408%
+Æ½¾ùÍÌÍÂÁ¿Îª:10829.4326
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:17.6601%
+
+2021-02-03T20:53:28.473
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=441, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=MaxBandwidthPathProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:40ms
+Æ½¾ùÍê³ÉÂÊÎª:60.5100%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:50.4483%
+Æ½¾ùÍÌÍÂÁ¿Îª:5150.2900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:10.8772%
+
+2021-02-03T21:22:05.475
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=6, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:32ms
+Æ½¾ùÍê³ÉÂÊÎª:5.7300%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:5.8567%
+Æ½¾ùÍÌÍÂÁ¿Îª:594.9800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:0.4517%
+
+2021-02-03T21:25:55.249
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=6, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:29ms
+Æ½¾ùÍê³ÉÂÊÎª:5.8650%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:5.7657%
+Æ½¾ùÍÌÍÂÁ¿Îª:583.5500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:0.3432%
+
+2021-02-03T22:43:03.579
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=6, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:32ms
+Æ½¾ùÍê³ÉÂÊÎª:5.7550%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:5.4519%
+Æ½¾ùÍÌÍÂÁ¿Îª:555.6200
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:0.3966%
+
+2021-02-04T15:50:30.011
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=49, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:33ms
+Æ½¾ùÍê³ÉÂÊÎª:18.9450%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:19.0013%
+Æ½¾ùÍÌÍÂÁ¿Îª:1947.5600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:1.5415%
+
+2021-02-04T21:41:57.790
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:38ms
+Æ½¾ùÍê³ÉÂÊÎª:62.4950%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:53.0663%
+Æ½¾ùÍÌÍÂÁ¿Îª:5466.9900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.3091%
+
+2021-02-04T21:42:10.993
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:38ms
+Æ½¾ùÍê³ÉÂÊÎª:62.5150%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:53.2801%
+Æ½¾ùÍÌÍÂÁ¿Îª:5443.7600
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.5376%
+
+2021-02-04T21:42:28.515
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:37ms
+Æ½¾ùÍê³ÉÂÊÎª:62.0650%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:52.6413%
+Æ½¾ùÍÌÍÂÁ¿Îª:5377.7800
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.1497%
+
+2021-02-04T21:42:39.152
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:36ms
+Æ½¾ùÍê³ÉÂÊÎª:62.2550%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:52.8852%
+Æ½¾ùÍÌÍÂÁ¿Îª:5420.9700
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:11.7928%
+
+2021-02-04T21:42:52.823
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:52ms
+Æ½¾ùÍê³ÉÂÊÎª:61.6250%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:51.7394%
+Æ½¾ùÍÌÍÂÁ¿Îª:5311.2700
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.0822%
+
+2021-02-04T21:43:09.502
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:36ms
+Æ½¾ùÍê³ÉÂÊÎª:62.8600%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:53.6164%
+Æ½¾ùÍÌÍÂÁ¿Îª:5466.0900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:11.7963%
+
+2021-02-04T21:43:20.284
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpEarliestOfflineScheduler{¼ò½é=ÀëÏß¡¢È«Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:36ms
+Æ½¾ùÍê³ÉÂÊÎª:62.3550%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:52.9493%
+Æ½¾ùÍÌÍÂÁ¿Îª:5456.1500
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:11.9605%
+
+2021-02-04T21:44:10.902
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:28ms
+Æ½¾ùÍê³ÉÂÊÎª:73.5050%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:57.9062%
+Æ½¾ùÍÌÍÂÁ¿Îª:5940.8900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.6358%
+
+2021-02-04T21:44:22.745
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:27ms
+Æ½¾ùÍê³ÉÂÊÎª:73.4250%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:57.4790%
+Æ½¾ùÍÌÍÂÁ¿Îª:5872.3200
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.1799%
+
+2021-02-04T21:44:36.622
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:24ms
+Æ½¾ùÍê³ÉÂÊÎª:74.5500%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:59.9705%
+Æ½¾ùÍÌÍÂÁ¿Îª:6118.7900
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:13.1927%
+
+2021-02-21T16:52:46.646
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:30ms
+Æ½¾ùÍê³ÉÂÊÎª:74.6950%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:59.8923%
+Æ½¾ùÍÌÍÂÁ¿Îª:6122.9200
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:12.7693%
+
+2021-02-21T16:55:57.015
+NetContext{½Úµã¶Ô¼ä×î´óÂ·¾¶¸öÊý£¨LPÓÃ£©=6, Â·¾¶×î´óÌøÊý=10, »º´æÂ·¾¶×ÜÊý=432, ÍøÂçÊ±Ï¶¸öÊý=20, ÍøÂç½Úµã¸öÊý=21, ÍøÂçÁ´Â·¸öÊý=33, ÍøÂçÁ´Â·³õÊ¼ÈÝÁ¿=40.0, ÊÇ·ñÖ§³Ö¶àÂ·¾¶=true, Â·¾¶Éú³ÉÆ÷=ShortestMaxBandwidthPathWithBdwLimitProducer, ¶àÂ·¾¶Éú³ÉÆ÷=SimpleKPathsProducer, ÇëÇó¸öÊý=200, ÇëÇó×îÔçÊ±Ï¶=0, ÇëÇó×îÍíÊ±Ï¶=19, ÐèÇó»ùÊý=6, ÇëÇóÉú³ÉÆ÷=RandomRProducer, ÓÅÏÈ¼¶ÐÞ¸ÄÆ÷=MaxCS_PM}
+µ÷¶ÈËã·¨:VbvpStepsOfflineScheduler{¼ò½é=ÀëÏß¡¢µ¥Ê±Ï¶¡¢×îÔç×îÒ×Íê³É}
+ÊµÑé´ÎÊý:100
+Æ½¾ùÒ»´ÎÊµÑé¼ÆËãÓÃÊ±:27ms
+Æ½¾ùÍê³ÉÂÊÎª:74.4900%
+Æ½¾ùÊý¾Ý´«ÊäÂÊÎª:59.8989%
+Æ½¾ùÍÌÍÂÁ¿Îª:6121.3000
+Æ½¾ùÎ´Íê³ÉÇëÇóµÄ´«ÊäÂÊ:13.5123%
+

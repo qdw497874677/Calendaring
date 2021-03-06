@@ -3,6 +3,7 @@ package com.qdw.calendaing;
 //import com.qdw.calendaing.base.RandomRProducer;
 import com.qdw.calendaing.base.config.PathConfig;
 import com.qdw.calendaing.base.config.RequirementConfig;
+import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathWithBdwLimitProducer;
 import com.qdw.calendaing.base.requirementBase.RandomRProducer;
 import com.qdw.calendaing.base.pathBase.MaxBandwidthPathProducer;
 import com.qdw.calendaing.base.pathBase.kpaths.SimpleKPathsProducer;
@@ -12,6 +13,9 @@ import com.qdw.calendaing.dataCollecting.ToFileDataCollecter;
 import com.qdw.calendaing.schedulerStregys.*;
 import com.qdw.calendaing.base.NetContext;
 import com.qdw.calendaing.schedulerStregys.lp.LPSimpleOfflineScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPStepsOfflineScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPStepsOnlineScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPWithBdwLimitScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.WithBdwLimitConstraintGenerater;
 
 import java.util.LinkedList;
@@ -25,7 +29,19 @@ import java.util.List;
  */
 public class TestBed {
 
+
     public static void main(String[] args) {
+//        test(50);
+//        test(100);
+        test(200);
+//        test(300);
+//        test(400);
+//        test(500);
+    }
+
+
+
+    public static void test(int numOfR) {
 
         //        String topoStr = "0-2,0-4,2-4,1-2,1-3,4-3,4-11,1-5,3-5,5-6,5-7,11-10,11-6,6-7,6-8,8-10,10-9,9-12,10-15,8-15,6-16,7-21,21-23,21-24,23-24,23-16,23-20,16-20,20-25,16-13,25-18,18-19,25-17,17-19,14-17,13-17,12-14,12-13,15-13,12-15,19-22,22-18";
 //        int numOfNode = 26;
@@ -44,12 +60,14 @@ public class TestBed {
         PathConfig pathConfig = new PathConfig(
                 6,
                 10,
-                new MaxBandwidthPathProducer(),
+//                new MaxBandwidthPathProducer(),
+                new ShortestMaxBandwidthPathWithBdwLimitProducer(),
                 new SimpleKPathsProducer()
         );
 
         RequirementConfig requirementConfig = new RequirementConfig(
-                400,
+//                600,
+                numOfR,
                 0,
                 19,
                 6,
@@ -79,18 +97,23 @@ public class TestBed {
         Scheduler scheduler = null;
         for (int i = 0; i < time; i++) {
             netContext.refresh();
-
+            // 设置为多路
+            netContext.setMulti(true);
 
 //            scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
             scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 //            scheduler = new VbvpEarliestOnlineScheduler();// 在线、全时隙
 //            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
 
-//            scheduler = new
 
 //             scheduler = new LPSimpleOfflineScheduler();// 离线、全时隙、LP
+//            scheduler = new LPWithBdwLimitScheduler(new LPSimpleOfflineScheduler());
+
 //            scheduler = new LPStepsOfflineScheduler();// 离线、分时隙、LP
+//            scheduler = new LPWithBdwLimitScheduler(new LPStepsOfflineScheduler());
+
 //             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
+//             scheduler = new LPWithBdwLimitScheduler(new LPStepsOnlineScheduler());// 在线、分时隙、LP
 
 
 

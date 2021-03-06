@@ -37,10 +37,8 @@ public class VbvpEarliestOfflineScheduler extends VbvpEarliestAbstractScheduler 
         }
 
         // 把无法完成的尽量传输
-//        sortRByD(calendaingResult.getRejected());
-//        for (Requirements.Requirement requirement : calendaingResult.getRejected()) {
-//            tryProcess(netContext,requirement);
-//        }
+        sortRByD(calendaingResult.getRejected());
+        tryProcess(netContext,calendaingResult.getRejected());
 
         return calendaingResult;
     }

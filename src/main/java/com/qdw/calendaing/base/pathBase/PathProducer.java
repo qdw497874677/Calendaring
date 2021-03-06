@@ -12,7 +12,9 @@ import com.qdw.calendaing.base.pathBase.kpaths.K_PathsProducer;
  */
 public interface PathProducer {
 
+    // 10:1-2-3
     String getPathStr(int s, int d, int numOfNode, NetTopo netTopo, double maxBdw);
+    // 10:1-2-3,10:2-3
     String getPathsStr(K_PathsProducer k_pathsProducer, int s, int d, int numOfNode, NetTopo netTopo,PathConfig pathConfig, double maxBdw);
 
 

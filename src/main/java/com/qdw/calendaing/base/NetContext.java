@@ -151,6 +151,7 @@ public class NetContext implements Cloneable {
         return "NetContext{" +
                 "节点对间最大路径个数（LP用）=" + pathConfig.getMaxNum() +
                 ", 路径最大跳数=" + pathConfig.getMaxHop() +
+                ", 缓存路径总数=" + getNetwork().getPathCacheSize() +
 //                ", 拓扑信息='" + topoStr + '\'' +
                 ", 网络时隙个数=" + numOfTimeSlot +
                 ", 网络节点个数=" + topoConfig.getNumOfNode() +

@@ -33,7 +33,7 @@ public abstract class VbvpStepsAbstractScheduler extends VbvpAbstractScheduler {
         }
 
         // 提高优先级
-        requirement.updatePriority(timeSlot,netContext.getRequirementConfig().getPriorityModifier());
+
         if (oneStepPath==null || oneStepPath.size()==0){
             return false;
         }
@@ -46,7 +46,7 @@ public abstract class VbvpStepsAbstractScheduler extends VbvpAbstractScheduler {
             }
             netContext.getNetwork().updateBandwidth(requirement.addFlow(timeSlot, FlowStatus.ZHENGCHANG,pathDoublePair.getKey(),value));
         }
-
+        requirement.updatePriority(timeSlot,netContext.getRequirementConfig().getPriorityModifier());
 //        requirement.addDemand(value);
         return result;
     }

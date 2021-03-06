@@ -44,6 +44,7 @@ public class VbvpStepsOfflineScheduler extends VbvpStepsAbstractScheduler {
 
         for (; curSlot <= r ; curSlot++) {
             // 从未处理集合中获取可以参与计算的请求
+            System.out.println();
             while (!unprocessed.isEmpty() && unprocessed.peek().getReadySlot()==curSlot){
                 curQueue.add(unprocessed.poll());
             }
@@ -69,6 +70,7 @@ public class VbvpStepsOfflineScheduler extends VbvpStepsAbstractScheduler {
         }
 //        System.out.println("l:"+l+" "+"r:"+r);
 //        System.out.println("@@@@"+unprocessed.size());
+
         return calendaingResult;
     }
 

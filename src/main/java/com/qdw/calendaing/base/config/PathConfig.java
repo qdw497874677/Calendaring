@@ -3,6 +3,7 @@ package com.qdw.calendaing.base.config;
 import com.qdw.calendaing.base.pathBase.kpaths.K_PathsProducer;
 import com.qdw.calendaing.base.pathBase.PathProducer;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @PackageName:com.qdw.calendaing
@@ -12,6 +13,7 @@ import lombok.Data;
  */
 
 @Data
+@NoArgsConstructor
 public class PathConfig {
     private int maxNum;
     private int maxHop;

@@ -26,7 +26,7 @@ public class ShortestPathProducer extends AbstractPathProducer {
         }
         int[][] edges = new int[0][];
         try {
-            edges = topo.clone().double2Int();
+            edges = topo.clone().getGraphByDistance();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
@@ -34,6 +34,8 @@ public class ShortestPathProducer extends AbstractPathProducer {
         boolean[] visited = new boolean[numOfNode];
         String[] path = new String[numOfNode];
         for(int i = 0; i < numOfNode; i++){
+            // 初始化源节点s到所有节点的距离
+            distance[i] = edges[s][i]>0?1:0;
             path[i] = new String((s) + "-" + (i));
         }
         for (int i = 0; i < numOfNode; i++) {
@@ -68,7 +70,7 @@ public class ShortestPathProducer extends AbstractPathProducer {
             visited[index] = true;
             // 更新当前最短路径及距离
             for (int w = 0; w < numOfNode; w++) {
-                if (!visited[w] && distance[index] < distance[w]-edges[index][w]) {
+                if (!visited[w] && distance[w]-edges[index][w] > distance[index]) {
                     distance[w] = distance[index] + edges[index][w];
                     path[w] = path[index]+"-"+w;
                 }

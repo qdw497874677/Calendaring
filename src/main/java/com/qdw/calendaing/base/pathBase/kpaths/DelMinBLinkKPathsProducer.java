@@ -2,7 +2,12 @@ package com.qdw.calendaing.base.pathBase.kpaths;
 
 import com.qdw.calendaing.base.NetTopo;
 import com.qdw.calendaing.base.config.PathConfig;
+import com.qdw.calendaing.base.config.TopoConfig;
+import com.qdw.calendaing.base.constant.TopoStrType;
+import com.qdw.calendaing.base.pathBase.AbstractPathProducer;
+import com.qdw.calendaing.base.pathBase.MaxBandwidthPathWithBdwLimitProducer;
 import com.qdw.calendaing.base.pathBase.PathProducer;
+import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathWithBdwLimitProducer;
 import org.apache.commons.lang.StringUtils;
 
 import java.util.LinkedList;
@@ -34,6 +39,7 @@ public class DelMinBLinkKPathsProducer implements K_PathsProducer {
             // 更新拓扑，进行接下来的寻路
             String minBdwLinkStr = findMinBdwLinkStr(netTopo, pathStr);
             clone.updateGraph(minBdwLinkStr,0.0);
+            System.out.println("更新链路"+minBdwLinkStr+"为 0.0");
         }
 
         return String.join(",",res);
@@ -80,5 +86,37 @@ public class DelMinBLinkKPathsProducer implements K_PathsProducer {
 
             }
         }
+    }
+
+    public static void main(String[] args) {
+        double[][] g = new double[][]{
+                {0.0,10.0,10.0,10.0},
+                {10.0,0.0,11.0,0.0},
+                {10.0,11.0,0.0,12.0},
+                {10.0,0.0,12.0,0.0},
+        };
+
+//        String topoStr = "0-1,0-3,0-5,0-6,0-12,1-5,2-3,3-4,3-6,3-8,5-6,6-7,6-10,7-8,8-9,9-15,9-10,10-12,11-12,12-13,12-16,12-17,13-14,13-15,14-15,14-17,9-15,15-17,16-17,16-18,16-20,15-17,16-17,17-18,18-19,18-20";
+//        int numOfNode = 21;
+//        double capacity = 40.0;
+
+//        String topoStr = "0-1,0-2,1-2";
+//        int numOfNode = 3;
+//        double capacity = 10.0;
+
+        String topoStr = "0-1:40,0-4:35,0-5:40,1-2:30,2-3:40,3-4:30,3-5:30,4-5:30";
+        int numOfNode = 6;
+        double capacity = 40.0;
+
+        TopoConfig topoConfig = new TopoConfig(topoStr,numOfNode,capacity, TopoStrType.YOURONGLIANG);
+        NetTopo netTopo = NetTopo.createTopo(topoConfig);
+//        NetTopo netTopo = new NetTopo(g);
+        AbstractPathProducer maxBandwidthPathProducer = new ShortestMaxBandwidthPathWithBdwLimitProducer();
+//        AbstractPathProducer maxBandwidthPathProducer = new MaxBandwidthPathWithBdwLimitProducer();
+        DelMinBLinkKPathsProducer delMinBLinkKPathsProducer = new DelMinBLinkKPathsProducer();
+        PathConfig pathConfig = new PathConfig();
+        pathConfig.setMaxNum(3);
+        String pathsStr = delMinBLinkKPathsProducer.getPathsStr(maxBandwidthPathProducer, 0, 3, numOfNode, netTopo, pathConfig, 0);
+        System.out.println(pathsStr);
     }
 }

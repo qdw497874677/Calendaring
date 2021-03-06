@@ -30,7 +30,8 @@ public class NetTopo implements Cloneable {
         double[][] g = new double[topoConfig.getNumOfNode()][topoConfig.getNumOfNode()];
         String str = topoConfig.getTopoStr();
         for (String s : str.split(",")) {
-            String[] split = s.split("-");
+            String[] linkAndBw = s.split(":");
+            String[] split = linkAndBw[0].split("-");
             int i = Integer.parseInt(split[0]);
 
             int j = Integer.parseInt(split[1]);
@@ -38,7 +39,7 @@ public class NetTopo implements Cloneable {
             if (topoConfig.getTopoStrType().equals(TopoStrType.WURONGLIANG)){
                 c = topoConfig.getCapacity();
             }else {
-                c = Double.parseDouble(split[2]);
+                c = Double.parseDouble(linkAndBw[1]);
             }
 
             g[i][j] = g[j][i] = c;
@@ -47,6 +48,8 @@ public class NetTopo implements Cloneable {
 
         return netTopo;
     }
+
+
 
     // 生成topo专用方法
     public static NetTopo createTopoByTimeSlot(NetContext netContext,int timeSlot){
@@ -99,8 +102,7 @@ public class NetTopo implements Cloneable {
 
 
 
-
-    public int[][] double2Int(){
+    public int[][] getGraphByDistance(){
         int n = graph.length;
         int m = graph[0].length;
         int[][] arr = new int[n][m];
