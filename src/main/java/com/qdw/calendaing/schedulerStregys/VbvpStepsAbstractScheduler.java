@@ -18,7 +18,7 @@ import java.util.List;
  */
 public abstract class VbvpStepsAbstractScheduler extends VbvpAbstractScheduler {
 
-    // 计算单个请求的分配结果
+    // 计算单个请求的分配结果，并且更新链路带宽
     // 为一个时隙的所有请求计算
     boolean process(NetContext netContext,Requirements.Requirement requirement,int timeSlot){
         boolean result = false;

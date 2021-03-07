@@ -16,6 +16,7 @@ import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
 import com.qdw.calendaing.schedulerStregys.*;
 import com.qdw.calendaing.base.NetContext;
 import com.qdw.calendaing.schedulerStregys.lp.LPSimpleOfflineScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPStepsOnlineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPWithBdwLimitScheduler;
 
 import java.util.LinkedList;
@@ -92,13 +93,13 @@ public class Main {
         netContext.setMulti(true);
 
         Scheduler scheduler;
-        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
+//        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
 //            scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 //            scheduler = new VbvpEarliestOnlineScheduler();// 在线、全时隙
 //            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
 //        scheduler = new LPSimpleOfflineScheduler();// 离线、全时隙、LP
 //            scheduler = new LPStepsOfflineScheduler();// 离线、分时隙、LP
-//             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
+             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
 //        scheduler = new LPWithBdwLimitScheduler(new LPSimpleOfflineScheduler());
 
         CalendaingResult calendaingResult = scheduler.calendaing(netContext);
@@ -111,9 +112,9 @@ public class Main {
         // 设置为多路
         netContext.setMulti(true);
 
-        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
+//        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
 //        scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
-
+        scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
         CalendaingResult calendaingResult2 = scheduler.calendaing(netContext);
         String print2 = getPrint(calendaingResult2, netContext);
 
@@ -167,7 +168,7 @@ public class Main {
         res.append("节点间最少路径数：").append(netContext.getNetwork().getMinpathSize()).append(" 节点间最多路径数：").append(netContext.getNetwork().getMaxpathSize()).append("\n");
         res.append("平均节点间的路径数量：").append(netContext.getNetwork().getAvgPathSize()).append("\n");
         res.append("缓存路径：").append(netContext.getNetwork().getPathCache()).append("\n");
-        res.append("请求：").append(netContext.getRequirements().toString()).append("\n");
+        res.append("请求：").append(netContext.getRequirements().toString());
 //        res.append("流：").append(netContext.getRequirements().get).append("\n");
         res.append("耗时：").append(calendaingResult.getTotalTime()).append("ms").append("\n");
         res.append("未完成请求的传输率：").append(calendaingResult.getReservedRateButRejected()).append("\n");

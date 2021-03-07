@@ -3,6 +3,8 @@ package com.qdw.calendaing;
 //import com.qdw.calendaing.base.RandomRProducer;
 import com.qdw.calendaing.base.config.PathConfig;
 import com.qdw.calendaing.base.config.RequirementConfig;
+import com.qdw.calendaing.base.pathBase.BdwLimitProducer;
+import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathProducer;
 import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathWithBdwLimitProducer;
 import com.qdw.calendaing.base.requirementBase.RandomRProducer;
 import com.qdw.calendaing.base.pathBase.MaxBandwidthPathProducer;
@@ -61,7 +63,8 @@ public class TestBed {
                 6,
                 10,
 //                new MaxBandwidthPathProducer(),
-                new ShortestMaxBandwidthPathWithBdwLimitProducer(),
+//                new ShortestMaxBandwidthPathWithBdwLimitProducer(),
+                new BdwLimitProducer(new ShortestMaxBandwidthPathProducer()),
                 new SimpleKPathsProducer()
         );
 
@@ -101,9 +104,9 @@ public class TestBed {
             netContext.setMulti(true);
 
 //            scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
-            scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
+//            scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 //            scheduler = new VbvpEarliestOnlineScheduler();// 在线、全时隙
-//            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
+            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
 
 
 //             scheduler = new LPSimpleOfflineScheduler();// 离线、全时隙、LP

@@ -42,6 +42,7 @@ public abstract class AbstractLPScheduler implements Scheduler {
             }
             Requirements.Requirement r = flow.getThisR();
             r.setMeetDemand(r.getMeetDemand()+flow.getValue());
+            // 如果满足需求就将请求状态改变
             if (r.getDemand() <= r.getMeetDemand()){
                 System.out.println("!!!!"+r.getDemand()+"  "+r.getMeetDemand());
                 r.setAccpted(true);
@@ -90,6 +91,7 @@ public abstract class AbstractLPScheduler implements Scheduler {
         return constraints;
     }
 
+    // 更新请求优先级
     void updateP(Collection<Flow> flows, int timeSlot, NetContext netContext){
         Requirements.Requirement pre = null;
         for (Flow flow : flows) {

@@ -173,6 +173,7 @@ public class Network implements Cloneable {
         for (Link link : path.getLinksMap().values()) {
 //            System.out.println("!!!!"+value);
 //            System.out.println();
+            // Á´Â·´ø¿í¼õÉÙvalue
             link.decrease(value, timeSlot);
         }
     }

@@ -79,7 +79,7 @@ public class ShortestMaxBandwidthPathProducer extends AbstractPathProducer {
             for (int w = 0; w < numOfNode; w++) {
                 //最小跳数中的最大带宽
                 int temp = distance[w]-edgesOfDistance[index][w];
-                if (!visited[w] && (temp > distance[index] || (temp == distance[index] && Math.min(bandwidth[index],edges[index][w]) > bandwidth[w]))) {
+                if (!visited[w] && ((distance[index]!=0 && temp > distance[index]) || (temp == distance[index] && Math.min(bandwidth[index],edges[index][w]) > bandwidth[w]))) {
                     distance[w] = distance[index] + edgesOfDistance[index][w];
                     bandwidth[w] = Math.min(bandwidth[index],edges[index][w]);
                     path[w] = path[index]+"-"+w;
