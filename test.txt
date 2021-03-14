@@ -1680,3 +1680,513 @@ NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网
 平均吞吐量为:6121.3000
 平均未完成请求的传输率:13.5123%
 
+2021-03-14T20:17:51.251
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:100
+平均一次实验计算用时:32ms
+平均完成率为:51.9300%
+平均数据传输率为:58.8392%
+平均吞吐量为:5995.5000
+平均未完成请求的传输率:23.0213%
+
+2021-03-14T20:18:02.673
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:55ms
+平均完成率为:53.3000%
+平均数据传输率为:58.6299%
+平均吞吐量为:6004.7000
+平均未完成请求的传输率:22.5239%
+
+2021-03-14T20:20:22.867
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:10
+平均一次实验计算用时:7855ms
+平均完成率为:28.0000%
+平均数据传输率为:63.5751%
+平均吞吐量为:6339.9204
+平均未完成请求的传输率:48.5622%
+
+2021-03-14T20:20:51.679
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpEarliestOnlineScheduler{简介=在线、全时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:66ms
+平均完成率为:42.8000%
+平均数据传输率为:55.3947%
+平均吞吐量为:5727.2000
+平均未完成请求的传输率:4.0370%
+
+2021-03-14T20:21:52.284
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:61ms
+平均完成率为:50.3500%
+平均数据传输率为:58.0627%
+平均吞吐量为:5963.7000
+平均未完成请求的传输率:23.2743%
+
+2021-03-14T20:22:07.843
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:52ms
+平均完成率为:70.7000%
+平均数据传输率为:60.7477%
+平均吞吐量为:6379.3000
+平均未完成请求的传输率:13.5216%
+
+2021-03-14T20:23:59.233
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:63ms
+平均完成率为:51.9000%
+平均数据传输率为:59.2187%
+平均吞吐量为:6011.8000
+平均未完成请求的传输率:23.6217%
+
+2021-03-14T20:25:47.296
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:57ms
+平均完成率为:50.4500%
+平均数据传输率为:56.4702%
+平均吞吐量为:5805.1000
+平均未完成请求的传输率:20.5921%
+
+2021-03-14T20:41:22.558
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:62ms
+平均完成率为:50.3000%
+平均数据传输率为:57.1613%
+平均吞吐量为:5915.9000
+平均未完成请求的传输率:23.3936%
+
+2021-03-14T20:41:47.139
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:58ms
+平均完成率为:70.1000%
+平均数据传输率为:59.7169%
+平均吞吐量为:6181.4000
+平均未完成请求的传输率:13.3382%
+
+2021-03-14T20:45:39.749
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:55ms
+平均完成率为:42.5000%
+平均数据传输率为:55.0783%
+平均吞吐量为:5681.8000
+平均未完成请求的传输率:23.1025%
+
+2021-03-14T20:46:43.249
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:9288ms
+平均完成率为:25.5000%
+平均数据传输率为:60.4430%
+平均吞吐量为:6476.4667
+平均未完成请求的传输率:47.8847%
+
+2021-03-14T20:52:37.723
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:8820ms
+平均完成率为:23.5000%
+平均数据传输率为:61.7517%
+平均吞吐量为:6254.8333
+平均未完成请求的传输率:50.0172%
+
+2021-03-14T21:03:00.020
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:520873ms
+平均完成率为:30.5000%
+平均数据传输率为:64.0119%
+平均吞吐量为:6273.1667
+平均未完成请求的传输率:48.1043%
+
+2021-03-14T21:03:13.544
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:8498ms
+平均完成率为:31.0000%
+平均数据传输率为:67.2879%
+平均吞吐量为:6814.2500
+平均未完成请求的传输率:50.3410%
+
+2021-03-14T21:12:23.462
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=1, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:58ms
+平均完成率为:100.0000%
+平均数据传输率为:100.0000%
+平均吞吐量为:16.0000
+平均未完成请求的传输率:0.0000%
+
+2021-03-14T21:12:42.730
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=50, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:2105ms
+平均完成率为:86.0000%
+平均数据传输率为:97.7914%
+平均吞吐量为:2081.0000
+平均未完成请求的传输率:63.5659%
+
+2021-03-14T21:12:54.913
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4382ms
+平均完成率为:29.0000%
+平均数据传输率为:61.9742%
+平均吞吐量为:5903.6667
+平均未完成请求的传输率:45.9111%
+
+2021-03-14T21:14:57.807
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:104ms
+平均完成率为:52.5000%
+平均数据传输率为:65.3874%
+平均吞吐量为:6321.0000
+平均未完成请求的传输率:26.3320%
+
+2021-03-14T21:15:33.242
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpEarliestOnlineScheduler{简介=在线、全时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:128ms
+平均完成率为:41.0000%
+平均数据传输率为:51.7022%
+平均吞吐量为:5437.0000
+平均未完成请求的传输率:7.7377%
+
+2021-03-14T21:16:47.630
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4541ms
+平均完成率为:23.5000%
+平均数据传输率为:57.5118%
+平均吞吐量为:6341.2500
+平均未完成请求的传输率:44.0226%
+
+2021-03-14T21:18:45.048
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4454ms
+平均完成率为:28.0000%
+平均数据传输率为:66.8272%
+平均吞吐量为:6688.7381
+平均未完成请求的传输率:52.7701%
+
+2021-03-14T21:22:23.209
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:123ms
+平均完成率为:41.5000%
+平均数据传输率为:60.0182%
+平均吞吐量为:5937.0000
+平均未完成请求的传输率:29.3624%
+
+2021-03-14T21:22:58.853
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:122ms
+平均完成率为:41.0000%
+平均数据传输率为:58.8409%
+平均吞吐量为:6163.0000
+平均未完成请求的传输率:31.2550%
+
+2021-03-14T21:23:44.545
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:80ms
+平均完成率为:45.0000%
+平均数据传输率为:57.1864%
+平均吞吐量为:5634.0000
+平均未完成请求的传输率:21.1441%
+
+2021-03-14T21:31:31.666
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:107ms
+平均完成率为:50.0000%
+平均数据传输率为:60.5203%
+平均吞吐量为:6374.0000
+平均未完成请求的传输率:25.8162%
+
+2021-03-14T21:31:39.489
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:104ms
+平均完成率为:73.5000%
+平均数据传输率为:62.2032%
+平均吞吐量为:6313.0000
+平均未完成请求的传输率:10.8114%
+
+2021-03-14T21:31:48.873
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:80ms
+平均完成率为:43.5000%
+平均数据传输率为:61.7641%
+平均吞吐量为:6232.0000
+平均未完成请求的传输率:24.0551%
+
+2021-03-14T21:32:02.262
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:103ms
+平均完成率为:48.5000%
+平均数据传输率为:57.9706%
+平均吞吐量为:5593.0000
+平均未完成请求的传输率:17.3630%
+
+2021-03-14T21:32:30.614
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:82ms
+平均完成率为:54.0000%
+平均数据传输率为:59.3501%
+平均吞吐量为:6173.0000
+平均未完成请求的传输率:16.1444%
+
+2021-03-14T21:32:42.507
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:104ms
+平均完成率为:70.0000%
+平均数据传输率为:58.9493%
+平均吞吐量为:6093.0000
+平均未完成请求的传输率:14.5418%
+
+2021-03-14T21:33:06.367
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:80ms
+平均完成率为:72.5000%
+平均数据传输率为:60.2902%
+平均吞吐量为:6275.0000
+平均未完成请求的传输率:12.6585%
+
+2021-03-14T21:34:07.285
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:5273ms
+平均完成率为:20.5000%
+平均数据传输率为:61.5289%
+平均吞吐量为:6264.2619
+平均未完成请求的传输率:52.3453%
+
+2021-03-14T21:34:52.287
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4352ms
+平均完成率为:26.5000%
+平均数据传输率为:66.7216%
+平均吞吐量为:6474.0000
+平均未完成请求的传输率:53.1078%
+
+2021-03-14T21:35:31.884
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4634ms
+平均完成率为:0.0000%
+平均数据传输率为:0.0000%
+平均吞吐量为:0.0000
+平均未完成请求的传输率:0.0000%
+
+2021-03-14T21:36:09.099
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4366ms
+平均完成率为:27.0000%
+平均数据传输率为:59.2867%
+平均吞吐量为:6047.8333
+平均未完成请求的传输率:42.6358%
+
+2021-03-14T21:36:38.387
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4324ms
+平均完成率为:34.5000%
+平均数据传输率为:66.1618%
+平均吞吐量为:6520.2500
+平均未完成请求的传输率:49.0645%
+
+2021-03-14T21:36:55.068
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4631ms
+平均完成率为:29.0000%
+平均数据传输率为:63.2498%
+平均吞吐量为:6218.7222
+平均未完成请求的传输率:47.1434%
+
+2021-03-14T21:37:16.473
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4569ms
+平均完成率为:27.5000%
+平均数据传输率为:57.7984%
+平均吞吐量为:6113.3333
+平均未完成请求的传输率:41.5903%
+
+2021-03-14T21:38:09.039
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4387ms
+平均完成率为:31.5000%
+平均数据传输率为:60.0363%
+平均吞吐量为:5836.1250
+平均未完成请求的传输率:41.4399%
+
+2021-03-14T21:39:06.748
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4403ms
+平均完成率为:32.5000%
+平均数据传输率为:66.8085%
+平均吞吐量为:6243.2500
+平均未完成请求的传输率:52.0224%
+
+2021-03-14T21:39:42.921
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4404ms
+平均完成率为:32.5000%
+平均数据传输率为:66.8324%
+平均吞吐量为:6922.5000
+平均未完成请求的传输率:50.7596%
+
+2021-03-14T21:39:55.712
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomRProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:85ms
+平均完成率为:72.0000%
+平均数据传输率为:62.8665%
+平均吞吐量为:6303.0000
+平均未完成请求的传输率:8.3005%
+
+2021-03-14T21:44:20.361
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomReqWithBwLimitProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:122ms
+平均完成率为:40.5000%
+平均数据传输率为:47.4676%
+平均吞吐量为:5061.0000
+平均未完成请求的传输率:24.8390%
+
+2021-03-14T21:44:39.884
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=200, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomReqWithBwLimitProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:4845ms
+平均完成率为:18.0000%
+平均数据传输率为:58.7998%
+平均吞吐量为:6393.3000
+平均未完成请求的传输率:50.4129%
+
+2021-03-14T21:44:57.580
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=100, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomReqWithBwLimitProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:1
+平均一次实验计算用时:2793ms
+平均完成率为:31.0000%
+平均数据传输率为:77.6096%
+平均吞吐量为:4282.5000
+平均未完成请求的传输率:69.5164%
+
+2021-03-14T21:45:07.036
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=100, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomReqWithBwLimitProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:1
+平均一次实验计算用时:94ms
+平均完成率为:58.0000%
+平均数据传输率为:77.7298%
+平均吞吐量为:3958.0000
+平均未完成请求的传输率:57.2881%
+
+2021-03-14T21:45:31.903
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=100, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomReqWithBwLimitProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOnlineScheduler{简介=在线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:47ms
+平均完成率为:63.0000%
+平均数据传输率为:80.9603%
+平均吞吐量为:4069.0000
+平均未完成请求的传输率:53.2727%
+
+2021-03-14T21:46:06.749
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=100, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomReqWithBwLimitProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOnlineScheduler{简介=在线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:10
+平均一次实验计算用时:2056ms
+平均完成率为:37.6000%
+平均数据传输率为:78.8659%
+平均吞吐量为:4097.1500
+平均未完成请求的传输率:65.6842%
+
+2021-03-14T21:47:11.422
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=100, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomReqWithBwLimitProducer, 优先级修改器=MaxCS_PM}
+调度算法:LPWithBdwLimitScheduler{scheduler=LPStepsOfflineScheduler{简介=离线、单时隙、LP, constraintGenerater=WithBdwLimitConstraintGenerater}}
+实验次数:10
+平均一次实验计算用时:602ms
+平均完成率为:40.2000%
+平均数据传输率为:82.6374%
+平均吞吐量为:4081.6833
+平均未完成请求的传输率:69.6510%
+
+2021-03-14T21:47:27.005
+NetContext{节点对间最大路径个数（LP用）=6, 路径最大跳数=10, 缓存路径总数=432, 网络时隙个数=20, 网络节点个数=21, 网络链路个数=33, 网络链路初始容量=40.0, 是否支持多路径=true, 路径生成器=BdwLimitProducer, 多路径生成器=SimpleKPathsProducer, 请求个数=100, 请求最早时隙=0, 请求最晚时隙=19, 需求基数=6, 请求生成器=RandomReqWithBwLimitProducer, 优先级修改器=MaxCS_PM}
+调度算法:VbvpStepsOfflineScheduler{简介=离线、单时隙、最早最易完成}
+实验次数:10
+平均一次实验计算用时:48ms
+平均完成率为:69.2000%
+平均数据传输率为:79.3264%
+平均吞吐量为:4079.9000
+平均未完成请求的传输率:48.6367%
+

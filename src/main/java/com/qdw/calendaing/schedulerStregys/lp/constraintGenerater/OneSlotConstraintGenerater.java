@@ -59,7 +59,7 @@ public class OneSlotConstraintGenerater extends AbstractConstraintGenerater {
             boolean flag = false;
             for (Flow flow : flows) {
                 if (flow.isCover(link)) {
-                    System.out.println("###link:"+link.getId());
+                    //System.out.println("###link:"+link.getId());
                     list.add(1);
                     flag = true;
                 } else {
@@ -70,7 +70,7 @@ public class OneSlotConstraintGenerater extends AbstractConstraintGenerater {
                 continue;
             }
             list.add(1);
-            System.out.println(link.getLinkInfoMap().size());
+            //System.out.println(link.getLinkInfoMap().size());
             list.add((int) link.getLinkInfoMap().get(timeSlot).getResidualCapacity());
             res.add(list);
         }
@@ -147,7 +147,7 @@ public class OneSlotConstraintGenerater extends AbstractConstraintGenerater {
     public List<Integer> getObjFunc(NetContext netContext, Collection<Flow> flows) {
         List<Integer> res = new LinkedList<>();
         for (Flow flow : flows) {
-            res.add(getCost(flow, (int)(- flow.getThisR().getPriority()),1000));
+            res.add(getCost(flow, (int)(-flow.getThisR().getPriority()),10000));
     }
         return res;
     }

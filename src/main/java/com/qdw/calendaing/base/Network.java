@@ -154,7 +154,7 @@ public class Network implements Cloneable {
     }
     public void updateBandwidth(List<Flow> flows){
         for (Flow flow : flows) {
-            updateBandwidth(flow.getPath(),flow.getTimeSlot(),flow.getValue());
+            updateBandwidth(flow);
         }
     }
     public void updateBandwidth(Flow flow){

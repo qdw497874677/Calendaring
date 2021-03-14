@@ -46,7 +46,7 @@ public abstract class VbvpStepsAbstractScheduler extends VbvpAbstractScheduler {
             }
             netContext.getNetwork().updateBandwidth(requirement.addFlow(timeSlot, FlowStatus.ZHENGCHANG,pathDoublePair.getKey(),value));
         }
-        requirement.updatePriority(timeSlot,netContext.getRequirementConfig().getPriorityModifier());
+//        requirement.updatePriority(timeSlot,netContext.getRequirementConfig().getPriorityModifier());
 //        requirement.addDemand(value);
         return result;
     }

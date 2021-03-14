@@ -6,6 +6,9 @@ import com.qdw.calendaing.base.Flow;
 import com.qdw.calendaing.base.NetContext;
 import com.qdw.calendaing.base.Requirements;
 import com.qdw.calendaing.base.constant.ConstraintType;
+import com.qdw.calendaing.base.requirementBase.priority.MaxCS_Online_PM;
+import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
+import com.qdw.calendaing.base.requirementBase.priority.PriorityModifier;
 import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.ConstraintGenerater;
 import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.OneSlotConstraintGenerater;
 import com.qdw.lpnet.LpUtil;
@@ -35,38 +38,48 @@ public class LPStepsOnlineScheduler extends AbstractLPScheduler {
         // 初始化请求的流
         netContext.getRequirements().initializeFlows(netContext.getPathConfig(),netContext.getNetwork(),false);
 
-
-        Requirements requirements = netContext.getRequirements();
         // 根据开始时隙升序
         Queue<Requirements.Requirement> unprocessed = netContext.getRequirements().getRequirements().stream().sorted((a, b) -> {
             return a.getReadySlot() - b.getReadySlot();
         }).collect(Collectors.toCollection(LinkedList::new));
         int processSlot = netContext.getRequirements().getEarliestSlot();
         int lastSlot = netContext.getRequirements().getLatestSlot();
+
+        // 设置优先级更新器
+//        PriorityModifier priorityModifier = new MaxCS_Online_PM();
+        PriorityModifier priorityModifier = new MaxCS_PM();
         List<Requirements.Requirement> processingR = new ArrayList<>();
 
         CalendaingResult calendaingResult = new CalendaingResult();
         long start = System.currentTimeMillis();
         for (; processSlot <= lastSlot; processSlot++) {
+            // 先处理PR中的
             if (!processingR.isEmpty()){
+
+                // 更新优先级
+                for (Requirements.Requirement requirement : processingR) {
+                    requirement.updatePriority(processSlot, priorityModifier);
+                }
+
                 lp(processingR, processSlot, netContext);
-                processingR = new ArrayList<>();
+                List<Requirements.Requirement> temp = new ArrayList<>();
                 for (Requirements.Requirement requirement : processingR) {
                     if (!check(requirement,calendaingResult,processSlot)){
-                        processingR.add(requirement);
+                        temp.add(requirement);
+
                     }
                 }
+                processingR = new ArrayList<>(temp);
             }
 
             while (!unprocessed.isEmpty() && processSlot == unprocessed.peek().getReadySlot()){
                 Requirements.Requirement poll = unprocessed.poll();
-                List<Requirements.Requirement> list = Collections.singletonList(poll);
-                lp(list,processSlot,netContext);
+                lp(Collections.singletonList(poll),processSlot,netContext);
                 if (!check(poll,calendaingResult,processSlot)){
                     processingR.add(poll);
                 }
-                // 更新带宽
-                netContext.getNetwork().updateBandwidth(poll.getFlowsOfR().get(processSlot));
+//                // 更新带宽
+//                netContext.getNetwork().updateBandwidth(poll.getFlowsOfR().get(processSlot));
             }
 
         }
@@ -75,14 +88,15 @@ public class LPStepsOnlineScheduler extends AbstractLPScheduler {
 
         calendaingResult.setTotalTime(time);
 
-        calendaingResult.setResultOneTime(netContext.getRequirements());
+//        calendaingResult.setResultOneTime(netContext.getRequirements());
         return calendaingResult;
     }
 
+    // 如果返回false表示需要继续
     public boolean check(Requirements.Requirement r,CalendaingResult calendaingResult,int curTime){
         if (r.isAccpted()){
             calendaingResult.accept(r);
-        }else if (r.getDemand() <= curTime){
+        }else if (r.getDeadline() <= curTime){
             calendaingResult.reject(r);
         }else {
             // 如果没有完成需求，且还没有到截止时隙，就返回false
@@ -92,6 +106,9 @@ public class LPStepsOnlineScheduler extends AbstractLPScheduler {
     }
 
     public void lp(Collection<Requirements.Requirement> rs, int timeSlot, NetContext netContext){
+        if (rs==null || rs.size()==0){
+            return;
+        }
         List<Flow> flows = new LinkedList<>();
         for (Requirements.Requirement requirement : rs) {
             if (!requirement.isAccpted() && requirement.getFlowsOfR().containsKey(timeSlot)){
@@ -121,11 +138,12 @@ public class LPStepsOnlineScheduler extends AbstractLPScheduler {
         double[] res = LpUtil.solveLp(constraints, objectiveFunction, flowsOfAll,2);
         System.out.println(Arrays.toString(res));
         setFlows(res,flows,timeSlot);
-        updateP(flows,timeSlot,netContext);
+//        updateP(flows,timeSlot,netContext);
 
         // 当前时隙计算的流量更新到网络中
-        for (Requirements.Requirement requirement : netContext.getRequirements().getRequirements()) {
-            netContext.getNetwork().updateBandwidth(requirement.getFlowsOfR().get(timeSlot));
+        for (Requirements.Requirement requirement : rs) {
+            List<Flow> flowList = requirement.getFlowsOfR().get(timeSlot);
+            netContext.getNetwork().updateBandwidth(flowList);
         }
     }
 

@@ -3,6 +3,8 @@ package com.qdw.calendaing.schedulerStregys;
 import com.qdw.calendaing.CalendaingResult;
 import com.qdw.calendaing.base.*;
 import com.qdw.calendaing.base.constant.FlowStatus;
+import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
+import com.qdw.calendaing.base.requirementBase.priority.PriorityModifier;
 import javafx.util.Pair;
 
 import java.util.*;
@@ -41,15 +43,24 @@ public class VbvpStepsOfflineScheduler extends VbvpStepsAbstractScheduler {
             return a.getReadySlot() - b.getReadySlot();
         }).collect(Collectors.toCollection(LinkedList::new));
 
-
+        // 设置优先级更新器
+        PriorityModifier priorityModifier = new MaxCS_PM();
+        List<Requirements.Requirement> processedR = new LinkedList<>();
         for (; curSlot <= r ; curSlot++) {
             // 从未处理集合中获取可以参与计算的请求
             System.out.println();
             while (!unprocessed.isEmpty() && unprocessed.peek().getReadySlot()==curSlot){
-                curQueue.add(unprocessed.poll());
-            }
+                Requirements.Requirement poll = unprocessed.poll();
 
-            List<Requirements.Requirement> list = new LinkedList<>();
+                processedR.add(poll);
+            }
+            for (Requirements.Requirement requirement : processedR) {
+
+                // 更新优先级
+                requirement.updatePriority(curSlot, priorityModifier);
+                curQueue.add(requirement);
+            }
+            processedR.clear();
             while (!curQueue.isEmpty()){
                 Requirements.Requirement poll = curQueue.poll();
 //                System.out.println(poll.getPriority());
@@ -57,13 +68,13 @@ public class VbvpStepsOfflineScheduler extends VbvpStepsAbstractScheduler {
                     if (curSlot==poll.getDeadline()){
                         calendaingResult.reject(poll);
                     }else {
-                        list.add(poll);
+                        processedR.add(poll);
                     }
                 }else {
                     calendaingResult.accept(poll);
                 }
             }
-            curQueue.addAll(list);
+
         }
         while (!curQueue.isEmpty()){
             calendaingResult.reject(curQueue.poll());

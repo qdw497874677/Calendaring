@@ -116,7 +116,7 @@ public class NetContext implements Cloneable {
         network = new Network(numOfTimeSlot);
         network.initializeNetwork(topoConfig,pathConfig);
 //        network.initializeNetwork(null,pathConfig,pathProducer);
-        System.out.println(network.getPathCacheInfo());
+        //System.out.println(network.getPathCacheInfo());
 
         // ≥ı ºªØ«Î«Û
         requirements = new Requirements(requirementConfig);
@@ -127,7 +127,7 @@ public class NetContext implements Cloneable {
     public void refresh(Requirements requirements){
         network = new Network(numOfTimeSlot);
         network.initializeNetwork(topoConfig,pathConfig);
-        System.out.println(network.getPathCacheInfo());
+        //System.out.println(network.getPathCacheInfo());
         this.requirements = requirements.clone();
     }
 

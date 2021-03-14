@@ -62,6 +62,20 @@ public class Requirements implements Cloneable {
 			this.priorityModifier = new MaxCS_PM();
 			priority = updatePriority(readySlot,priorityModifier);
 		}
+		public Requirement(int id, Node sNode, Node dNode, int readySlot, int deadline, double demand, double maxBdw) {
+			this.id = id;
+			this.sNode = sNode;
+			this.dNode = dNode;
+			this.readySlot = readySlot;
+			this.deadline = deadline;
+			this.demand = demand;
+			this.flowsOfR = new LinkedHashMap<>();
+//			priority = demand/(deadline-readySlot);
+//			priority = demand;
+			this.maxBdw = maxBdw;
+			this.priorityModifier = new MaxCS_PM();
+			priority = updatePriority(readySlot,priorityModifier);
+		}
 		public Requirement(int id, Node sNode, Node dNode, int readySlot, int deadline, double demand,double maxBdw,PriorityModifier priorityModifier) {
 			this.id = id;
 			this.sNode = sNode;
@@ -112,7 +126,7 @@ public class Requirements implements Cloneable {
 
 			priority = priorityModifier.updatePriority(curTimeSlot,this);
 
-			System.out.println("pri:"+priority);
+//			System.out.println("pri:"+priority);
 			return priority;
 		}
 
@@ -363,7 +377,7 @@ public class Requirements implements Cloneable {
 		int sum = 0;
 		for (Requirement requirement : requirements) {
 			for (List<Flow> flows : requirement.getFlowsOfR().values()) {
-				System.out.println(sum);
+//				System.out.println(sum);
 				sum += flows.size();
 			}
 		}

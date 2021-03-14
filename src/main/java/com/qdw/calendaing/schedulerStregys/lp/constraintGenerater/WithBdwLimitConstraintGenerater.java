@@ -42,37 +42,7 @@ public class WithBdwLimitConstraintGenerater extends AbstractConstraintGenerater
         return constraintGenerater.generateOne(netContext,flows,constraintType);
     }
 
-    // 获取最大带宽约束
-    private List<List<Integer>> getMBCons(NetContext netContext,Collection<Flow> flows){
-        int flowsOfAll = flows.size();
-        System.out.println("所有初始流的数量为:"+flowsOfAll);
 
-        List<List<Integer>> res = new LinkedList<>();
-        int prefix = 0;
-        for (Flow flow : flows) {
-            List<Integer> list = new ArrayList<>(flowsOfAll+2);
-            double maxBdw = flow.getThisR().getMaxBdw();
-            if (flow.getStatus().equals(FlowStatus.XUNI) || maxBdw<=0){
-                prefix++;
-                continue;
-            }
-            for (int i = 0; i < prefix; i++) {
-                list.add(0);
-            }
-            list.add(1);
-            while (list.size()<flowsOfAll){
-                list.add(0);
-            }
-
-            list.add(1);
-            list.add((int)maxBdw);
-            prefix++;
-            res.add(list);
-        }
-//        System.out.println("参数个数为：" + res.get(0).size());
-        System.out.println("getLLCons size!!!:"+res.size());
-        return res;
-    }
 
     @Override
     public List<Integer> getObjFunc(NetContext netContext, Collection<Flow> flows) {

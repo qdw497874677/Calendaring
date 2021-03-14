@@ -6,6 +6,8 @@ import com.qdw.calendaing.base.Flow;
 import com.qdw.calendaing.base.NetContext;
 import com.qdw.calendaing.base.Requirements;
 import com.qdw.calendaing.base.constant.ConstraintType;
+import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
+import com.qdw.calendaing.base.requirementBase.priority.PriorityModifier;
 import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.ConstraintGenerater;
 import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.OneSlotConstraintGenerater;
 import com.qdw.lpnet.LpUtil;
@@ -13,10 +15,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 // TODO
@@ -34,22 +33,30 @@ public class LPStepsOfflineScheduler extends AbstractLPScheduler {
         netContext.getRequirements().initializeFlows(netContext.getPathConfig(),netContext.getNetwork(),false);
 
         Requirements requirements = netContext.getRequirements();
+        Queue<Requirements.Requirement> unprocessed = netContext.getRequirements().getRequirements().stream().sorted((a, b) -> {
+            return a.getReadySlot() - b.getReadySlot();
+        }).collect(Collectors.toCollection(LinkedList::new));
         int l = requirements.getEarliestSlot();
         int r = requirements.getLatestSlot();
 
+        // 设置优先级更新器
+        PriorityModifier priorityModifier = new MaxCS_PM();
+        List<Requirements.Requirement> processedR = new LinkedList<>();
         CalendaingResult calendaingResult = new CalendaingResult();
         long start = System.currentTimeMillis();
         for (int i = l; i <= r; i++) {
             List<Flow> flows = new LinkedList<>();
-            for (Requirements.Requirement requirement : requirements.getRequirements()) {
-                // 如果还没有完全被满足，且有当前时隙初始的流
-                if (!requirement.isAccpted() && requirement.getFlowsOfR().containsKey(i)){
-                    flows.addAll(requirement.getFlowsOfR().get(i));
-                    Flow xunniFlow = Flow.getXUNNIFlow(i, requirement);
-                    requirement.getFlowsOfR().get(i).add(xunniFlow);
-                    flows.add(xunniFlow);
-                }
+            while (!unprocessed.isEmpty() && unprocessed.peek().getReadySlot()==i){
+                processedR.add(unprocessed.poll());
             }
+            for (Requirements.Requirement requirement : processedR) {
+                flows.addAll(requirement.getFlowsOfR().get(i));
+                Flow xunniFlow = Flow.getXUNNIFlow(i, requirement);
+                requirement.getFlowsOfR().get(i).add(xunniFlow);
+                flows.add(xunniFlow);
+                requirement.updatePriority(i, priorityModifier);
+            }
+
             if (flows.size()==0){
                 continue;
             }
@@ -72,7 +79,15 @@ public class LPStepsOfflineScheduler extends AbstractLPScheduler {
             double[] res = LpUtil.solveLp(constraints, objectiveFunction, flowsOfAll,2);
             System.out.println(Arrays.toString(res));
             setFlows(res,flows,i);
-            updateP(flows,i,netContext);
+
+            // 把不能继续的移除
+            Iterator<Requirements.Requirement> iterator = processedR.iterator();
+            while (iterator.hasNext()){
+                Requirements.Requirement requirement = iterator.next();
+                if (requirement.isAccpted() || requirement.getDeadline()==i){
+                    iterator.remove();
+                }
+            }
 
         }
         long time  = System.currentTimeMillis() - start;

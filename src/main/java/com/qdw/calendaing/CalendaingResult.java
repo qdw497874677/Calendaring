@@ -162,7 +162,12 @@ public class CalendaingResult {
                 }
             }
         }
-        BigDecimal bigDecimal = new BigDecimal(sum*100/sumDemand);
+        BigDecimal bigDecimal = null;
+        if (sumDemand == 0){
+            bigDecimal = new BigDecimal(0);
+        }else {
+            bigDecimal = new BigDecimal(sum*100/sumDemand);
+        }
         return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
     }
 

@@ -4,6 +4,8 @@ import com.qdw.calendaing.CalendaingResult;
 import com.qdw.calendaing.base.*;
 import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.pathBase.Path;
+import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
+import com.qdw.calendaing.base.requirementBase.priority.PriorityModifier;
 import javafx.util.Pair;
 
 import java.util.*;
@@ -24,6 +26,7 @@ public class VbvpEarliestOfflineScheduler extends VbvpEarliestAbstractScheduler 
         // 根据平均传输带宽 升序
         // 离线特性
         sortRByD(unprocessed);
+
 
         CalendaingResult calendaingResult = new CalendaingResult();
 

@@ -40,7 +40,7 @@ public class RandomReqWithBwLimitProducer implements RequirementProducer {
         double maxBdw = 0;
         maxBdw = random.nextInt(demandBase) + (demandBase/3)*2;
 
-        return new Requirements.Requirement(ids++,network.getNode(s),network.getNode(d),a,b,demand);
+        return new Requirements.Requirement(ids++,network.getNode(s),network.getNode(d),a,b,demand,maxBdw);
     }
 
 }
