@@ -1,6 +1,6 @@
 package com.qdw.calendaing.base.requirementBase.priority;
 
-import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.requirement.Requirements;
 
 /**
  * @Author: Quandw

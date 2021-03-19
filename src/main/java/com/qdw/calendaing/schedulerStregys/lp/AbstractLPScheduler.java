@@ -2,13 +2,11 @@ package com.qdw.calendaing.schedulerStregys.lp;
 
 import com.pranav.pojo.Constraint;
 import com.qdw.calendaing.base.*;
-import com.qdw.calendaing.base.config.RequirementConfig;
 import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.pathBase.Path;
+import com.qdw.calendaing.base.requirement.Requirements;
 import com.qdw.calendaing.schedulerStregys.Scheduler;
 import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.ConstraintGenerater;
-import javafx.util.Pair;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

@@ -2,11 +2,10 @@ package com.qdw.calendaing.schedulerStregys;
 
 import com.qdw.calendaing.base.NetContext;
 import com.qdw.calendaing.base.NetTopo;
-import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.requirement.Requirements;
 import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.pathBase.Path;
 import com.qdw.calendaing.base.pathBase.PathProducer;
-import com.qdw.calendaing.schedulerStregys.Scheduler;
 import javafx.util.Pair;
 
 import java.util.Collections;
@@ -21,7 +20,7 @@ import java.util.List;
 public abstract class VbvpAbstractScheduler implements Scheduler {
 
     // 获取一个时隙的一条路径，尽量刚好满足需求
-    List<Pair<Path,Double>> getOneStepPath(NetContext netContext, Requirements.Requirement requirement, int timeSlot){
+    public List<Pair<Path,Double>> getOneStepPath(NetContext netContext, Requirements.Requirement requirement, int timeSlot){
         int s = requirement.getSNode().getId();
         int d = requirement.getDNode().getId();
         NetTopo topoByTimeSlot = NetTopo.createTopoByTimeSlot(netContext, timeSlot);

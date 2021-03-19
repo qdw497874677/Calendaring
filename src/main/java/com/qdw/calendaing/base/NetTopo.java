@@ -58,7 +58,7 @@ public class NetTopo implements Cloneable {
         double[][] g = new double[numOfNode][numOfNode];
         Map<String, Link> links = netContext.getNetwork().getLinks();
         for (Link link : links.values()) {
-            double residualCapacity = link.getLinkInfoMap().get(timeSlot).getResidualCapacity();
+            double residualCapacity = link.getLinkInfo(timeSlot).getResidualCapacity();
             g[link.getNodeA().getId()][link.getNodeB().getId()] = residualCapacity;
             g[link.getNodeB().getId()][link.getNodeA().getId()] = residualCapacity;
         }

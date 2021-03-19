@@ -26,13 +26,18 @@ public class Network implements Cloneable {
     private Map<Integer,Node> nodes = new LinkedHashMap<>();
     private Map<String,Link> links = new LinkedHashMap<>();
     private Map<String,List<Path>> pathCache = new LinkedHashMap<>();
+    private TopoConfig topoConfig;
+
+    // ‘› ±–¥À¿
+    int cost = 1;
 //    private Flow flows = new Flow();
-    public Network(int timeSlot){
-        this.slotSize = timeSlot;
+    public Network(int timeSlotSize){
+        this.slotSize = timeSlotSize;
     }
 
 
     public Network initializeNetwork(TopoConfig topoConfig, PathConfig pathConfig){
+        this.topoConfig = topoConfig;
         if (topoConfig==null || StringUtils.isEmpty(topoConfig.getTopoStr())){
             String topoStr =
                     "0-1-10.0," +
@@ -71,11 +76,17 @@ public class Network implements Cloneable {
         for (int i = 0; i < g.length; i++) {
             for (int j = i; j < g[0].length; j++) {
                 if(g[i][j]>0.0){
-                    Link link = new Link(nodes.get(i), nodes.get(j));
-                    link.initializeInfo(slotSize,value,1);
+                    Link link = new Link(nodes.get(i), nodes.get(j), this);
+                    link.initializeInfo(slotSize,value,cost);
                     links.put(link.getId(),link);
                 }
             }
+        }
+    }
+
+    public void addLinkInfo(int timeSlot){
+        for (Link value : links.values()) {
+            value.addInfo(timeSlot, topoConfig.getCapacity(), cost);
         }
     }
 
@@ -154,7 +165,7 @@ public class Network implements Cloneable {
     }
     public void updateBandwidth(List<Flow> flows){
         for (Flow flow : flows) {
-            updateBandwidth(flow);
+            updateBandwidth(flow.getPath(),flow.getTimeSlot(),flow.getValue());
         }
     }
     public void updateBandwidth(Flow flow){

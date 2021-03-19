@@ -2,10 +2,7 @@ package com.qdw.calendaing.schedulerStregys;
 
 import com.qdw.calendaing.CalendaingResult;
 import com.qdw.calendaing.base.NetContext;
-import com.qdw.calendaing.base.Requirements;
-import com.qdw.calendaing.base.requirementBase.priority.MaxCS_Online_PM;
-import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
-import com.qdw.calendaing.base.requirementBase.priority.PriorityModifier;
+import com.qdw.calendaing.base.requirement.Requirements;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -35,21 +32,10 @@ public class VbvpStepsOnlineScheduler extends VbvpStepsAbstractScheduler {
         int processSlot = netContext.getRequirements().getEarliestSlot();
         int lastSlot = netContext.getRequirements().getLatestSlot();
 
-        // 设置优先级更新器
-//        PriorityModifier priorityModifier = new MaxCS_Online_PM();
-        PriorityModifier priorityModifier = new MaxCS_PM();
         // 暂时存放即将要加入curQueue的请求
         List<Requirements.Requirement> temp = new LinkedList<>();
         // 按时间顺序处理
         for (; processSlot <= lastSlot; processSlot++) {
-
-            // 更新请求优先级
-            for (Requirements.Requirement requirement : temp) {
-                requirement.updatePriority(processSlot, priorityModifier);
-                curQueue.add(requirement);
-            }
-            temp.clear();
-
             while (!curQueue.isEmpty()){
                 Requirements.Requirement poll = curQueue.poll();
                 if (!process(netContext,poll,processSlot)){
@@ -74,6 +60,8 @@ public class VbvpStepsOnlineScheduler extends VbvpStepsAbstractScheduler {
                     calendaingResult.accept(poll);
                 }
             }
+            curQueue.addAll(temp);
+            temp.clear();
         }
 
         while (!curQueue.isEmpty()){

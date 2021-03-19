@@ -1,6 +1,6 @@
 package com.qdw.calendaing.base.requirementBase.priority;
 
-import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.requirement.Requirements;
 
 /**
  * @Author: Quandw
@@ -11,7 +11,9 @@ public class MaxCS_PM extends AbstractPriorityModifier {
     @Override
     public double updatePriority(int curTimeSlot, Requirements.Requirement requirement) {
 
-        double priority = - (requirement.getDemand() - requirement.getMeetDemand()) / (1 + (double)(requirement.getDeadline() - curTimeSlot + 1)/(requirement.getDeadline() - requirement.getReadySlot() + 1) ) ;
+        getFields(requirement);
+
+        double priority = - (demand - meetDemand) / (1 + (double)(deadline - curTimeSlot + 1)/(deadline - readySlot + 1) ) ;
 
         requirement.setPriority(priority);
         return priority;

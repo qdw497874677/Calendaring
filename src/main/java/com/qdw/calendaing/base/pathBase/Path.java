@@ -69,7 +69,7 @@ public class Path {
         }
         double min = Integer.MAX_VALUE;
         for (Link link : linksMap.values()) {
-            min = Math.min(min,link.getLinkInfoMap().get(timeSlot).getCapacity());
+            min = Math.min(min,link.getLinkInfo(timeSlot).getCapacity());
         }
         residualCapacity.put(timeSlot,min);
         return min;

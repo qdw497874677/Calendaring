@@ -3,11 +3,10 @@ package com.qdw.calendaing.schedulerStregys;
 import com.qdw.calendaing.base.*;
 import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.pathBase.Path;
-import com.qdw.calendaing.base.pathBase.PathProducer;
+import com.qdw.calendaing.base.requirement.Requirements;
+import com.qdw.calendaing.schedulerStregys.VbvpAbstractScheduler;
 import javafx.util.Pair;
 
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -20,7 +19,7 @@ public abstract class VbvpStepsAbstractScheduler extends VbvpAbstractScheduler {
 
     // 计算单个请求的分配结果，并且更新链路带宽
     // 为一个时隙的所有请求计算
-    boolean process(NetContext netContext,Requirements.Requirement requirement,int timeSlot){
+    boolean process(NetContext netContext, Requirements.Requirement requirement, int timeSlot){
         boolean result = false;
         // 计算路径
         List<Pair<Path, Double>> oneStepPath = null;
@@ -46,7 +45,7 @@ public abstract class VbvpStepsAbstractScheduler extends VbvpAbstractScheduler {
             }
             netContext.getNetwork().updateBandwidth(requirement.addFlow(timeSlot, FlowStatus.ZHENGCHANG,pathDoublePair.getKey(),value));
         }
-//        requirement.updatePriority(timeSlot,netContext.getRequirementConfig().getPriorityModifier());
+        requirement.updatePriority(timeSlot,netContext.getRequirementConfig().getPriorityModifier());
 //        requirement.addDemand(value);
         return result;
     }

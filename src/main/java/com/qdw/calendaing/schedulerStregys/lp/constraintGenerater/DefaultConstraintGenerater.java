@@ -2,13 +2,10 @@ package com.qdw.calendaing.schedulerStregys.lp.constraintGenerater;
 
 import com.qdw.calendaing.base.*;
 import com.qdw.calendaing.base.constant.ConstraintType;
-import com.qdw.calendaing.base.constant.FlowStatus;
+import com.qdw.calendaing.base.requirement.Requirements;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 /**
  * @PackageName:com.qdw.calendaing.base
@@ -69,7 +66,7 @@ public class DefaultConstraintGenerater extends AbstractConstraintGenerater {
                     continue;
                 }
                 list.add(1);
-                list.add((int) link.getLinkInfoMap().get(i).getResidualCapacity());
+                list.add((int) link.getLinkInfo(i).getResidualCapacity());
                 res.add(list);
             }
         }

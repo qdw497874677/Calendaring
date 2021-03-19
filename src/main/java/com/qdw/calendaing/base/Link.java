@@ -22,14 +22,23 @@ public class Link {
 	private String id;
 	private Node nodeA;
 	private Node nodeB;
+	private Network network;
 	private Map<Integer,LinkInfo> linkInfoMap = new LinkedHashMap<>();
 	private List<Flow> overlapFlows = new LinkedList<>();
 	private Set<Path> overlapPaths = new HashSet<>();
 
-	public Link(Node nodeA, Node nodeB){
+	public Link(Node nodeA, Node nodeB, Network network){
 		this.id = getLinkId(nodeA.getId(),nodeB.getId());
 		this.nodeA = nodeA;
 		this.nodeB = nodeB;
+		this.network = network;
+	}
+
+	public LinkInfo getLinkInfo(int timeSlot){
+		if (!linkInfoMap.containsKey(timeSlot)){
+			network.addLinkInfo(timeSlot);
+		}
+		return linkInfoMap.get(timeSlot);
 	}
 
 	public void addOverlapFlow(Flow flow) {
@@ -38,8 +47,12 @@ public class Link {
 
 	public void initializeInfo(int slotSize,double capacity,double cost){
 		for (int i = 0; i < slotSize; i++) {
-			linkInfoMap.put(i, new LinkInfo(i, capacity, capacity, cost));
+			addInfo(i, capacity, cost);
 		}
+	}
+
+	public void addInfo(int timeSlot,double capacity,double cost){
+		linkInfoMap.put(timeSlot, new LinkInfo(timeSlot, capacity, capacity, cost));
 	}
 
 	public double decrease(double value,int timeSlot){

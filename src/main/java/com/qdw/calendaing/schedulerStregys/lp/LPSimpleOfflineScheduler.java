@@ -4,17 +4,12 @@ import com.pranav.pojo.Constraint;
 import com.qdw.calendaing.CalendaingResult;
 import com.qdw.calendaing.base.Flow;
 import com.qdw.calendaing.base.NetContext;
-import com.qdw.calendaing.base.Requirements;
-import com.qdw.calendaing.base.constant.ConstraintType;
-import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.ConstraintGenerater;
+import com.qdw.calendaing.base.requirement.Requirements;
 import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.DefaultConstraintGenerater;
 import com.qdw.lpnet.LpUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 

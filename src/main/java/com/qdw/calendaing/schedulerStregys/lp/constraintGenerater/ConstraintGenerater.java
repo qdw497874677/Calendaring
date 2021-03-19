@@ -2,7 +2,6 @@ package com.qdw.calendaing.schedulerStregys.lp.constraintGenerater;
 
 import com.qdw.calendaing.base.Flow;
 import com.qdw.calendaing.base.NetContext;
-import com.qdw.calendaing.base.Requirements;
 import com.qdw.calendaing.base.constant.ConstraintType;
 
 import java.util.Collection;

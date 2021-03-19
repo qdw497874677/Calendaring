@@ -2,7 +2,7 @@ package com.qdw.calendaing.schedulerStregys;
 
 import com.qdw.calendaing.CalendaingResult;
 import com.qdw.calendaing.base.NetContext;
-import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.requirement.Requirements;
 
 import java.util.List;
 

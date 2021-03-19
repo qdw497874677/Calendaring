@@ -6,9 +6,8 @@ import com.qdw.calendaing.base.config.RequirementConfig;
 import com.qdw.calendaing.base.config.TopoConfig;
 import com.qdw.calendaing.base.constant.TopoStrType;
 import com.qdw.calendaing.base.pathBase.kpaths.DelMinBLinkKPathsProducer;
-import com.qdw.calendaing.base.pathBase.kpaths.K_PathsProducer;
 import com.qdw.calendaing.base.pathBase.MaxBandwidthPathProducer;
-import com.qdw.calendaing.base.pathBase.PathProducer;
+import com.qdw.calendaing.base.requirement.Requirements;
 import com.qdw.calendaing.base.requirementBase.RandomRProducer;
 import com.qdw.calendaing.base.requirementBase.RequirementProducer;
 import lombok.Data;
@@ -116,7 +115,7 @@ public class NetContext implements Cloneable {
         network = new Network(numOfTimeSlot);
         network.initializeNetwork(topoConfig,pathConfig);
 //        network.initializeNetwork(null,pathConfig,pathProducer);
-        //System.out.println(network.getPathCacheInfo());
+        System.out.println(network.getPathCacheInfo());
 
         // ≥ı ºªØ«Î«Û
         requirements = new Requirements(requirementConfig);
@@ -127,7 +126,7 @@ public class NetContext implements Cloneable {
     public void refresh(Requirements requirements){
         network = new Network(numOfTimeSlot);
         network.initializeNetwork(topoConfig,pathConfig);
-        //System.out.println(network.getPathCacheInfo());
+        System.out.println(network.getPathCacheInfo());
         this.requirements = requirements.clone();
     }
 

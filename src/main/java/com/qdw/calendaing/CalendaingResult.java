@@ -1,7 +1,7 @@
 package com.qdw.calendaing;
 
 import com.qdw.calendaing.base.Flow;
-import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.requirement.Requirements;
 import com.qdw.calendaing.base.constant.FlowStatus;
 import lombok.Data;
 
@@ -162,12 +162,7 @@ public class CalendaingResult {
                 }
             }
         }
-        BigDecimal bigDecimal = null;
-        if (sumDemand == 0){
-            bigDecimal = new BigDecimal(0);
-        }else {
-            bigDecimal = new BigDecimal(sum*100/sumDemand);
-        }
+        BigDecimal bigDecimal = new BigDecimal(sum*100/sumDemand);
         return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
     }
 

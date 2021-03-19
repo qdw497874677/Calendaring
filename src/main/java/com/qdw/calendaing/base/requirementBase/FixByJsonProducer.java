@@ -2,7 +2,7 @@ package com.qdw.calendaing.base.requirementBase;
 
 import com.alibaba.fastjson.JSONObject;
 import com.qdw.calendaing.base.Network;
-import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.requirement.Requirements;
 import com.qdw.calendaing.base.config.RequirementConfig;
 
 import java.util.Collections;

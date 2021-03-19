@@ -6,22 +6,14 @@ import com.qdw.calendaing.base.Flow;
 import com.qdw.calendaing.base.config.PathConfig;
 import com.qdw.calendaing.base.config.RequirementConfig;
 import com.qdw.calendaing.base.pathBase.BdwLimitProducer;
-import com.qdw.calendaing.base.pathBase.MaxBandwidthPathWithBdwLimitProducer;
-import com.qdw.calendaing.base.Requirements;
+import com.qdw.calendaing.base.requirement.Requirements;
 import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathProducer;
-import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathWithBdwLimitProducer;
 import com.qdw.calendaing.base.pathBase.kpaths.SimpleKPathsProducer;
-import com.qdw.calendaing.base.requirementBase.RandomRProducer;
-import com.qdw.calendaing.base.requirementBase.RandomReqWithBwLimitProducer;
 import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
 import com.qdw.calendaing.schedulerStregys.*;
 import com.qdw.calendaing.base.NetContext;
-import com.qdw.calendaing.schedulerStregys.lp.LPSimpleOfflineScheduler;
-import com.qdw.calendaing.schedulerStregys.lp.LPStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPStepsOnlineScheduler;
-import com.qdw.calendaing.schedulerStregys.lp.LPWithBdwLimitScheduler;
-import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.WithBdwLimitConstraintGenerater;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -69,17 +61,16 @@ public class Main {
                 new SimpleKPathsProducer());
 
 //        RequirementConfig requirementConfig = new RequirementConfig(0,19,getReqsJsonList());
-//        RequirementConfig requirementConfig = new RequirementConfig(0,19,
-//                new MaxCS_PM(),
-//                getReqsJsonListWithBdwLimit());
-        RequirementConfig requirementConfig = new RequirementConfig(
-                20,
-                0,
-                19,
-                6,
+        RequirementConfig requirementConfig = new RequirementConfig(0,19,
+                new MaxCS_PM(),
+                getReqsJsonListWithBdwLimit());
+//        RequirementConfig requirementConfig = new RequirementConfig(
+//                6,
+//                0,
+//                19,
+//                6,
 //                new RandomRProducer()
-                new RandomReqWithBwLimitProducer()
-        );
+//        );
 
 
         NetContext netContext = NetContext.getNetContext(
@@ -101,11 +92,10 @@ public class Main {
 //        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
 //            scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 //            scheduler = new VbvpEarliestOnlineScheduler();// 在线、全时隙
-            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
-
-//        scheduler = new LPWithBdwLimitScheduler(new LPSimpleOfflineScheduler());// 离线、全时隙、LP
-//            scheduler = new LPWithBdwLimitScheduler(new LPStepsOfflineScheduler());// 离线、分时隙、LP
-//             scheduler = new LPWithBdwLimitScheduler(new LPStepsOnlineScheduler());// 在线、分时隙、LP
+//            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
+//        scheduler = new LPSimpleOfflineScheduler();// 离线、全时隙、LP
+//            scheduler = new LPStepsOfflineScheduler();// 离线、分时隙、LP
+             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
 //        scheduler = new LPWithBdwLimitScheduler(new LPSimpleOfflineScheduler());
 
         CalendaingResult calendaingResult = scheduler.calendaing(netContext);
@@ -119,10 +109,8 @@ public class Main {
         netContext.setMulti(true);
 
 //        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
-        scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
-//            scheduler = new VbvpEarliestOnlineScheduler();// 在线、全时隙
-//        scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
-
+//        scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
+        scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
         CalendaingResult calendaingResult2 = scheduler.calendaing(netContext);
         String print2 = getPrint(calendaingResult2, netContext);
 
@@ -168,7 +156,7 @@ public class Main {
     static public String getPrint(CalendaingResult calendaingResult,NetContext netContext){
         StringBuilder res = new StringBuilder();
         res.append(calendaingResult);
-        res.append(netContext.getNetwork().getLinksInfo());
+        res.append(netContext.getNetwork().getLinksInfo()).append("\n");
         res.append("完成率：").append(calendaingResult.getAcceptRate()).append("\n");
         res.append("数据传输率：").append(calendaingResult.getThroughputRate()).append("\n");
         res.append("总路径数量：").append(netContext.getNetwork().getPathCacheSize()).append("\n");
