@@ -48,7 +48,7 @@ public class Flow {
 	@Override
 	public String toString() {
 		return "Flow [id=" + id + ", path=" +
-				path.getPathStr() +
+				String.valueOf(path==null?"ÐéÄâ":path.getPathStr()) +
 				", timestep=" + timeSlot +  ", value=" + value + ", Rid=" +
 
 				thisR.getId() + "]";

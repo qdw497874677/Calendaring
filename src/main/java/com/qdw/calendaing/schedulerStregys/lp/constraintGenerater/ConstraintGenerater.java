@@ -9,9 +9,9 @@ import java.util.List;
 
 public interface ConstraintGenerater {
 
- List<List<Integer>> generateAll(NetContext netContext, Collection<Flow> flows);
+ List<List<Double>> generateAll(NetContext netContext, Collection<Flow> flows);
 
- List<List<Integer>> generateOne(NetContext netContext, Collection<Flow> flows, ConstraintType constraintType);
+ List<List<Double>> generateOne(NetContext netContext, Collection<Flow> flows, ConstraintType constraintType);
 
- List<Integer> getObjFunc(NetContext netContext, Collection<Flow> flows);
+ List<Double> getObjFunc(NetContext netContext, Collection<Flow> flows);
 }

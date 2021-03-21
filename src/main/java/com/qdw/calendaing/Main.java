@@ -13,7 +13,12 @@ import com.qdw.calendaing.base.pathBase.kpaths.SimpleKPathsProducer;
 import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
 import com.qdw.calendaing.schedulerStregys.*;
 import com.qdw.calendaing.base.NetContext;
+import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.FD_VbvpStepsOfflineScheduler;
+import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.lp.FD_LPStepsOfflineScheduler;
+import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.lp.FD_LPWithBdwLimitScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPStepsOnlineScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPWithBdwLimitScheduler;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -48,11 +53,13 @@ public class Main {
         int numOfNode = 3;
         double capacity = 10.0;
 
+
+
 //        PathConfig pathConfig = new PathConfig(6,10,
 //                new MaxBandwidthPathProducer(),
 //                new SimpleKPathsProducer());
 
-        PathConfig pathConfig = new PathConfig(6,10,
+        PathConfig pathConfig = new PathConfig(2,10,
 //                new ShortestMaxBandwidthPathWithBdwLimitProducer(),
                 new BdwLimitProducer(new ShortestMaxBandwidthPathProducer()),
 //                new ShortestMaxBandwidthPathProducer(),
@@ -63,7 +70,8 @@ public class Main {
 //        RequirementConfig requirementConfig = new RequirementConfig(0,19,getReqsJsonList());
         RequirementConfig requirementConfig = new RequirementConfig(0,19,
                 new MaxCS_PM(),
-                getReqsJsonListWithBdwLimit());
+//                getReqsJsonListWithBdwLimit1());
+                getReqsJsonListWithBdwLimit2());
 //        RequirementConfig requirementConfig = new RequirementConfig(
 //                6,
 //                0,
@@ -95,8 +103,11 @@ public class Main {
 //            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
 //        scheduler = new LPSimpleOfflineScheduler();// 离线、全时隙、LP
 //            scheduler = new LPStepsOfflineScheduler();// 离线、分时隙、LP
-             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
+//        scheduler = new LPWithBdwLimitScheduler(new LPStepsOfflineScheduler());// 离线、分时隙、LP
+//             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
 //        scheduler = new LPWithBdwLimitScheduler(new LPSimpleOfflineScheduler());
+
+        scheduler = new FD_VbvpStepsOfflineScheduler();
 
         CalendaingResult calendaingResult = scheduler.calendaing(netContext);
         String print = getPrint(calendaingResult, netContext);
@@ -110,7 +121,9 @@ public class Main {
 
 //        scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
 //        scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
-        scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
+//        scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
+//        scheduler = new LPWithBdwLimitScheduler(new LPStepsOfflineScheduler());// 离线、分时隙、LP
+        scheduler = new LPWithBdwLimitScheduler(new FD_LPStepsOfflineScheduler());// 离线、分时隙、LP
         CalendaingResult calendaingResult2 = scheduler.calendaing(netContext);
         String print2 = getPrint(calendaingResult2, netContext);
 
@@ -135,7 +148,7 @@ public class Main {
         list.add(json5);
         return list;
     }
-    static public List<JSONObject> getReqsJsonListWithBdwLimit(){
+    static public List<JSONObject> getReqsJsonListWithBdwLimit1(){
         JSONObject json1 = Requirements.getJson(0, 1, 2, 4, 18, 8);
         JSONObject json2 = Requirements.getJson(1, 2, 1, 8, 80,9);
         JSONObject json3 = Requirements.getJson(0, 2, 0, 6, 28,7);
@@ -147,9 +160,16 @@ public class Main {
         list.add(json3);
         list.add(json4);
         list.add(json5);
-
-
         return list.stream().limit(5).collect(Collectors.toList());
+    }
+
+    static public List<JSONObject> getReqsJsonListWithBdwLimit2(){
+        JSONObject json1 = Requirements.getJson(0, 1, 0, 2, 34, 8);
+        JSONObject json2 = Requirements.getJson(1, 2, 0, 1, 26,9);
+        List<JSONObject> list = new LinkedList<>();
+        list.add(json1);
+        list.add(json2);
+        return list.stream().limit(2).collect(Collectors.toList());
     }
 
 
@@ -168,6 +188,8 @@ public class Main {
 //        res.append("流：").append(netContext.getRequirements().get).append("\n");
         res.append("耗时：").append(calendaingResult.getTotalTime()).append("ms").append("\n");
         res.append("未完成请求的传输率：").append(calendaingResult.getReservedRateButRejected()).append("\n");
+        res.append("按时完成率:").append(calendaingResult.getOAR()).append("\n");
+        res.append("平均预留延迟率:").append(calendaingResult.getARDR()).append("\n");
 
         for (Requirements.Requirement requirement : netContext.getRequirements().getRequirements()) {
             if (requirement.getMeetDemand()>requirement.getDemand()){

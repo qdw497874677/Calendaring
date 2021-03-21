@@ -24,9 +24,9 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 public abstract class AbstractLPScheduler implements Scheduler {
 
-    ConstraintGenerater constraintGenerater;
+    public ConstraintGenerater constraintGenerater;
 
-    void setFlows(double[] res, Collection<Flow> flows, int timeSlot){
+    public void setFlows(double[] res, Collection<Flow> flows, int timeSlot){
         if (flows.size()!=res.length){
 //            throw new Exception("流数量和结果数量不一致");
             System.out.println("___________________________流数量和结果数量不一致");
@@ -39,16 +39,17 @@ public abstract class AbstractLPScheduler implements Scheduler {
                 continue;
             }
             Requirements.Requirement r = flow.getThisR();
-            r.setMeetDemand(r.getMeetDemand()+flow.getValue());
+            r.setMeetDemand(r.getMeetDemand()+Math.ceil(flow.getValue()));
             // 如果满足需求就将请求状态改变
             if (r.getDemand() <= r.getMeetDemand()){
-                System.out.println("!!!!"+r.getDemand()+"  "+r.getMeetDemand());
+//                System.out.println("!!!!"+r.getDemand()+"  "+r.getMeetDemand());
                 r.setAccpted(true);
+                r.setRealFinishSlot(timeSlot);
             }
         }
     }
 
-    void setFlows(double[] res,NetContext netContext){
+    public void setFlows(double[] res,NetContext netContext){
         Requirements requirements = netContext.getRequirements();
         int i = 0;
         for (Requirements.Requirement requirement : requirements.getRequirements()) {
@@ -68,20 +69,22 @@ public abstract class AbstractLPScheduler implements Scheduler {
             requirement.setMeetDemand(sum);
             if (sum == requirement.getDemand()){
                 requirement.setAccpted(true);
+
             }
         }
     }
 
-    List<Constraint> setCons(List<List<Integer>> lists){
+    public List<Constraint> setCons(List<List<Double>> lists){
         List<Constraint> constraints = new ArrayList<>();
-        for (List<Integer> list : lists) {
+        for (List<Double> list : lists) {
 //            System.out.println("list size:"+list.size());
             Constraint constraint = new Constraint();
+//            .map((a)->{return Double.parseDouble(a+"");})
             constraint.setCoefficient(list.stream()
                     .limit(list.size()-2)
                     .map(String::valueOf)
                     .collect(Collectors.joining(" ")));
-            constraint.setEquality(list.get(list.size()-2));
+            constraint.setEquality(list.get(list.size()-2).intValue());
             constraint.setConstraintValue(list.get(list.size()-1));
             constraints.add(constraint);
 //            System.out.println("@@@@:"+constraint);
@@ -90,7 +93,7 @@ public abstract class AbstractLPScheduler implements Scheduler {
     }
 
     // 更新请求优先级
-    void updateP(Collection<Flow> flows, int timeSlot, NetContext netContext){
+    public void updateP(Collection<Flow> flows, int timeSlot, NetContext netContext){
         Requirements.Requirement pre = null;
         for (Flow flow : flows) {
             if (flow.getThisR()!=pre){
@@ -101,19 +104,19 @@ public abstract class AbstractLPScheduler implements Scheduler {
 
     }
 
-    void updatePaths(NetContext netContext,int timeSlot){
+    public void updatePaths(NetContext netContext,int timeSlot){
         Map<String, List<Path>> pathCache = netContext.getNetwork().getPathCache();
         pathCache.clear();
         netContext.getNetwork().updatePaths(timeSlot,netContext);
     }
 
-    void setConstraintGenerater(ConstraintGenerater constraintGenerater){
+    public void setConstraintGenerater(ConstraintGenerater constraintGenerater){
         this.constraintGenerater = constraintGenerater;
     }
 
     public List<Constraint> getConstraints(NetContext netContext, List<Flow> flows){
         List<Constraint> constraints = new ArrayList<>();
-        constraintGenerater.generateAll(netContext,flows);
+//        constraintGenerater.generateAll(netContext,flows);
         constraints.addAll(setCons(constraintGenerater.generateAll(netContext,flows)));
 //        constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,ConstraintType.RONGLIANG)));
 //        constraints.addAll(setCons(constraintGenerater.generate(netContext,flows,ConstraintType.XUQIU)));

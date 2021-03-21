@@ -9,11 +9,13 @@ import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathWithBdwLimitProd
 import com.qdw.calendaing.base.requirementBase.RandomRProducer;
 import com.qdw.calendaing.base.pathBase.MaxBandwidthPathProducer;
 import com.qdw.calendaing.base.pathBase.kpaths.SimpleKPathsProducer;
+import com.qdw.calendaing.base.requirementBase.RandomReqWithBwLimitProducer;
 import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
 import com.qdw.calendaing.base.requirementBase.priority.MaxTP_PM;
 import com.qdw.calendaing.dataCollecting.ToFileDataCollecter;
 import com.qdw.calendaing.schedulerStregys.*;
 import com.qdw.calendaing.base.NetContext;
+import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.lp.FD_LPStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPSimpleOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPStepsOnlineScheduler;
@@ -35,10 +37,10 @@ public class TestBed {
     public static void main(String[] args) {
 //        test(50);
 //        test(100);
-        test(200);
+//        test(200);
 //        test(300);
 //        test(400);
-//        test(500);
+        test(500);
     }
 
 
@@ -74,7 +76,8 @@ public class TestBed {
                 0,
                 19,
                 6,
-                new RandomRProducer(),
+//                new RandomRProducer(),
+                new RandomReqWithBwLimitProducer(),
 
                 new MaxCS_PM()
 //                new MaxTP_PM()
@@ -93,7 +96,7 @@ public class TestBed {
         );
 
         // 实验次数
-        int time = 100;
+        int time = 1;
         List<CalendaingResult> list = new LinkedList<>();
         StringBuilder print = new StringBuilder();
 //        netContext.setPathProducer(new MaxBandwidthPathProducer());
@@ -106,7 +109,7 @@ public class TestBed {
 //            scheduler = new VbvpEarliestOfflineScheduler();// 离线、全时隙
 //            scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 //            scheduler = new VbvpEarliestOnlineScheduler();// 在线、全时隙
-            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
+//            scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
 
 
 //             scheduler = new LPSimpleOfflineScheduler();// 离线、全时隙、LP
@@ -118,7 +121,8 @@ public class TestBed {
 //             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
 //             scheduler = new LPWithBdwLimitScheduler(new LPStepsOnlineScheduler());// 在线、分时隙、LP
 
-
+//            scheduler = new FD_LPStepsOfflineScheduler();// 离线、分时隙、LP
+            scheduler = new LPWithBdwLimitScheduler(new FD_LPStepsOfflineScheduler());
 
             long start = System.currentTimeMillis();
             CalendaingResult calendaingResult = scheduler.calendaing(netContext);

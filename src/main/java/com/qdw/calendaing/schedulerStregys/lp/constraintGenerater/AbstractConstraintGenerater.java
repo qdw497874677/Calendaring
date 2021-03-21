@@ -24,8 +24,8 @@ public abstract class AbstractConstraintGenerater implements ConstraintGenerater
 
 
     @Override
-    public List<List<Integer>> generateAll(NetContext netContext, Collection<Flow> flows) {
-        List<List<Integer>> res = new LinkedList<>();
+    public List<List<Double>> generateAll(NetContext netContext, Collection<Flow> flows) {
+        List<List<Double>> res = new LinkedList<>();
         res.addAll(generateOne(netContext,flows,ConstraintType.RONGLIANG));
         res.addAll(generateOne(netContext,flows,ConstraintType.LIULIANG));
         res.addAll(generateOne(netContext,flows,ConstraintType.XUQIU));
@@ -33,14 +33,15 @@ public abstract class AbstractConstraintGenerater implements ConstraintGenerater
     }
 
 
-    Integer getCost(Flow flow,int plusValue,int valueOfXUNI){
+    public Double getCost(Flow flow,double plusValue,int valueOfXUNI){
 
         if (flow.getStatus().equals(FlowStatus.ZHENGCHANG)){
             // 如果是正常流，则将所对应的请求的优先级也介入流的权值的计算
-            return flow.getPath().getPath().size() + plusValue;
+            return flow.getPath().getPath().size() * plusValue;
         }else {
-//            return valueOfXUNI;
-            return plusValue * 100;
+            return (double)valueOfXUNI;
+//            return -plusValue * 100;
+//            return (int)(Integer.MAX_VALUE/(flow.getThisR().getDemand() - flow.getThisR().getMeetDemand()));
         }
     }
     Integer getCost(Flow flow){

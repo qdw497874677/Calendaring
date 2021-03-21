@@ -1,8 +1,12 @@
-package com.qdw.calendaing.schedulerStregys.lp.constraintGenerater;
+package com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.lp;
 
-import com.qdw.calendaing.base.*;
+import com.qdw.calendaing.base.Flow;
+import com.qdw.calendaing.base.Link;
+import com.qdw.calendaing.base.NetContext;
+import com.qdw.calendaing.base.Network;
 import com.qdw.calendaing.base.constant.ConstraintType;
 import com.qdw.calendaing.base.requirement.Requirements;
+import com.qdw.calendaing.schedulerStregys.lp.constraintGenerater.AbstractConstraintGenerater;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
@@ -71,7 +75,7 @@ public class OneSlotConstraintGenerater extends AbstractConstraintGenerater {
                 continue;
             }
             list.add(1.0);
-            System.out.println(link.getLinkInfoMap().size());
+//            System.out.println(link.getLinkInfoMap().size());
             list.add(link.getLinkInfo(timeSlot).getResidualCapacity());
             res.add(list);
         }
@@ -134,7 +138,7 @@ public class OneSlotConstraintGenerater extends AbstractConstraintGenerater {
                 list.add(0.0);
             }
             list.add(3.0);
-            list.add((requirement.getDemand()-requirement.getMeetDemand()));
+            list.add(requirement.getDemand()-requirement.getMeetDemand());
             res.add(list);
         }
 
@@ -148,7 +152,7 @@ public class OneSlotConstraintGenerater extends AbstractConstraintGenerater {
     public List<Double> getObjFunc(NetContext netContext, Collection<Flow> flows) {
         List<Double> res = new LinkedList<>();
         for (Flow flow : flows) {
-            res.add(getCost(flow, (- flow.getThisR().getPriority()),1000));
+            res.add(getCost(flow, (int)(- flow.getThisR().getPriority()),1000));
     }
         return res;
     }

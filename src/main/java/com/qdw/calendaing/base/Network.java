@@ -28,6 +28,15 @@ public class Network implements Cloneable {
     private Map<String,List<Path>> pathCache = new LinkedHashMap<>();
     private TopoConfig topoConfig;
 
+//    private static Network instance = null;
+//
+//    synchronized private static Network getInstance(){
+//        if (instance == null){
+//            instance = new Network();
+//        }
+//        return instance;
+//    }
+
     // ‘› ±–¥À¿
     int cost = 1;
 //    private Flow flows = new Flow();

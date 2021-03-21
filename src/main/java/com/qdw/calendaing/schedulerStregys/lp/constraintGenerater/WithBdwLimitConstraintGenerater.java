@@ -23,8 +23,8 @@ public class WithBdwLimitConstraintGenerater extends AbstractConstraintGenerater
     }
 
     @Override
-    public List<List<Integer>> generateAll(NetContext netContext, Collection<Flow> flows) {
-        List<List<Integer>> res = new LinkedList<>();
+    public List<List<Double>> generateAll(NetContext netContext, Collection<Flow> flows) {
+        List<List<Double>> res = new LinkedList<>();
         res.addAll(generateOne(netContext,flows,ConstraintType.RONGLIANG));
         res.addAll(generateOne(netContext,flows,ConstraintType.LIULIANG));
         res.addAll(generateOne(netContext,flows,ConstraintType.XUQIU));
@@ -33,7 +33,7 @@ public class WithBdwLimitConstraintGenerater extends AbstractConstraintGenerater
     }
 
     @Override
-    public List<List<Integer>> generateOne(NetContext netContext, Collection<Flow> flows, ConstraintType constraintType) {
+    public List<List<Double>> generateOne(NetContext netContext, Collection<Flow> flows, ConstraintType constraintType) {
         if (constraintType.equals(ConstraintType.MAXBDW)){
             return getMBCons(netContext,flows);
         }
@@ -41,29 +41,29 @@ public class WithBdwLimitConstraintGenerater extends AbstractConstraintGenerater
     }
 
     // 获取最大带宽约束
-    private List<List<Integer>> getMBCons(NetContext netContext,Collection<Flow> flows){
+    private List<List<Double>> getMBCons(NetContext netContext,Collection<Flow> flows){
         int flowsOfAll = flows.size();
         System.out.println("所有初始流的数量为:"+flowsOfAll);
 
-        List<List<Integer>> res = new LinkedList<>();
+        List<List<Double>> res = new LinkedList<>();
         int prefix = 0;
         for (Flow flow : flows) {
-            List<Integer> list = new ArrayList<>(flowsOfAll+2);
+            List<Double> list = new ArrayList<>(flowsOfAll+2);
             double maxBdw = flow.getThisR().getMaxBdw();
             if (flow.getStatus().equals(FlowStatus.XUNI) || maxBdw<=0){
                 prefix++;
                 continue;
             }
             for (int i = 0; i < prefix; i++) {
-                list.add(0);
+                list.add(0.0);
             }
-            list.add(1);
+            list.add(1.0);
             while (list.size()<flowsOfAll){
-                list.add(0);
+                list.add(0.0);
             }
 
-            list.add(1);
-            list.add((int)maxBdw);
+            list.add(1.0);
+            list.add(maxBdw);
             prefix++;
             res.add(list);
         }
@@ -73,7 +73,7 @@ public class WithBdwLimitConstraintGenerater extends AbstractConstraintGenerater
     }
 
     @Override
-    public List<Integer> getObjFunc(NetContext netContext, Collection<Flow> flows) {
+    public List<Double> getObjFunc(NetContext netContext, Collection<Flow> flows) {
         return constraintGenerater.getObjFunc(netContext,flows);
     }
 }

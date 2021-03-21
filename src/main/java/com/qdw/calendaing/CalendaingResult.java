@@ -20,6 +20,10 @@ import java.util.List;
 public class CalendaingResult {
     private List<Requirements.Requirement> accepted = new LinkedList<>();
     private List<Requirements.Requirement> rejected = new LinkedList<>();
+
+    private List<Requirements.Requirement> onTime = new LinkedList<>();
+    private List<Requirements.Requirement> delay = new LinkedList<>();
+
     private double sumOfDemand = 0;
     private double sumMeetDemand = 0;
     private long totalTime = 0;
@@ -29,6 +33,15 @@ public class CalendaingResult {
         accepted.add(requirement);
         sumDemand(requirement);
         sumMeetDemand(requirement);
+
+//        System.out.println("!!!!!!!!!!");
+//        System.out.println("requirement.getRealFinishSlot():"+requirement.getRealFinishSlot() + "   requirement.getDeadline():"+requirement.getDeadline());
+
+        if (requirement.getDeadline() < requirement.getRealFinishSlot()){
+            delay.add(requirement);
+        }else {
+            onTime.add(requirement);
+        }
     }
 
     public void reject(Requirements.Requirement requirement){
@@ -37,6 +50,7 @@ public class CalendaingResult {
         sumDemand(requirement);
         sumMeetDemand(requirement);
     }
+
 
     public void setResultOneTime(Requirements requirements){
         for (Requirements.Requirement requirement : requirements.getRequirements()) {
@@ -162,6 +176,9 @@ public class CalendaingResult {
                 }
             }
         }
+        if (sumDemand==0){
+            return 0+"%";
+        }
         BigDecimal bigDecimal = new BigDecimal(sum*100/sumDemand);
         return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
     }
@@ -204,6 +221,34 @@ public class CalendaingResult {
         return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"";
     }
 
+    // 按时完成率
+    public String getOAR(){
+        int b = onTime.size() + delay.size();
+        if (b == 0){
+            return "0";
+        }else {
+            BigDecimal bigDecimal = new BigDecimal(onTime.size()/b * 100);
+            return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
+        }
+    }
+
+    // 平均预留延迟率
+    public String getARDR(){
+        if (delay.size() == 0){
+            return "0";
+        }else {
+            double a = 0;
+            for (Requirements.Requirement requirement : delay) {
+                a = requirement.getRealFinishSlot() - requirement.getDeadline();
+            }
+            double b = 0;
+            for (Requirements.Requirement requirement : delay) {
+                b = requirement.getDeadline() - requirement.getReadySlot();
+            }
+            BigDecimal bigDecimal = new BigDecimal(a/b * 100);
+            return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
+        }
+    }
 
     @Override
     public String toString() {
