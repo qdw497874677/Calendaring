@@ -6,6 +6,7 @@ import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.constant.TopoStrType;
 import com.qdw.calendaing.base.pathBase.Path;
 import com.qdw.calendaing.base.pathBase.PathProducer;
+import com.qdw.calendaing.base.requirement.Requirements;
 import javafx.util.Pair;
 import lombok.Data;
 import org.apache.commons.lang.StringUtils;
@@ -172,6 +173,19 @@ public class Network implements Cloneable {
             updateBandwidth(flows);
         }
     }
+
+    public void updateBandwidth(Requirements.Requirement requirement, int timeSlot){
+        List<Flow> flows = requirement.getFlowsOfR().get(timeSlot);
+        if (flows!=null){
+            for (Flow flow : flows) {
+                if (flow.getStatus()!=FlowStatus.ZHENGCHANG){
+                    continue;
+                }
+                updateBandwidth(flow.getPath(), timeSlot, timeSlot, flow.getValue());
+            }
+        }
+    }
+
     public void updateBandwidth(List<Flow> flows){
         for (Flow flow : flows) {
             updateBandwidth(flow.getPath(),flow.getTimeSlot(),flow.getValue());

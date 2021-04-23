@@ -6,16 +6,22 @@ import com.qdw.calendaing.base.Flow;
 import com.qdw.calendaing.base.config.PathConfig;
 import com.qdw.calendaing.base.config.RequirementConfig;
 import com.qdw.calendaing.base.pathBase.BdwLimitProducer;
+import com.qdw.calendaing.base.pathBase.MaxBandwidthPathProducer;
+import com.qdw.calendaing.base.pathBase.kpaths.DelMinBLinkKPathsProducer;
 import com.qdw.calendaing.base.requirement.Requirements;
 import com.qdw.calendaing.base.constant.FlowStatus;
 import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathProducer;
 import com.qdw.calendaing.base.pathBase.kpaths.SimpleKPathsProducer;
+import com.qdw.calendaing.base.requirementBase.RandomRProducer;
+import com.qdw.calendaing.base.requirementBase.RandomReqWithBwLimitProducer;
 import com.qdw.calendaing.base.requirementBase.priority.MaxCS_PM;
 import com.qdw.calendaing.schedulerStregys.*;
 import com.qdw.calendaing.base.NetContext;
+import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.FD_VbvpEarliestOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.FD_VbvpStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.lp.FD_LPStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.lp.FD_LPWithBdwLimitScheduler;
+import com.qdw.calendaing.schedulerStregys.lp.LPSimpleOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPStepsOnlineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPWithBdwLimitScheduler;
@@ -46,7 +52,7 @@ public class Main {
         // ESNET 21
 //        String topoStr = "0-1,0-3,0-5,0-6,0-12,1-5,2-3,3-4,3-6,3-8,5-6,6-7,6-10,7-8,8-9,9-15,9-10,10-12,11-12,12-13,12-16,12-17,13-14,13-15,14-15,14-17,9-15,15-17,16-17,16-18,16-20,15-17,16-17,17-18,18-19,18-20";
 //        int numOfNode = 21;
-//        double capacity = 40.0;
+//        double capacity = 20.0;
 
         // SMALL 3
         String topoStr = "0-1,0-2,1-2";
@@ -59,25 +65,28 @@ public class Main {
 //                new MaxBandwidthPathProducer(),
 //                new SimpleKPathsProducer());
 
-        PathConfig pathConfig = new PathConfig(2,10,
+        PathConfig pathConfig = new PathConfig(6,10,
 //                new ShortestMaxBandwidthPathWithBdwLimitProducer(),
+//                new BdwLimitProducer(new MaxBandwidthPathProducer()),
                 new BdwLimitProducer(new ShortestMaxBandwidthPathProducer()),
 //                new ShortestMaxBandwidthPathProducer(),
 //                new ShortestMaxBandwidthPathProducer(),
 //                new MaxBandwidthPathWithBdwLimitProducer(),
-                new SimpleKPathsProducer());
+//                new SimpleKPathsProducer());
+                new DelMinBLinkKPathsProducer());
 
 //        RequirementConfig requirementConfig = new RequirementConfig(0,19,getReqsJsonList());
         RequirementConfig requirementConfig = new RequirementConfig(0,19,
                 new MaxCS_PM(),
 //                getReqsJsonListWithBdwLimit1());
-                getReqsJsonListWithBdwLimit2());
+//                getReqsJsonListWithBdwLimit2());
+                getReqsJsonListWithBdwLimit3());
 //        RequirementConfig requirementConfig = new RequirementConfig(
-//                6,
+//                300,
 //                0,
 //                19,
-//                6,
-//                new RandomRProducer()
+//                10,
+//                new RandomReqWithBwLimitProducer()
 //        );
 
 
@@ -107,6 +116,7 @@ public class Main {
 //             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
 //        scheduler = new LPWithBdwLimitScheduler(new LPSimpleOfflineScheduler());
 
+//        scheduler = new FD_VbvpEarliestOfflineScheduler();
         scheduler = new FD_VbvpStepsOfflineScheduler();
 
         CalendaingResult calendaingResult = scheduler.calendaing(netContext);
@@ -123,7 +133,10 @@ public class Main {
 //        scheduler = new VbvpStepsOfflineScheduler();// 离线、分时隙
 //        scheduler = new VbvpStepsOnlineScheduler();// 在线、分时隙
 //        scheduler = new LPWithBdwLimitScheduler(new LPStepsOfflineScheduler());// 离线、分时隙、LP
-        scheduler = new LPWithBdwLimitScheduler(new FD_LPStepsOfflineScheduler());// 离线、分时隙、LP
+
+//        scheduler = new FD_VbvpEarliestOfflineScheduler();
+        scheduler = new FD_VbvpStepsOfflineScheduler();
+//        scheduler = new LPWithBdwLimitScheduler(new FD_LPStepsOfflineScheduler());// 离线、分时隙、LP
         CalendaingResult calendaingResult2 = scheduler.calendaing(netContext);
         String print2 = getPrint(calendaingResult2, netContext);
 
@@ -163,6 +176,21 @@ public class Main {
         return list.stream().limit(5).collect(Collectors.toList());
     }
 
+    static public List<JSONObject> getReqsJsonListWithBdwLimit3(){
+        JSONObject json1 = Requirements.getJson(0, 1, 2, 4, 30, 8);
+        JSONObject json2 = Requirements.getJson(1, 2, 2, 6, 40,6);
+        JSONObject json3 = Requirements.getJson(0, 2, 0, 3, 28,7);//0
+        JSONObject json4 = Requirements.getJson(0, 1, 1, 2, 16,8);
+        JSONObject json5 = Requirements.getJson(1, 2, 0, 4, 25,9);//1
+        List<JSONObject> list = new LinkedList<>();
+        list.add(json1);
+        list.add(json2);
+        list.add(json3);
+        list.add(json4);
+        list.add(json5);
+        return list.stream().limit(5).collect(Collectors.toList());
+    }
+
     static public List<JSONObject> getReqsJsonListWithBdwLimit2(){
         JSONObject json1 = Requirements.getJson(0, 1, 0, 2, 34, 8);
         JSONObject json2 = Requirements.getJson(1, 2, 0, 1, 26,9);
@@ -175,8 +203,8 @@ public class Main {
 
     static public String getPrint(CalendaingResult calendaingResult,NetContext netContext){
         StringBuilder res = new StringBuilder();
-        res.append(calendaingResult);
-        res.append(netContext.getNetwork().getLinksInfo()).append("\n");
+//        res.append(calendaingResult);
+//        res.append(netContext.getNetwork().getLinksInfo()).append("\n");
         res.append("完成率：").append(calendaingResult.getAcceptRate()).append("\n");
         res.append("数据传输率：").append(calendaingResult.getThroughputRate()).append("\n");
         res.append("总路径数量：").append(netContext.getNetwork().getPathCacheSize()).append("\n");
@@ -188,22 +216,26 @@ public class Main {
 //        res.append("流：").append(netContext.getRequirements().get).append("\n");
         res.append("耗时：").append(calendaingResult.getTotalTime()).append("ms").append("\n");
         res.append("未完成请求的传输率：").append(calendaingResult.getReservedRateButRejected()).append("\n");
-        res.append("按时完成率:").append(calendaingResult.getOAR()).append("\n");
-        res.append("平均预留延迟率:").append(calendaingResult.getARDR()).append("\n");
+        res.append("按时完成率:").append(calendaingResult.getOAR()).append("%\n");
+        res.append("平均预留延迟率:").append(calendaingResult.getARDR()).append("%\n");
+        res.append("按时完成传输率:").append(calendaingResult.getOADR()).append("%\n");
+        res.append("ECT:").append(calendaingResult.getECT()).append("\n");
+        res.append("平均带宽消耗:").append(calendaingResult.getBC()).append("\n");
+        res.append("按时传输数据量:").append(calendaingResult.getOTDV()).append("\n");
 
-        for (Requirements.Requirement requirement : netContext.getRequirements().getRequirements()) {
-            if (requirement.getMeetDemand()>requirement.getDemand()){
-               res.append("!!!").append(requirement.getMeetDemand()).append("  ").append(requirement.getDemand()).append("\n");
-                for (List<Flow> flows : requirement.getFlowsOfR().values()) {
-                    for (Flow flow : flows) {
-                        res.append(flow).append(" ").append(flow.getValue()).append("\n");
-                            if (flow.getStatus().equals(FlowStatus.XUNI)){
-                            res.append(" 是虚拟流  ").append("\n");
-                        }
-                    }
-                }
-            }
-        }
+//        for (Requirements.Requirement requirement : netContext.getRequirements().getRequirements()) {
+//            if (requirement.getMeetDemand()>requirement.getDemand()){
+//               res.append("!!!").append(requirement.getMeetDemand()).append("  ").append(requirement.getDemand()).append("\n");
+//                for (List<Flow> flows : requirement.getFlowsOfR().values()) {
+//                    for (Flow flow : flows) {
+//                        res.append(flow).append(" ").append(flow.getValue()).append("\n");
+//                            if (flow.getStatus().equals(FlowStatus.XUNI)){
+//                            res.append(" 是虚拟流  ").append("\n");
+//                        }
+//                    }
+//                }
+//            }
+//        }
         return res.toString();
     }
 }

@@ -137,7 +137,9 @@ public class OneSlotConstraintGenerater extends AbstractConstraintGenerater {
             list.add((requirement.getDemand()-requirement.getMeetDemand()));
             res.add(list);
         }
-
+        if (res.get(0).size()==0){
+            System.out.println();
+        }
         System.out.println("参数个数为：" + res.get(0).size());
         System.out.println("getXQCons size!!!:"+res.size());
         return res;

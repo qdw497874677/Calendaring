@@ -222,32 +222,118 @@ public class CalendaingResult {
     }
 
     // 按时完成率
-    public String getOAR(){
+    public double getOAR(){
         int b = onTime.size() + delay.size();
         if (b == 0){
-            return "0";
+            return 0;
         }else {
-            BigDecimal bigDecimal = new BigDecimal(onTime.size()/b * 100);
-            return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
+            BigDecimal bigDecimal = new BigDecimal((double) onTime.size()/b * 100);
+            return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN).doubleValue();
         }
     }
 
+    // 按时完成传输率
+    public double getOADR(){
+        double a = 0;
+        for (Requirements.Requirement requirement : onTime) {
+            a += requirement.getDemand();
+        }
+        double b = 0;
+        for (Requirements.Requirement requirement : accepted) {
+            b += requirement.getDemand();
+        }
+        if (b == 0){
+            return 0;
+        }else {
+            BigDecimal bigDecimal = new BigDecimal((double) a/b * 100);
+            return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN).doubleValue();
+        }
+    }
+
+    // 按时传输数据量
+    public double getOTDV(){
+        double a = 0;
+        for (Requirements.Requirement requirement : onTime) {
+            a += requirement.getDemand();
+        }
+        BigDecimal bigDecimal = new BigDecimal((double) a);
+        return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN).doubleValue();
+    }
+
+    // 按时完成传输率
+    public static double getAllOADR(Collection<CalendaingResult> collection){
+        double sum = 0;
+        for (CalendaingResult calendaingResult : collection) {
+            sum += calendaingResult.getOADR();
+        }
+        return sum/collection.size();
+    }
+
+    // 最早完成时间
+    public double getECT(){
+        double sum = 0;
+        for (Requirements.Requirement requirement : accepted) {
+            sum += requirement.getRealFinishSlot();
+        }
+        return sum/accepted.size();
+    }
+
+    // 带宽消耗率
+    public double getBC(){
+        double sum = 0;
+        for (Requirements.Requirement requirement : accepted) {
+            for (List<Flow> flows : requirement.getFlowsOfR().values()) {
+                for (Flow flow : flows) {
+                    if (flow.getValue()>0 && flow.getStatus().equals(FlowStatus.ZHENGCHANG)){
+                        sum += flow.getPath().getPath().size()*flow.getValue();
+                    }
+                }
+            }
+        }
+        return sum/accepted.size();
+    }
+
+    public static double getAllBC(Collection<CalendaingResult> collection){
+        double sum = 0;
+        for (CalendaingResult calendaingResult : collection) {
+            sum += calendaingResult.getBC();
+        }
+        return sum/collection.size();
+    }
+
+
+    public static double getAllOAR(Collection<CalendaingResult> collection){
+        double sum = 0;
+        for (CalendaingResult calendaingResult : collection) {
+            sum += calendaingResult.getOAR();
+        }
+        return sum/collection.size();
+    }
+
+
+
     // 平均预留延迟率
-    public String getARDR(){
+    public double getARDR(){
         if (delay.size() == 0){
-            return "0";
+            return 0;
         }else {
             double a = 0;
-            for (Requirements.Requirement requirement : delay) {
-                a = requirement.getRealFinishSlot() - requirement.getDeadline();
-            }
             double b = 0;
             for (Requirements.Requirement requirement : delay) {
-                b = requirement.getDeadline() - requirement.getReadySlot();
+                a += requirement.getRealFinishSlot() - requirement.getDeadline();
+                b += requirement.getDeadline() - requirement.getReadySlot();
             }
-            BigDecimal bigDecimal = new BigDecimal(a/b * 100);
-            return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN)+"%";
+            BigDecimal bigDecimal = new BigDecimal((double)a/b * 100);
+            return bigDecimal.setScale(4,BigDecimal.ROUND_HALF_DOWN).doubleValue();
         }
+    }
+
+    public static double getAllARDR(Collection<CalendaingResult> collection){
+        double sum = 0;
+        for (CalendaingResult calendaingResult : collection) {
+            sum += calendaingResult.getARDR();
+        }
+        return sum/collection.size();
     }
 
     @Override

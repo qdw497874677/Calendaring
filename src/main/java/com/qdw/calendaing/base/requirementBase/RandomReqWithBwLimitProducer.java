@@ -23,10 +23,14 @@ public class RandomReqWithBwLimitProducer implements RequirementProducer {
             b = a;
             a = temp;
         }
+
+//        int a = random.nextInt(r+1-l);
+//        int b = random.nextInt(r+1-a)+a;
+
         int demandBase = requirementConfig.getDemandBase();
         double demand = 0;
         for (int i = 0; i < b - a + 1; i++) {
-            demand += random.nextInt(demandBase*2-demandBase/2)+demandBase/2;
+            demand += random.nextInt(demandBase)+demandBase;
         }
 
         int size = network.getNodes().size();
@@ -38,7 +42,12 @@ public class RandomReqWithBwLimitProducer implements RequirementProducer {
 
         // 限制的最大带宽
         int maxBdw = 0;
-        maxBdw = random.nextInt(demandBase) + demandBase;
+        maxBdw = random.nextInt(demandBase) + 1;
+        demand = 0;
+        for (int i = a; i <=b ; i++) {
+            demand += 1+random.nextInt(maxBdw);
+        }
+//        demand = 2* maxBdw * (random.nextInt(b-a+1)+1);
 
         return new Requirements.Requirement(ids++,network.getNode(s),network.getNode(d),a,b,demand,maxBdw);
     }

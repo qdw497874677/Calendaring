@@ -6,6 +6,7 @@ import com.qdw.calendaing.base.config.RequirementConfig;
 import com.qdw.calendaing.base.pathBase.BdwLimitProducer;
 import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathProducer;
 import com.qdw.calendaing.base.pathBase.ShortestMaxBandwidthPathWithBdwLimitProducer;
+import com.qdw.calendaing.base.pathBase.kpaths.DelMinBLinkKPathsProducer;
 import com.qdw.calendaing.base.requirementBase.RandomRProducer;
 import com.qdw.calendaing.base.pathBase.MaxBandwidthPathProducer;
 import com.qdw.calendaing.base.pathBase.kpaths.SimpleKPathsProducer;
@@ -15,6 +16,8 @@ import com.qdw.calendaing.base.requirementBase.priority.MaxTP_PM;
 import com.qdw.calendaing.dataCollecting.ToFileDataCollecter;
 import com.qdw.calendaing.schedulerStregys.*;
 import com.qdw.calendaing.base.NetContext;
+import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.FD_VbvpEarliestOfflineScheduler;
+import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.FD_VbvpStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.PBSP_FDBRR.lp.FD_LPStepsOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPSimpleOfflineScheduler;
 import com.qdw.calendaing.schedulerStregys.lp.LPStepsOfflineScheduler;
@@ -37,10 +40,16 @@ public class TestBed {
     public static void main(String[] args) {
 //        test(50);
 //        test(100);
+//        test(150);
 //        test(200);
+//        test(250);
 //        test(300);
 //        test(400);
-        test(500);
+//        test(500);
+//        test(600);
+//        test(700);
+//        test(800);
+        test(900);
     }
 
 
@@ -59,15 +68,19 @@ public class TestBed {
         // ESNET 21
         String topoStr = "0-1,0-3,0-5,0-6,0-12,1-5,2-3,3-4,3-6,3-8,5-6,6-7,6-10,7-8,8-9,9-15,9-10,10-12,11-12,12-13,12-16,12-17,13-14,13-15,14-15,14-17,9-15,15-17,16-17,16-18,16-20,15-17,16-17,17-18,18-19,18-20";
         int numOfNode = 21;
-        double capacity = 40.0;
+        double capacity = 20.0;
 
         PathConfig pathConfig = new PathConfig(
                 6,
                 10,
 //                new MaxBandwidthPathProducer(),
 //                new ShortestMaxBandwidthPathWithBdwLimitProducer(),
+
+//                new BdwLimitProducer(new MaxBandwidthPathProducer()),
                 new BdwLimitProducer(new ShortestMaxBandwidthPathProducer()),
-                new SimpleKPathsProducer()
+
+//                new SimpleKPathsProducer()
+                new DelMinBLinkKPathsProducer()
         );
 
         RequirementConfig requirementConfig = new RequirementConfig(
@@ -75,7 +88,7 @@ public class TestBed {
                 numOfR,
                 0,
                 19,
-                6,
+                10,
 //                new RandomRProducer(),
                 new RandomReqWithBwLimitProducer(),
 
@@ -96,7 +109,7 @@ public class TestBed {
         );
 
         // 实验次数
-        int time = 1;
+        int time = 10;
         List<CalendaingResult> list = new LinkedList<>();
         StringBuilder print = new StringBuilder();
 //        netContext.setPathProducer(new MaxBandwidthPathProducer());
@@ -120,8 +133,10 @@ public class TestBed {
 
 //             scheduler = new LPStepsOnlineScheduler();// 在线、分时隙、LP
 //             scheduler = new LPWithBdwLimitScheduler(new LPStepsOnlineScheduler());// 在线、分时隙、LP
-
 //            scheduler = new FD_LPStepsOfflineScheduler();// 离线、分时隙、LP
+
+//            scheduler = new FD_VbvpEarliestOfflineScheduler(); // 顺占、全时隙
+//            scheduler = new FD_VbvpStepsOfflineScheduler(); // 顺占、分时隙
             scheduler = new LPWithBdwLimitScheduler(new FD_LPStepsOfflineScheduler());
 
             long start = System.currentTimeMillis();
@@ -144,6 +159,13 @@ public class TestBed {
         print.append("实验次数:").append(time).append("\n");
         print.append("平均一次实验计算用时:").append(avgTime/time).append("ms\n");
 
+        double allOAR = CalendaingResult.getAllOAR(list);
+        print.append("平均按时完成率:").append(allOAR).append("%\n");
+        double allARDR = CalendaingResult.getAllARDR(list);
+        print.append("平均预留延迟率:").append(allARDR).append("%\n");
+        print.append("平均按时完成传输率:").append(CalendaingResult.getAllOADR(list)).append("%\n");
+        print.append("平均带宽消耗率:").append(CalendaingResult.getAllBC(list)).append("\n");
+
         String averageRate = CalendaingResult.getAverageAcceptRate(list);
         print.append("平均完成率为:").append(averageRate).append("\n");
         String averageThroughputRate = CalendaingResult.getAverageThroughputRate(list);
@@ -158,7 +180,7 @@ public class TestBed {
         toFileDataCollecter.addData(print.toString());
 
         System.out.println(print);
-
+        System.out.println(list.size());
 
 
     }

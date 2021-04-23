@@ -152,7 +152,12 @@ public class OneSlotConstraintGenerater extends AbstractConstraintGenerater {
     public List<Double> getObjFunc(NetContext netContext, Collection<Flow> flows) {
         List<Double> res = new LinkedList<>();
         for (Flow flow : flows) {
-            res.add(getCost(flow, (int)(- flow.getThisR().getPriority()),1000));
+//            res.add(getCost(flow, 1/flow.getThisR().getPriority(),100000));
+            res.add(getCost(flow, -flow.getThisR().getPriority(),100000));
+//            res.add(getCost(flow, -flow.getThisR().getPriority()*100,100000));
+//            res.add(getCost(flow, flow.getThisR().getDemand()-flow.getThisR().getMeetDemand(),100000));
+//            res.add(getCost(flow, flow.getThisR().getDemand()-flow.getThisR().getMeetDemand(),100000));
+//            res.add(getCost(flow, flow.getThisR().getDeadline()*(flow.getThisR().getDemand()-flow.getThisR().getMeetDemand()),10000));
     }
         return res;
     }

@@ -33,14 +33,14 @@ public abstract class AbstractConstraintGenerater implements ConstraintGenerater
     }
 
 
-    public Double getCost(Flow flow,double plusValue,int valueOfXUNI){
+    public Double getCost(Flow flow,double plusValue,double valueOfXUNI){
 
         if (flow.getStatus().equals(FlowStatus.ZHENGCHANG)){
             // 如果是正常流，则将所对应的请求的优先级也介入流的权值的计算
-            return flow.getPath().getPath().size() * plusValue;
+            return plusValue;
         }else {
-            return (double)valueOfXUNI;
-//            return -plusValue * 100;
+            return valueOfXUNI;
+//            return plusValue * valueOfXUNI;
 //            return (int)(Integer.MAX_VALUE/(flow.getThisR().getDemand() - flow.getThisR().getMeetDemand()));
         }
     }
